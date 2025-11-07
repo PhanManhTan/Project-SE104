@@ -22,11 +22,4 @@
 * **Giảng viên:** Huỳnh Ngọc Tín
 * **Đề tài:** Quản lý khách sạn.
 
-# HƯỚNG DẪN CÀI ĐẶT
-```
-git clone https://github.com/hungcao0402/SE104
-cd SE104
-pip install -r requirements.txt
-python manage.py runserver
-```
 

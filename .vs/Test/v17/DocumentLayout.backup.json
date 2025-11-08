@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SE104\\DOAN\\Project-SE104\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76EF634C-D5D1-46B4-8369-46E3E2FC3138}|Test\\Test.csproj|D:\\SE104\\DOAN\\Project-SE104\\test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76EF634C-D5D1-46B4-8369-46E3E2FC3138}|Test\\Test.csproj|solutionrelative:test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76EF634C-D5D1-46B4-8369-46E3E2FC3138}|Test\\Test.csproj|d:\\se104\\doan\\project-se104\\test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{76EF634C-D5D1-46B4-8369-46E3E2FC3138}|Test\\Test.csproj|solutionrelative:test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76EF634C-D5D1-46B4-8369-46E3E2FC3138}|Test\\Test.csproj|D:\\SE104\\DOAN\\Project-SE104\\test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76EF634C-D5D1-46B4-8369-46E3E2FC3138}|Test\\Test.csproj|solutionrelative:test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\SE104\\DOAN\\Project-SE104\\Test\\App.config",
+              "RelativeDocumentMoniker": "Test\\App.config",
+              "ToolTip": "D:\\SE104\\DOAN\\Project-SE104\\Test\\App.config",
+              "RelativeToolTip": "Test\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-08T03:30:22.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\SE104\\DOAN\\Project-SE104\\Test\\Form1.cs",
+              "RelativeDocumentMoniker": "Test\\Form1.cs",
+              "ToolTip": "D:\\SE104\\DOAN\\Project-SE104\\Test\\Form1.cs",
+              "RelativeToolTip": "Test\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T03:26:24.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\DOAN\\Project-SE104\\Test\\Form1.cs",
+              "RelativeDocumentMoniker": "Test\\Form1.cs",
+              "ToolTip": "D:\\SE104\\DOAN\\Project-SE104\\Test\\Form1.cs [Design]",
+              "RelativeToolTip": "Test\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T03:26:15.722Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

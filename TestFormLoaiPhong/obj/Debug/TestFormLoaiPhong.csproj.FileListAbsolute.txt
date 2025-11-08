@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.Properties.Resources.resources
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.csproj.GenerateResource.cache
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\bin\Debug\TestFormLoaiPhong.exe.config
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\bin\Debug\TestFormLoaiPhong.exe
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\bin\Debug\TestFormLoaiPhong.pdb
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.exe
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.pdb
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.exe.config
+C:\Users\User\Desktop\TEST\TestFormLoaiPhong\TestFormLoaiPhong\obj\Debug\TestFormLoaiPhong.Form1.resources

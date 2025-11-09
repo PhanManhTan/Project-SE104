@@ -10,7 +10,7 @@
 # THÀNH VIÊN NHÓM
 
 | STT    | MSSV          | Họ và Tên              |       Email             | Github |
-| ------ |:-------------:| ----------------------:|------------------------:|-------:|
+| ------ |:-------------:| ----------------------:|------------------------:|:-------:|
 | 1      | 23521404      | Phan Mạnh Tân         |23521404@gm.uit.edu.vn   | [PhanManhTan](https://github.com/PhanManhTan) |
 | 2      | 23521357      | Nguyễn Văn Sơn        |23521357@gm.uit.edu.vn   | [vansonnguyen2209](https://github.com/vansonnguyen2209) |
 | 3      | 23521306      | Nguyễn Tấn Quốc       |23521306@gm.uit.edu.vn   | [tanquoc18](https://github.com/tanquoc18) |

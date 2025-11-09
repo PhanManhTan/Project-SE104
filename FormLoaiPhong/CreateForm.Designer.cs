@@ -118,7 +118,7 @@
             this.Controls.Add(this.txtMaLK);
             this.Controls.Add(this.lbMaLK);
             this.Name = "CreateForm";
-            this.Load += new System.EventHandler(this.Add_Load);
+            this.Load += new System.EventHandler(this.CreateForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

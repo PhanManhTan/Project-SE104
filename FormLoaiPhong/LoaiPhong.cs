@@ -3,40 +3,77 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.IO;        // THƯ VIỆN CHÍNH CHO FILE
-using System.Text;
+
 namespace FormLoaiPhong
 {
     public partial class LoaiPhong : Form
     {
-        string connString = "Data Source=DESKTOP-0A82EOD\\MSI;Initial Catalog=QLKS98;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
+        private string connString = "Data Source=DESKTOP-0A82EOD\\MSI;Initial Catalog=QLKS98;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
+        private string selectedMaLoai; // Lưu mã loại phòng đang chọn
+
         public LoaiPhong()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void LoaiPhong_Load(object sender, EventArgs e)
         {
-            LoadData();
+            SetupDataGridView();
             SetupForm();
+            LoadData();
+               
+            // Gán sự kiện khi chọn dòng trong DataGridView
+            dgvLoaiPhong.SelectionChanged += DgvLoaiPhong_SelectionChanged;
         }
-        private void SetupForm()
+
+        private void SetupDataGridView()
         {
-            
-            // ComboBox – CHỈ CÓ THỂ SET BẰNG CODE (Items)
-            // ĐÃ XÓA – SET TRONG DESIGNER
             dgvLoaiPhong.RowHeadersVisible = false;
             dgvLoaiPhong.AllowUserToAddRows = false;
             dgvLoaiPhong.ReadOnly = true;
             dgvLoaiPhong.MultiSelect = false;
             dgvLoaiPhong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLoaiPhong.EnableHeadersVisualStyles = false;
-            dgvLoaiPhong.ShowCellToolTips = false;
             dgvLoaiPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvLoaiPhong.AutoSize = false;
             dgvLoaiPhong.ScrollBars = ScrollBars.Vertical;
         }
+        private void SetupForm()
+        {
+            // === Cấu hình chung DataGridView ===
+            dgvLoaiPhong.RowHeadersVisible = false;
+            dgvLoaiPhong.AllowUserToAddRows = false;
+            dgvLoaiPhong.ReadOnly = true;
+            dgvLoaiPhong.MultiSelect = false;
+            dgvLoaiPhong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvLoaiPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLoaiPhong.ScrollBars = ScrollBars.Vertical;
+            dgvLoaiPhong.EnableHeadersVisualStyles = false;
+
+            // === Header ===
+            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
+            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvLoaiPhong.ColumnHeadersHeight = 30;
+            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.White;
+            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // === Dòng xen kẽ + chọn dòng ===
+            dgvLoaiPhong.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 249, 250);
+            dgvLoaiPhong.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
+            dgvLoaiPhong.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+
+            // === Font dòng ===
+            dgvLoaiPhong.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
+
+            // === Tăng độ cao dòng ===
+            dgvLoaiPhong.RowTemplate.Height = 40;
+
+            // === Cấm kéo cột/dòng ===
+            dgvLoaiPhong.AllowUserToResizeColumns = false;
+            dgvLoaiPhong.AllowUserToResizeRows = false;
+            dgvLoaiPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+        }
+
         private void LoadData()
         {
             try
@@ -45,26 +82,12 @@ namespace FormLoaiPhong
                 {
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-
-                  //  Tắt tạm sự kiện
-                    dgvLoaiPhong.SelectionChanged -= dgvLoaiPhong_SelectionChanged;
-
                     dgvLoaiPhong.DataSource = dt;
-                    ConfigureColumns();
 
+                    // Clear selection ban đầu
                     dgvLoaiPhong.ClearSelection();
-                    if (dt.Rows.Count > 0)
-                    {
-                        dgvLoaiPhong.Rows[0].Selected = true;
-                        dgvLoaiPhong.CurrentCell = null;
-                    }
-                    else
-                    {
-                       // ClearInputs();
-                    }
-
-                   // Bật lại sự kiện
-                   dgvLoaiPhong.SelectionChanged += dgvLoaiPhong_SelectionChanged;
+                    selectedMaLoai = null;
+                    ConfigureColumns();
                 }
             }
             catch (Exception ex)
@@ -72,9 +95,31 @@ namespace FormLoaiPhong
                 MessageBox.Show("Lỗi kết nối: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void dgvLoaiPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
+        // ================= XỬ LÝ CHỌN DÒNG =================
+        private void DgvLoaiPhong_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvLoaiPhong.SelectedRows.Count > 0)
+            {
+                var row = dgvLoaiPhong.SelectedRows[0];
+                if (!row.IsNewRow && row.Cells["MaLoaiPhong"].Value != null)
+                {
+                    selectedMaLoai = row.Cells["MaLoaiPhong"].Value.ToString();
+                }
+            }
+        }
+
+        // ================= BUTTONS =================
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            using (var frm = new CreateForm(connString))
+            {
+                if (frm.ShowDialog() == DialogResult.OK)
+                {
+                    LoadData();
+                }
+            }
         }
         private void ConfigureColumns()
         {
@@ -83,21 +128,21 @@ namespace FormLoaiPhong
             {
                 var col = dgvLoaiPhong.Columns["STT"];
                 col.HeaderText = "STT";
-                col.Width = 20;
                 col.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                col.FillWeight = 10; // tỷ lệ chiếm cột
             }
 
             // === CỘT MÃ LOẠI ===
             if (dgvLoaiPhong.Columns["MaLoaiPhong"] != null)
             {
                 var col = dgvLoaiPhong.Columns["MaLoaiPhong"];
-                col.HeaderText = "Mã loại";
-                col.Width = 110;
+                col.HeaderText = "Mã loại phòng";
                 col.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                col.FillWeight = 25;
             }
 
             // === CỘT ĐƠN GIÁ ===
@@ -105,22 +150,22 @@ namespace FormLoaiPhong
             {
                 var col = dgvLoaiPhong.Columns["DonGia"];
                 col.HeaderText = "Đơn giá";
-                col.Width = 140;
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 col.DefaultCellStyle.Format = "N0";
                 col.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                col.FillWeight = 20;
             }
 
             // === CỘT TRẠNG THÁI ===
             if (dgvLoaiPhong.Columns["TrangThaiSuDung"] != null)
             {
                 var col = dgvLoaiPhong.Columns["TrangThaiSuDung"];
-                col.HeaderText = "Trạng thái";
-                col.Width = 130;
+                col.HeaderText = "Trạng thái sử dụng";
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 col.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                col.FillWeight = 20;
             }
 
             // === HEADER: NỀN TRẮNG, CHỮ ĐEN ĐẬM ===
@@ -138,26 +183,27 @@ namespace FormLoaiPhong
             // === DÒNG XEN KẼ + CHỌN DÒNG ===
             dgvLoaiPhong.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 249, 250);
             dgvLoaiPhong.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
-            dgvLoaiPhong.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+            dgvLoaiPhong.RowsDefaultCellStyle.SelectionForeColor = Color.White; 
 
             // CHỮ TRONG DÒNG
             dgvLoaiPhong.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
 
-            // TẮT MÀU Ô RIÊNG LẺ (CHỈ CHỌN CẢ DÒNG)
-            dgvLoaiPhong.DefaultCellStyle.SelectionBackColor = dgvLoaiPhong.DefaultCellStyle.BackColor;
-            dgvLoaiPhong.DefaultCellStyle.SelectionForeColor = dgvLoaiPhong.DefaultCellStyle.ForeColor;
-
             // TĂNG ĐỘ CAO DÒNG
             dgvLoaiPhong.RowTemplate.Height = 40;
 
-            dgvLoaiPhong.AllowUserToResizeColumns = false; // Cấm kéo ngang toàn bộ
-            dgvLoaiPhong.AllowUserToResizeRows = false;    // Cấm kéo dọc toàn bộ
-            dgvLoaiPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            // Cho phép cột tự co giãn khi form resize
+            dgvLoaiPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
-            using (var frm = new CreateForm(connString))
+            if (string.IsNullOrEmpty(selectedMaLoai))
+            {
+                MessageBox.Show("Vui lòng chọn một loại phòng để cập nhật.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            using (var frm = new UpdateForm(connString, selectedMaLoai))
             {
                 if (frm.ShowDialog() == DialogResult.OK)
                 {
@@ -165,29 +211,41 @@ namespace FormLoaiPhong
                 }
             }
         }
-        private void dgvLoaiPhong_SelectionChanged(object sender, EventArgs e)
+
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (dgvLoaiPhong.SelectedRows.Count > 0)
+            if (string.IsNullOrEmpty(selectedMaLoai))
             {
-                var row = dgvLoaiPhong.SelectedRows[0];
-                if (!row.IsNewRow)
-                    FillInputsFromRow(row);
+                MessageBox.Show("Vui lòng chọn một loại phòng để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (MessageBox.Show($"Bạn có chắc muốn xóa loại phòng {selectedMaLoai}?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                try
+                {
+                    using (SqlConnection conn = new SqlConnection(connString))
+                    {
+                        conn.Open();
+                        string query = "DELETE FROM LoaiPhong WHERE MaLoaiPhong = @MaLoai";
+                        using (SqlCommand cmd = new SqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@MaLoai", selectedMaLoai);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi xóa: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
-        private void FillInputsFromRow(DataGridViewRow row)
+
+        private void btnRefresh_Click(object sender, EventArgs e)
         {
-            if (row == null || row.Cells["MaLoaiPhong"].Value == null) return;
-
-           // _oldMa = row.Cells["MaLoaiPhong"].Value.ToString().Trim();
-          //  txtMa.Text = _oldMa;
-
-            var donGia = row.Cells["DonGia"].Value;
-          //  txtDonGia.Text = donGia != null ? donGia.ToString() : "";
-
-            string trangThai = row.Cells["TrangThaiSuDung"].Value?.ToString() ?? "Đang sử dụng";
-           // cboTrangThai.SelectedIndex = trangThai.Contains("Đang sử dụng") ? 0 : 1;
-
-            //txtMa.Enabled = false; // Không cho sửa mã khi đang chọn
+            LoadData();
         }
     }
 }

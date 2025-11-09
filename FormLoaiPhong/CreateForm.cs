@@ -18,8 +18,8 @@ namespace FormLoaiPhong
 
         private void FormSetup()
         {
-            cboTTSD.Items.Add("Đang dùng");
-            cboTTSD.Items.Add("Không dùng");
+            cboTTSD.Items.Add("Đang sử dụng");
+            cboTTSD.Items.Add("Ngừng sử dụng");
             cboTTSD.SelectedIndex = 0;
             cboTTSD.DropDownStyle = ComboBoxStyle.DropDownList;
         }
@@ -95,6 +95,11 @@ namespace FormLoaiPhong
         private void Add_Load(object sender, EventArgs e)
         {
             ClearInputs();
+        }
+
+        private void CreateForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

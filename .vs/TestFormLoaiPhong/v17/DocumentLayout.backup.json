@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|d:\\references\\3\\hk5\\se104\\project\\project-se104\\testformloaiphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|d:\\references\\3\\hk5\\se104\\project\\project-se104\\testformloaiphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|d:\\references\\3\\hk5\\se104\\project\\project-se104\\testformloaiphong\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\testformloaiphong\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|d:\\references\\3\\hk5\\se104\\project\\project-se104\\testformloaiphong\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|d:\\references\\3\\hk5\\se104\\project\\project-se104\\testformloaiphong\\config.txt||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\config.txt||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\testformloaiphong\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\testformloaiphong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|d:\\references\\3\\hk5\\se104\\project\\project-se104\\testformloaiphong\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|d:\\references\\3\\hk5\\se104\\project\\project-se104\\testformloaiphong\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\testformloaiphong\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{41F8384A-75A4-46A1-ADA3-AD3F31F912AC}|TestFormLoaiPhong\\TestFormLoaiPhong.csproj|solutionrelative:testformloaiphong\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "config.txt",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\config.txt",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\config.txt",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\config.txt",
+              "RelativeToolTip": "TestFormLoaiPhong\\config.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-09T06:53:09.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuyDinh.cs",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\QuyDinh.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\QuyDinh.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\QuyDinh.cs*",
+              "RelativeToolTip": "TestFormLoaiPhong\\QuyDinh.cs*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T06:48:27.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuyDinh.cs [Design]",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\QuyDinh.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\QuyDinh.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\QuyDinh.cs [Design]*",
+              "RelativeToolTip": "TestFormLoaiPhong\\QuyDinh.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T06:31:56.907Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThanhToan.cs [Design]",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\ThanhToan.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\ThanhToan.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\ThanhToan.cs [Design]",
+              "RelativeToolTip": "TestFormLoaiPhong\\ThanhToan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:54:45.701Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Home.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\Home.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Home.cs",
+              "RelativeToolTip": "TestFormLoaiPhong\\Home.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:34:38.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Home.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\Home.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Home.cs [Design]",
+              "RelativeToolTip": "TestFormLoaiPhong\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:04:41.453Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\App.config",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\App.config",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\App.config",
+              "RelativeToolTip": "TestFormLoaiPhong\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-08T10:20:09.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Form1.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\Form1.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Form1.cs [Design]",
+              "RelativeToolTip": "TestFormLoaiPhong\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T10:17:43.639Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Program.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\Program.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Program.cs",
+              "RelativeToolTip": "TestFormLoaiPhong\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T10:18:44.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Form1.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\Form1.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Form1.cs",
+              "RelativeToolTip": "TestFormLoaiPhong\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T10:18:18.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TestFormLoaiPhong\\Form1.Designer.cs",
+              "ToolTip": "D:\\References\\3\\HK5\\SE104\\Project\\Project-SE104\\TestFormLoaiPhong\\Form1.Designer.cs",
+              "RelativeToolTip": "TestFormLoaiPhong\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T10:18:21.067Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 118,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

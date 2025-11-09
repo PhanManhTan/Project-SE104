@@ -1,0 +1,1 @@
+﻿Data Source=CCCUATAZ\SQLEXPRESS01;Initial Catalog=QLKS99;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;

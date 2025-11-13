@@ -1,0 +1,314 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\updatequydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\updatequydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\updatequydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\updatequydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|d:\\se104\\chiucn\\project-se104 - copy\\formphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\quydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\loaiphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\loaiphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\createform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\createform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\createphongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\createphongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\createphongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\createphongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\updatephongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\updatephongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\formphong\\updatephongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED0E3401-9838-48EA-B796-425F813CB11A}|FormPhong\\FormPhong.csproj|solutionrelative:formphong\\updatephongform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\Program.cs",
+              "RelativeDocumentMoniker": "FormPhong\\Program.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\Program.cs",
+              "RelativeToolTip": "FormPhong\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:45:04.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateQuyDinh.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateQuyDinh.cs",
+              "RelativeDocumentMoniker": "FormPhong\\UpdateQuyDinh.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateQuyDinh.cs",
+              "RelativeToolTip": "FormPhong\\UpdateQuyDinh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:38:18.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateQuyDinh.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateQuyDinh.cs",
+              "RelativeDocumentMoniker": "FormPhong\\UpdateQuyDinh.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateQuyDinh.cs [Design]",
+              "RelativeToolTip": "FormPhong\\UpdateQuyDinh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:36:30.309Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuyDinh.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\QuyDinh.cs",
+              "RelativeDocumentMoniker": "FormPhong\\QuyDinh.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\QuyDinh.cs",
+              "RelativeToolTip": "FormPhong\\QuyDinh.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAG8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:44:14.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuyDinh.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\QuyDinh.cs",
+              "RelativeDocumentMoniker": "FormPhong\\QuyDinh.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\QuyDinh.cs [Design]",
+              "RelativeToolTip": "FormPhong\\QuyDinh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:32:15.24Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Phong.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\Phong.cs",
+              "RelativeDocumentMoniker": "FormPhong\\Phong.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\Phong.cs",
+              "RelativeToolTip": "FormPhong\\Phong.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAuwFEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T09:46:15.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateForm.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateForm.cs",
+              "RelativeDocumentMoniker": "FormPhong\\UpdateForm.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateForm.cs",
+              "RelativeToolTip": "FormPhong\\UpdateForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:02:38.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreateForm.Designer.cs",
+              "RelativeDocumentMoniker": "FormPhong\\CreateForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreateForm.Designer.cs",
+              "RelativeToolTip": "FormPhong\\CreateForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:02:26.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateForm.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreateForm.cs",
+              "RelativeDocumentMoniker": "FormPhong\\CreateForm.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreateForm.cs",
+              "RelativeToolTip": "FormPhong\\CreateForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:02:13.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoaiPhong.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\LoaiPhong.Designer.cs",
+              "RelativeDocumentMoniker": "FormPhong\\LoaiPhong.Designer.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\LoaiPhong.Designer.cs",
+              "RelativeToolTip": "FormPhong\\LoaiPhong.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:01:21.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoaiPhong.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\LoaiPhong.cs",
+              "RelativeDocumentMoniker": "FormPhong\\LoaiPhong.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\LoaiPhong.cs",
+              "RelativeToolTip": "FormPhong\\LoaiPhong.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAUBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T06:59:00.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoaiPhong.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\LoaiPhong.cs",
+              "RelativeDocumentMoniker": "FormPhong\\LoaiPhong.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\LoaiPhong.cs [Design]",
+              "RelativeToolTip": "FormPhong\\LoaiPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T06:58:58.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Phong.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\Phong.cs",
+              "RelativeDocumentMoniker": "FormPhong\\Phong.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\Phong.cs [Design]",
+              "RelativeToolTip": "FormPhong\\Phong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T09:37:20.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateForm.Designer.cs",
+              "RelativeDocumentMoniker": "FormPhong\\UpdateForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdateForm.Designer.cs",
+              "RelativeToolTip": "FormPhong\\UpdateForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:02:49.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreatePhongForm.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreatePhongForm.cs",
+              "RelativeDocumentMoniker": "FormPhong\\CreatePhongForm.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreatePhongForm.cs",
+              "RelativeToolTip": "FormPhong\\CreatePhongForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T09:48:55.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreatePhongForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreatePhongForm.cs",
+              "RelativeDocumentMoniker": "FormPhong\\CreatePhongForm.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\CreatePhongForm.cs [Design]",
+              "RelativeToolTip": "FormPhong\\CreatePhongForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T09:48:17.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UpdatePhongForm.cs",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdatePhongForm.cs",
+              "RelativeDocumentMoniker": "FormPhong\\UpdatePhongForm.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdatePhongForm.cs",
+              "RelativeToolTip": "FormPhong\\UpdatePhongForm.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAJAAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T09:48:58.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdatePhongForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdatePhongForm.cs",
+              "RelativeDocumentMoniker": "FormPhong\\UpdatePhongForm.cs",
+              "ToolTip": "D:\\SE104\\CHIUCN\\Project-SE104 - Copy\\FormPhong\\UpdatePhongForm.cs [Design]",
+              "RelativeToolTip": "FormPhong\\UpdatePhongForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T09:48:38.862Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

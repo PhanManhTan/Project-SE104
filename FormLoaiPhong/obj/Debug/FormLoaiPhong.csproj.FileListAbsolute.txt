@@ -1,0 +1,49 @@
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe.config
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\bin\Debug\FormLoaiPhong.pdb
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.Properties.Resources.resources
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.GenerateResource.cache
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.exe
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.pdb
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.exe.config
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.LoaiPhong.resources
+C:\Users\User\Desktop\TEST\FormLoaiPhong\FormLoaiPhong\obj\Debug\FormLoaiPhong.CreateForm.resources
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.exe.config
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.CreateForm.resources
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.LoaiPhong.resources
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.Properties.Resources.resources
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.GenerateResource.cache
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.exe
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.pdb
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe.config
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\bin\Debug\FormLoaiPhong.pdb
+C:\Users\User\Desktop\TEST\FormLoaiPhong\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.UpdateForm.resources
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe.config
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\bin\Debug\FormLoaiPhong.pdb
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.AssemblyReference.cache
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.CreateForm.resources
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.LoaiPhong.resources
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.Properties.Resources.resources
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.UpdateForm.resources
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.GenerateResource.cache
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.CoreCompileInputs.cache
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.exe
+D:\SE104\CHIUCN\Project-SE104\FormLoaiPhong\obj\Debug\FormLoaiPhong.pdb
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe.config
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\bin\Debug\FormLoaiPhong.exe
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\bin\Debug\FormLoaiPhong.pdb
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.AssemblyReference.cache
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.CreateForm.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.LoaiPhong.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.Properties.Resources.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.UpdateForm.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.GenerateResource.cache
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.csproj.CoreCompileInputs.cache
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.exe
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormLoaiPhong\obj\Debug\FormLoaiPhong.pdb

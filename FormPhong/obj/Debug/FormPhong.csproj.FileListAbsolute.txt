@@ -1,0 +1,15 @@
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\bin\Debug\FormPhong.exe.config
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\bin\Debug\FormPhong.exe
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\bin\Debug\FormPhong.pdb
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.csproj.AssemblyReference.cache
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.CreatePhongForm.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.Phong.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.Properties.Resources.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.UpdatePhongForm.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.csproj.GenerateResource.cache
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.csproj.CoreCompileInputs.cache
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.exe
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.pdb
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.CreateForm.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.LoaiPhong.resources
+D:\SE104\CHIUCN\Project-SE104 - Copy\FormPhong\obj\Debug\FormPhong.UpdateForm.resources

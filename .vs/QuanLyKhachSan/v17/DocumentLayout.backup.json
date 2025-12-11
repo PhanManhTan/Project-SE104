@@ -1,0 +1,509 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|c:\\users\\user\\desktop\\se104\\quanlykhachsan\\quanlykhachsan\\khachhang_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachhang_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachhang_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachhang_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaiphong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaiphong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaikhach_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaikhach_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\phong_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\phong_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaiphong_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaiphong_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachsan_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachsan_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachhang_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachhang_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|c:\\users\\user\\desktop\\se104\\quanlykhachsan\\quanlykhachsan\\khachsan_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachsan_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachhang_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachhang_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachhang_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachhang_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachhang_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachhang_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaiphong_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaiphong_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\phong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\phong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachhang_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachhang_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\phong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\phong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaikhach_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaikhach_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\phong_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\phong_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\phong_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\phong_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaiphong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaiphong_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\phong_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\phong_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\phong_mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\phong_mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachsan_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachsan_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\khachsan_mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\khachsan_mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\quanlykhachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC2D980-FF61-4B3F-9C27-437C352F6306}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KhachHang_MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachHang_MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_MainForm.Designer.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachHang_MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T07:51:30.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoaiKhach_UpdateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_UpdateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiKhach_UpdateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_UpdateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiKhach_UpdateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:11:44.326Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoaiPhong_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiPhong_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_MainForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiPhong_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:56:39.374Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoaiKhach_CreateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_CreateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiKhach_CreateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_CreateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiKhach_CreateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:37:34.025Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KhachHang_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachHang_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_MainForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachHang_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:25:18.751Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoaiKhach_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiKhach_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_MainForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiKhach_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:20:28.371Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Phong_CreateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_CreateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Phong_CreateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_CreateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\Phong_CreateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:09:43.439Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoaiPhong_UpdateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_UpdateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiPhong_UpdateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_UpdateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiPhong_UpdateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:20:23.517Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KhachSan_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachSan_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachSan_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:09:22.522Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KhachHang_UpdateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_UpdateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachHang_UpdateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_UpdateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachHang_UpdateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:32:18.764Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KhachSan_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachSan_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachSan_MainForm.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAWwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:09:17.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KhachHang_UpdateForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_UpdateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachHang_UpdateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_UpdateForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachHang_UpdateForm.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwL8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:26:21.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "KhachHang_CreateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_CreateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachHang_CreateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_CreateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachHang_CreateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:23:36.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "KhachHang_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachHang_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_MainForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachHang_MainForm.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAuwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:12:34.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "KhachHang_CreateForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_CreateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachHang_CreateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachHang_CreateForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachHang_CreateForm.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwFMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:23:41.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Phong_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Phong_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\Phong_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:56:32.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoaiPhong_CreateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_CreateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiPhong_CreateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_CreateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiPhong_CreateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:20:26.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Phong_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Phong_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\Phong_MainForm.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAcwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:56:34.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoaiKhach_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiKhach_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_MainForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiKhach_MainForm.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:23:00.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Phong_UpdateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_UpdateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Phong_UpdateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_UpdateForm.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\Phong_UpdateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:20:19.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Phong_MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Phong_MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.Designer.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\Phong_MainForm.Designer.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAIAwwIoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:08:28.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoaiPhong_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_MainForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiPhong_MainForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiPhong_MainForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiPhong_MainForm.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:04:17.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoaiKhach_UpdateForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_UpdateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiKhach_UpdateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_UpdateForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiKhach_UpdateForm.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:11:45.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Phong_MainForm.resx",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.resx",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Phong_MainForm.resx",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_MainForm.resx",
+              "RelativeToolTip": "QuanLyKhachSan\\Phong_MainForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-11-13T08:08:26.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Phong_CreateForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_CreateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Phong_CreateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Phong_CreateForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\Phong_CreateForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:10:21.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoaiKhach_CreateForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_CreateForm.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\LoaiKhach_CreateForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\LoaiKhach_CreateForm.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\LoaiKhach_CreateForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:23:28.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "KhachSan_MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachSan_MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.Designer.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachSan_MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:09:20.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\Program.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T07:10:20.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "KhachSan_MainForm.resx",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.resx",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\KhachSan_MainForm.resx",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SE104\\QuanLyKhachSan\\QuanLyKhachSan\\KhachSan_MainForm.resx",
+              "RelativeToolTip": "QuanLyKhachSan\\KhachSan_MainForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-11-13T07:09:21.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

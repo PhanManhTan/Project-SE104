@@ -1,0 +1,592 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SE104\\Project-SE104\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\se104\\project-se104\\project\\quydinhform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\quydinhform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\se104\\project-se104\\project\\quydinhform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\quydinhform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\se104\\project-se104\\project\\quydinhform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\quydinhform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|d:\\se104\\project-se104\\services\\parameterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|solutionrelative:services\\parameterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|D:\\SE104\\Project-SE104\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|solutionrelative:services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|D:\\SE104\\Project-SE104\\services\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|solutionrelative:services\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|d:\\se104\\project-se104\\services\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|solutionrelative:services\\billingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\se104\\project-se104\\project\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC4B251-3109-4127-80E5-8FCC2483E861}|Data\\Data.csproj|d:\\se104\\project-se104\\data\\db.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{ABC4B251-3109-4127-80E5-8FCC2483E861}|Data\\Data.csproj|solutionrelative:data\\db.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhach_updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhach_updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhach_createform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhach_createform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhach_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhach_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\loaikhachform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\loaikhachform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypes_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypes_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypes_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypes_createform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypes_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypes_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypes_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypes_updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypes_updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypes_updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypes_createform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypes_createform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|D:\\SE104\\Project-SE104\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|solutionrelative:services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\roomtypesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roomtypesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC4B251-3109-4127-80E5-8FCC2483E861}|Data\\Data.csproj|D:\\SE104\\Project-SE104\\data\\global_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC4B251-3109-4127-80E5-8FCC2483E861}|Data\\Data.csproj|solutionrelative:data\\global_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\SE104\\Project-SE104\\project\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\Main.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\Main.Designer.cs",
+              "RelativeToolTip": "Project\\Main.Designer.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAgwMsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T07:41:55.687Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuyDinhForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\QuyDinhForm.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\QuyDinhForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\QuyDinhForm.Designer.cs",
+              "RelativeToolTip": "Project\\QuyDinhForm.Designer.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAYwOQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:57:25.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuyDinhForm.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\QuyDinhForm.cs",
+              "RelativeDocumentMoniker": "Project\\QuyDinhForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\QuyDinhForm.cs",
+              "RelativeToolTip": "Project\\QuyDinhForm.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:54:54.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuyDinhForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\QuyDinhForm.cs",
+              "RelativeDocumentMoniker": "Project\\QuyDinhForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\QuyDinhForm.cs [Design]",
+              "RelativeToolTip": "Project\\QuyDinhForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:54:07.368Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ParameterService.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Services\\ParameterService.cs",
+              "RelativeDocumentMoniker": "Services\\ParameterService.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Services\\ParameterService.cs",
+              "RelativeToolTip": "Services\\ParameterService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:53:03.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DB.dbml",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Data\\DB.dbml",
+              "RelativeDocumentMoniker": "Data\\DB.dbml",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Data\\DB.dbml",
+              "RelativeToolTip": "Data\\DB.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2025-12-12T06:43:34.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\CustomerService.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Services\\CustomerService.cs",
+              "RelativeToolTip": "Services\\CustomerService.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T16:03:30.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoaiKhach_UpdateForm.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_UpdateForm.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhach_UpdateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_UpdateForm.cs",
+              "RelativeToolTip": "Project\\LoaiKhach_UpdateForm.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:44:42.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Project\\Program.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\Program.cs",
+              "RelativeToolTip": "Project\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAewBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:26:48.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BillingService.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Services\\BillingService.cs",
+              "RelativeDocumentMoniker": "Services\\BillingService.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Services\\BillingService.cs",
+              "RelativeToolTip": "Services\\BillingService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:47:09.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoaiKhach_UpdateForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_UpdateForm.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhach_UpdateForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_UpdateForm.Designer.cs",
+              "RelativeToolTip": "Project\\LoaiKhach_UpdateForm.Designer.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:44:20.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RentalService.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Services\\RentalService.cs",
+              "RelativeDocumentMoniker": "Services\\RentalService.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Services\\RentalService.cs",
+              "RelativeToolTip": "Services\\RentalService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwDcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:30:16.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoaiKhach_CreateForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_CreateForm.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhach_CreateForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_CreateForm.Designer.cs",
+              "RelativeToolTip": "Project\\LoaiKhach_CreateForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:42:52.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoaiKhachForm.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhachForm.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhachForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhachForm.cs",
+              "RelativeToolTip": "Project\\LoaiKhachForm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:40:53.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoaiKhach_CreateForm.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_CreateForm.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhach_CreateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_CreateForm.cs",
+              "RelativeToolTip": "Project\\LoaiKhach_CreateForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:43:18.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoaiKhach_UpdateForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_UpdateForm.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhach_UpdateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_UpdateForm.cs [Design]",
+              "RelativeToolTip": "Project\\LoaiKhach_UpdateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:44:12.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoaiKhachForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhachForm.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhachForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhachForm.cs [Design]",
+              "RelativeToolTip": "Project\\LoaiKhachForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:24.523Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoaiKhach_CreateForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_CreateForm.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhach_CreateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhach_CreateForm.cs [Design]",
+              "RelativeToolTip": "Project\\LoaiKhach_CreateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:42:37.051Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoaiKhachForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\LoaiKhachForm.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\LoaiKhachForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\LoaiKhachForm.Designer.cs",
+              "RelativeToolTip": "Project\\LoaiKhachForm.Designer.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAowHUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:38:30.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RoomTypes_CreateForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_CreateForm.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypes_CreateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_CreateForm.cs [Design]",
+              "RelativeToolTip": "Project\\RoomTypes_CreateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:17:36.131Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RoomTypes_UpdateForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_UpdateForm.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypes_UpdateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_UpdateForm.cs [Design]",
+              "RelativeToolTip": "Project\\RoomTypes_UpdateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:19:53.909Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RoomTypes_UpdateForm.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_UpdateForm.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypes_UpdateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_UpdateForm.cs",
+              "RelativeToolTip": "Project\\RoomTypes_UpdateForm.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAADMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:20:21.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RoomTypes_CreateForm.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_CreateForm.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypes_CreateForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_CreateForm.cs",
+              "RelativeToolTip": "Project\\RoomTypes_CreateForm.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwBkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:18:18.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RoomTypes_UpdateForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_UpdateForm.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypes_UpdateForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_UpdateForm.Designer.cs",
+              "RelativeToolTip": "Project\\RoomTypes_UpdateForm.Designer.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAcwHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:20:46.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RoomTypes_CreateForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_CreateForm.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypes_CreateForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypes_CreateForm.Designer.cs",
+              "RelativeToolTip": "Project\\RoomTypes_CreateForm.Designer.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAcwIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:17:43.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "Services\\RoomService.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Services\\RoomService.cs",
+              "RelativeToolTip": "Services\\RoomService.cs",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAAwIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T07:59:25.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RoomTypesForm.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypesForm.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypesForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypesForm.cs",
+              "RelativeToolTip": "Project\\RoomTypesForm.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAqwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:15:05.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RoomTypesForm.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypesForm.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypesForm.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypesForm.cs [Design]",
+              "RelativeToolTip": "Project\\RoomTypesForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:14:30.206Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RoomTypesForm.Designer.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\RoomTypesForm.Designer.cs",
+              "RelativeDocumentMoniker": "Project\\RoomTypesForm.Designer.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\RoomTypesForm.Designer.cs",
+              "RelativeToolTip": "Project\\RoomTypesForm.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T08:14:37.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\Main.cs",
+              "RelativeDocumentMoniker": "Project\\Main.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\Main.cs",
+              "RelativeToolTip": "Project\\Main.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAjwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T07:55:39.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\Main.cs",
+              "RelativeDocumentMoniker": "Project\\Main.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\Main.cs [Design]",
+              "RelativeToolTip": "Project\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T07:24:26.642Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Global_.cs",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Data\\Global_.cs",
+              "RelativeDocumentMoniker": "Data\\Global_.cs",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Data\\Global_.cs",
+              "RelativeToolTip": "Data\\Global_.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T03:23:17.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\SE104\\Project-SE104\\Project\\App.config",
+              "RelativeDocumentMoniker": "Project\\App.config",
+              "ToolTip": "D:\\SE104\\Project-SE104\\Project\\App.config",
+              "RelativeToolTip": "Project\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-10T15:00:07.208Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

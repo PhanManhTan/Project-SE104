@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace Project
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public partial class Main : Form
     {
         public Main()

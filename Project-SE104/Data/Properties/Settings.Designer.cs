@@ -55,5 +55,16 @@ namespace Data.Properties {
                 return ((string)(this["QuanLyKhachSan1ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CCCUATAZ\\SQLEXPRESS01;Initial Catalog=QuanLyKhachSan2;Integrated Secu" +
+            "rity=True;Encrypt=False")]
+        public string QuanLyKhachSan2ConnectionString {
+            get {
+                return ((string)(this["QuanLyKhachSan2ConnectionString"]));
+            }
+        }
     }
 }

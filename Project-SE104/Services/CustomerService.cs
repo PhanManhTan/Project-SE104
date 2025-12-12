@@ -55,7 +55,7 @@ namespace Services
         {
             var kh = db.KhachHangs.FirstOrDefault(k => k.MaKhach == maKhach);
             if (kh == null) return false;
-            if (db.PhieuThues.Any(pt => pt.MaKhach == maKhach)) return false;
+            if (db.ChiTietPhieuThues.Any(pt => pt.MaKhach == maKhach)) return false;
 
             db.KhachHangs.DeleteOnSubmit(kh);
             db.SubmitChanges();

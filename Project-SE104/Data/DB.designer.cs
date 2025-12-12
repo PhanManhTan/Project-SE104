@@ -22,7 +22,7 @@ namespace Data
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QuanLyKhachSan1")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QuanLyKhachSan2")]
 	public partial class DBDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,6 +33,9 @@ namespace Data
     partial void InsertChiTietHoaDon(ChiTietHoaDon instance);
     partial void UpdateChiTietHoaDon(ChiTietHoaDon instance);
     partial void DeleteChiTietHoaDon(ChiTietHoaDon instance);
+    partial void InsertChiTietPhieuThue(ChiTietPhieuThue instance);
+    partial void UpdateChiTietPhieuThue(ChiTietPhieuThue instance);
+    partial void DeleteChiTietPhieuThue(ChiTietPhieuThue instance);
     partial void InsertHoaDon(HoaDon instance);
     partial void UpdateHoaDon(HoaDon instance);
     partial void DeleteHoaDon(HoaDon instance);
@@ -60,7 +63,7 @@ namespace Data
     #endregion
 		
 		public DBDataContext() : 
-				base(global::Data.Properties.Settings.Default.QuanLyKhachSan1ConnectionString, mappingSource)
+				base(global::Data.Properties.Settings.Default.QuanLyKhachSan2ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -94,6 +97,14 @@ namespace Data
 			get
 			{
 				return this.GetTable<ChiTietHoaDon>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ChiTietPhieuThue> ChiTietPhieuThues
+		{
+			get
+			{
+				return this.GetTable<ChiTietPhieuThue>();
 			}
 		}
 		
@@ -201,7 +212,7 @@ namespace Data
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHoaDon", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHoaDon", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaHoaDon
 		{
 			get
@@ -225,7 +236,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuThue", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuThue", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhieuThue
 		{
 			get
@@ -378,6 +389,198 @@ namespace Data
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiTietPhieuThue")]
+	public partial class ChiTietPhieuThue : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _MaPhieuThue;
+		
+		private string _MaKhach;
+		
+		private string _VaiTro;
+		
+		private EntityRef<KhachHang> _KhachHang;
+		
+		private EntityRef<PhieuThue> _PhieuThue;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaPhieuThueChanging(string value);
+    partial void OnMaPhieuThueChanged();
+    partial void OnMaKhachChanging(string value);
+    partial void OnMaKhachChanged();
+    partial void OnVaiTroChanging(string value);
+    partial void OnVaiTroChanged();
+    #endregion
+		
+		public ChiTietPhieuThue()
+		{
+			this._KhachHang = default(EntityRef<KhachHang>);
+			this._PhieuThue = default(EntityRef<PhieuThue>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuThue", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaPhieuThue
+		{
+			get
+			{
+				return this._MaPhieuThue;
+			}
+			set
+			{
+				if ((this._MaPhieuThue != value))
+				{
+					if (this._PhieuThue.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaPhieuThueChanging(value);
+					this.SendPropertyChanging();
+					this._MaPhieuThue = value;
+					this.SendPropertyChanged("MaPhieuThue");
+					this.OnMaPhieuThueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKhach", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaKhach
+		{
+			get
+			{
+				return this._MaKhach;
+			}
+			set
+			{
+				if ((this._MaKhach != value))
+				{
+					if (this._KhachHang.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaKhachChanging(value);
+					this.SendPropertyChanging();
+					this._MaKhach = value;
+					this.SendPropertyChanged("MaKhach");
+					this.OnMaKhachChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VaiTro", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string VaiTro
+		{
+			get
+			{
+				return this._VaiTro;
+			}
+			set
+			{
+				if ((this._VaiTro != value))
+				{
+					this.OnVaiTroChanging(value);
+					this.SendPropertyChanging();
+					this._VaiTro = value;
+					this.SendPropertyChanged("VaiTro");
+					this.OnVaiTroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_ChiTietPhieuThue", Storage="_KhachHang", ThisKey="MaKhach", OtherKey="MaKhach", IsForeignKey=true)]
+		public KhachHang KhachHang
+		{
+			get
+			{
+				return this._KhachHang.Entity;
+			}
+			set
+			{
+				KhachHang previousValue = this._KhachHang.Entity;
+				if (((previousValue != value) 
+							|| (this._KhachHang.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._KhachHang.Entity = null;
+						previousValue.ChiTietPhieuThues.Remove(this);
+					}
+					this._KhachHang.Entity = value;
+					if ((value != null))
+					{
+						value.ChiTietPhieuThues.Add(this);
+						this._MaKhach = value.MaKhach;
+					}
+					else
+					{
+						this._MaKhach = default(string);
+					}
+					this.SendPropertyChanged("KhachHang");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PhieuThue_ChiTietPhieuThue", Storage="_PhieuThue", ThisKey="MaPhieuThue", OtherKey="MaPhieuThue", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		public PhieuThue PhieuThue
+		{
+			get
+			{
+				return this._PhieuThue.Entity;
+			}
+			set
+			{
+				PhieuThue previousValue = this._PhieuThue.Entity;
+				if (((previousValue != value) 
+							|| (this._PhieuThue.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._PhieuThue.Entity = null;
+						previousValue.ChiTietPhieuThues.Remove(this);
+					}
+					this._PhieuThue.Entity = value;
+					if ((value != null))
+					{
+						value.ChiTietPhieuThues.Add(this);
+						this._MaPhieuThue = value.MaPhieuThue;
+					}
+					else
+					{
+						this._MaPhieuThue = default(string);
+					}
+					this.SendPropertyChanged("PhieuThue");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HoaDon")]
 	public partial class HoaDon : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -410,7 +613,7 @@ namespace Data
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHoaDon", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHoaDon", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaHoaDon
 		{
 			get
@@ -532,7 +735,7 @@ namespace Data
 		
 		private string _MaLoaiKhach;
 		
-		private EntitySet<PhieuThue> _PhieuThues;
+		private EntitySet<ChiTietPhieuThue> _ChiTietPhieuThues;
 		
 		private EntityRef<LoaiKhach> _LoaiKhach;
 		
@@ -554,12 +757,12 @@ namespace Data
 		
 		public KhachHang()
 		{
-			this._PhieuThues = new EntitySet<PhieuThue>(new Action<PhieuThue>(this.attach_PhieuThues), new Action<PhieuThue>(this.detach_PhieuThues));
+			this._ChiTietPhieuThues = new EntitySet<ChiTietPhieuThue>(new Action<ChiTietPhieuThue>(this.attach_ChiTietPhieuThues), new Action<ChiTietPhieuThue>(this.detach_ChiTietPhieuThues));
 			this._LoaiKhach = default(EntityRef<LoaiKhach>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKhach", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKhach", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaKhach
 		{
 			get
@@ -579,7 +782,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HoTen", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HoTen", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
 		public string HoTen
 		{
 			get
@@ -599,7 +802,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CMND", DbType="VarChar(12)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CMND", DbType="VarChar(20)")]
 		public string CMND
 		{
 			get
@@ -619,7 +822,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="VarChar(100)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="NVarChar(200)")]
 		public string DiaChi
 		{
 			get
@@ -639,7 +842,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiKhach", DbType="Char(5) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiKhach", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
 		public string MaLoaiKhach
 		{
 			get
@@ -663,16 +866,16 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_PhieuThue", Storage="_PhieuThues", ThisKey="MaKhach", OtherKey="MaKhach")]
-		public EntitySet<PhieuThue> PhieuThues
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_ChiTietPhieuThue", Storage="_ChiTietPhieuThues", ThisKey="MaKhach", OtherKey="MaKhach")]
+		public EntitySet<ChiTietPhieuThue> ChiTietPhieuThues
 		{
 			get
 			{
-				return this._PhieuThues;
+				return this._ChiTietPhieuThues;
 			}
 			set
 			{
-				this._PhieuThues.Assign(value);
+				this._ChiTietPhieuThues.Assign(value);
 			}
 		}
 		
@@ -730,13 +933,13 @@ namespace Data
 			}
 		}
 		
-		private void attach_PhieuThues(PhieuThue entity)
+		private void attach_ChiTietPhieuThues(ChiTietPhieuThue entity)
 		{
 			this.SendPropertyChanging();
 			entity.KhachHang = this;
 		}
 		
-		private void detach_PhieuThues(PhieuThue entity)
+		private void detach_ChiTietPhieuThues(ChiTietPhieuThue entity)
 		{
 			this.SendPropertyChanging();
 			entity.KhachHang = null;
@@ -771,7 +974,7 @@ namespace Data
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiKhach", DbType="Char(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiKhach", DbType="VarChar(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaLoaiKhach
 		{
 			get
@@ -889,7 +1092,7 @@ namespace Data
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiPhong", DbType="Char(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiPhong", DbType="VarChar(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaLoaiPhong
 		{
 			get
@@ -909,7 +1112,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenLoaiPhong", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenLoaiPhong", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string TenLoaiPhong
 		{
 			get
@@ -1005,15 +1208,11 @@ namespace Data
 		
 		private string _MaPhong;
 		
-		private string _MaKhach;
-		
 		private System.DateTime _NgayBatDauThue;
-		
-		private string _VaiTro;
 		
 		private EntitySet<ChiTietHoaDon> _ChiTietHoaDons;
 		
-		private EntityRef<KhachHang> _KhachHang;
+		private EntitySet<ChiTietPhieuThue> _ChiTietPhieuThues;
 		
 		private EntityRef<Phong> _Phong;
 		
@@ -1025,23 +1224,19 @@ namespace Data
     partial void OnMaPhieuThueChanged();
     partial void OnMaPhongChanging(string value);
     partial void OnMaPhongChanged();
-    partial void OnMaKhachChanging(string value);
-    partial void OnMaKhachChanged();
     partial void OnNgayBatDauThueChanging(System.DateTime value);
     partial void OnNgayBatDauThueChanged();
-    partial void OnVaiTroChanging(string value);
-    partial void OnVaiTroChanged();
     #endregion
 		
 		public PhieuThue()
 		{
 			this._ChiTietHoaDons = new EntitySet<ChiTietHoaDon>(new Action<ChiTietHoaDon>(this.attach_ChiTietHoaDons), new Action<ChiTietHoaDon>(this.detach_ChiTietHoaDons));
-			this._KhachHang = default(EntityRef<KhachHang>);
+			this._ChiTietPhieuThues = new EntitySet<ChiTietPhieuThue>(new Action<ChiTietPhieuThue>(this.attach_ChiTietPhieuThues), new Action<ChiTietPhieuThue>(this.detach_ChiTietPhieuThues));
 			this._Phong = default(EntityRef<Phong>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuThue", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuThue", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhieuThue
 		{
 			get
@@ -1061,7 +1256,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhong", DbType="Char(5) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhong", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
 		public string MaPhong
 		{
 			get
@@ -1081,30 +1276,6 @@ namespace Data
 					this._MaPhong = value;
 					this.SendPropertyChanged("MaPhong");
 					this.OnMaPhongChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKhach", DbType="Char(10) NOT NULL", CanBeNull=false)]
-		public string MaKhach
-		{
-			get
-			{
-				return this._MaKhach;
-			}
-			set
-			{
-				if ((this._MaKhach != value))
-				{
-					if (this._KhachHang.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMaKhachChanging(value);
-					this.SendPropertyChanging();
-					this._MaKhach = value;
-					this.SendPropertyChanged("MaKhach");
-					this.OnMaKhachChanged();
 				}
 			}
 		}
@@ -1129,26 +1300,6 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VaiTro", DbType="Char(10)")]
-		public string VaiTro
-		{
-			get
-			{
-				return this._VaiTro;
-			}
-			set
-			{
-				if ((this._VaiTro != value))
-				{
-					this.OnVaiTroChanging(value);
-					this.SendPropertyChanging();
-					this._VaiTro = value;
-					this.SendPropertyChanged("VaiTro");
-					this.OnVaiTroChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PhieuThue_ChiTietHoaDon", Storage="_ChiTietHoaDons", ThisKey="MaPhieuThue", OtherKey="MaPhieuThue")]
 		public EntitySet<ChiTietHoaDon> ChiTietHoaDons
 		{
@@ -1162,37 +1313,16 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_PhieuThue", Storage="_KhachHang", ThisKey="MaKhach", OtherKey="MaKhach", IsForeignKey=true)]
-		public KhachHang KhachHang
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PhieuThue_ChiTietPhieuThue", Storage="_ChiTietPhieuThues", ThisKey="MaPhieuThue", OtherKey="MaPhieuThue")]
+		public EntitySet<ChiTietPhieuThue> ChiTietPhieuThues
 		{
 			get
 			{
-				return this._KhachHang.Entity;
+				return this._ChiTietPhieuThues;
 			}
 			set
 			{
-				KhachHang previousValue = this._KhachHang.Entity;
-				if (((previousValue != value) 
-							|| (this._KhachHang.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._KhachHang.Entity = null;
-						previousValue.PhieuThues.Remove(this);
-					}
-					this._KhachHang.Entity = value;
-					if ((value != null))
-					{
-						value.PhieuThues.Add(this);
-						this._MaKhach = value.MaKhach;
-					}
-					else
-					{
-						this._MaKhach = default(string);
-					}
-					this.SendPropertyChanged("KhachHang");
-				}
+				this._ChiTietPhieuThues.Assign(value);
 			}
 		}
 		
@@ -1261,6 +1391,18 @@ namespace Data
 			this.SendPropertyChanging();
 			entity.PhieuThue = null;
 		}
+		
+		private void attach_ChiTietPhieuThues(ChiTietPhieuThue entity)
+		{
+			this.SendPropertyChanging();
+			entity.PhieuThue = this;
+		}
+		
+		private void detach_ChiTietPhieuThues(ChiTietPhieuThue entity)
+		{
+			this.SendPropertyChanging();
+			entity.PhieuThue = null;
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Phong")]
@@ -1302,7 +1444,7 @@ namespace Data
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhong", DbType="Char(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhong", DbType="VarChar(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhong
 		{
 			get
@@ -1322,7 +1464,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiPhong", DbType="Char(5) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiPhong", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
 		public string MaLoaiPhong
 		{
 			get
@@ -1346,7 +1488,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GhiChu", DbType="VarChar(200)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GhiChu", DbType="NVarChar(200)")]
 		public string GhiChu
 		{
 			get
@@ -1366,7 +1508,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrang", DbType="VarChar(20)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrang", DbType="NVarChar(20)")]
 		public string TinhTrang
 		{
 			get
@@ -1629,7 +1771,7 @@ namespace Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FullName", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FullName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
 		public string FullName
 		{
 			get

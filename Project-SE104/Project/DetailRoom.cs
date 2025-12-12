@@ -31,7 +31,7 @@ namespace Project
             cbTypeRoom.DataSource = mlp;
             cbStatus.DataSource = roomService.GetAllStatus();
         }
-        Phong cur;
+        private Phong cur=null;
         public DetailRoom(Phong x)
         {
             InitializeComponent();
@@ -41,16 +41,13 @@ namespace Project
             cbStatus.Items.Clear();
             cbTypeRoom.Items.Clear();
             RoomService roomService = new RoomService();
-            List<LoaiPhong> lp = roomService.GetAllTypeofRoom();
-            List<string> mlp = new List<string>();
-            foreach (LoaiPhong l in lp)
-            {
-                mlp.Add(l.MaLoaiPhong.ToString().Trim());  
-            }
-            cbTypeRoom.DataSource = mlp;
+            cbTypeRoom.DataSource= roomService
+                .GetAllTypeofRoom()
+                .Select(a => a.MaLoaiPhong.ToString())
+                .ToList(); 
             cbStatus.DataSource = roomService.GetAllStatus();
-            string loaiphong = x.LoaiPhong.MaLoaiPhong.Trim();
-            string tinhtrang = x.TinhTrang.Trim();
+            string loaiphong = x.MaLoaiPhong;
+            string tinhtrang = x.TinhTrang;
             cbTypeRoom.SelectedItem = loaiphong;
             cbStatus.SelectedItem = tinhtrang;
         }
@@ -68,7 +65,7 @@ namespace Project
                 Phong phong = new Phong();
                 phong.MaPhong = tbMaPhong.Text;
                 phong.MaLoaiPhong = cbTypeRoom.SelectedItem.ToString();
-                phong.TinhTrang = cbStatus.SelectedIndex.ToString();
+                phong.TinhTrang = cbStatus.SelectedItem.ToString();
                 phong.GhiChu = tbNote.Text;
                 roomService.UpdateRoom(phong);
                 this.Close();
@@ -78,7 +75,7 @@ namespace Project
                 Phong phong = new Phong();
                 phong.MaPhong = tbMaPhong.Text;
                 phong.MaLoaiPhong = cbTypeRoom.SelectedItem.ToString();
-                phong.TinhTrang = cbStatus.SelectedIndex.ToString();
+                phong.TinhTrang = cbStatus.SelectedItem.ToString();
                 phong.GhiChu = tbNote.Text;
                 roomService.AddRoom(phong);
                 this.Close();

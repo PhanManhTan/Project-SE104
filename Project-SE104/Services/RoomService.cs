@@ -109,12 +109,10 @@ namespace Services
         }
         public List<string> GetAllStatus()
         {
-            return new List<string>
-            {
-                "Trong",
-                "Da thue",
-                "Dang don"
-            };
+            return qlks.Phongs
+          .Select(p => p.TinhTrang)
+          .Distinct()
+          .ToList();
         }
 
     }

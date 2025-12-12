@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class LoginForm
+    partial class Login
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -109,7 +109,7 @@
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username:";
             // 
-            // LoginForm
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,7 +119,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.Name = "LoginForm";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ KHÁCH SẠN - ĐĂNG NHẬP";
             this.Load += new System.EventHandler(this.LoginForm_Load);

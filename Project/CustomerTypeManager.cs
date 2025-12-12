@@ -6,27 +6,29 @@ using Data;     // Thêm dòng này
 
 namespace Project
 {
-    public partial class LoaiKhachForm : Form
+    public partial class CustomerTypeManager : Form
     {
         private string selectedMaLoai = null;
         private readonly CustomerService customerService = new CustomerService(); // Khai báo Service
 
         // Giữ nguyên constructor nhận connString để code cũ không bị lỗi, nhưng ta không dùng biến đó nữa
-        public LoaiKhachForm()
+        public CustomerTypeManager()
         {
             InitializeComponent();
         }
 
         private void LoaiKhachForm_Load(object sender, EventArgs e)
         {
-            SetupDataGridView();
+
             SetupForm();
             LoadData();
             dgvLoaiKhach.SelectionChanged += DgvLoaiKhach_SelectionChanged;
         }
 
         // ... (Giữ nguyên các hàm SetupDataGridView, SetupForm) ...
-        private void SetupDataGridView()
+
+
+        private void SetupForm()
         {
             dgvLoaiKhach.RowHeadersVisible = false;
             dgvLoaiKhach.AllowUserToAddRows = false;
@@ -35,23 +37,33 @@ namespace Project
             dgvLoaiKhach.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvLoaiKhach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvLoaiKhach.ScrollBars = ScrollBars.Vertical;
-        }
 
-        private void SetupForm()
-        {
             dgvLoaiKhach.EnableHeadersVisualStyles = false;
+
+            // Header
             dgvLoaiKhach.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
             dgvLoaiKhach.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             dgvLoaiKhach.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             dgvLoaiKhach.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvLoaiKhach.ColumnHeadersHeight = 30;
+            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.White;
+            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // Dòng xen kẽ
             dgvLoaiKhach.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 249, 250);
             dgvLoaiKhach.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
             dgvLoaiKhach.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+
+            // Font dòng
             dgvLoaiKhach.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
+
+            // Tăng độ cao dòng
             dgvLoaiKhach.RowTemplate.Height = 40;
+
+            // Cấm kéo cột/dòng
             dgvLoaiKhach.AllowUserToResizeColumns = false;
             dgvLoaiKhach.AllowUserToResizeRows = false;
+            dgvLoaiKhach.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
         }
 
         private void LoadData()
@@ -113,7 +125,7 @@ namespace Project
         private void btnCreate_Click(object sender, EventArgs e)
         {
             // Bỏ truyền connString, Forms con tự xử lý service
-            using (var frm = new LoaiKhach_CreateForm())
+            using (var frm = new CustomerTypeCreate())
             {
                 if (frm.ShowDialog() == DialogResult.OK)
                     LoadData();
@@ -129,7 +141,7 @@ namespace Project
             }
 
             // Bỏ truyền connString
-            using (var frm = new LoaiKhach_UpdateForm(selectedMaLoai))
+            using (var frm = new CustomerTypeUpdate(selectedMaLoai))
             {
                 if (frm.ShowDialog() == DialogResult.OK)
                     LoadData();

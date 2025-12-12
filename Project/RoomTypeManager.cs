@@ -6,12 +6,12 @@ using Data;
 
 namespace Project
 {
-    public partial class RoomTypesForm : Form
+    public partial class RoomTypeManager : Form
     {
         private RoomService roomService = new RoomService();
         private string selectedMaLoai;
 
-        public RoomTypesForm()
+        public RoomTypeManager()
         {
             InitializeComponent();
         }
@@ -89,7 +89,7 @@ namespace Project
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            using (var frm = new RoomTypes_CreateForm())
+            using (var frm = new RoomTypeCreate())
             {
                 if (frm.ShowDialog() == DialogResult.OK) 
                     LoadData();
@@ -104,7 +104,7 @@ namespace Project
                 return;
             }
 
-            using (var frm = new RoomTypes_UpdateForm(selectedMaLoai))
+            using (var frm = new RoomTypeUpdate(selectedMaLoai))
             {
                 if (frm.ShowDialog() == DialogResult.OK)
                     LoadData();  // Refresh ngay tại đây

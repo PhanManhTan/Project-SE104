@@ -5,12 +5,12 @@ using Data;
 
 namespace Project
 {
-    public partial class LoaiKhach_UpdateForm : Form
+    public partial class CustomerTypeUpdate : Form
     {
         private readonly CustomerService customerService = new CustomerService();
         private string oldMaLoai;
 
-        public LoaiKhach_UpdateForm(string maLoai)
+        public CustomerTypeUpdate(string maLoai)
         {
             InitializeComponent();
             this.oldMaLoai = maLoai;

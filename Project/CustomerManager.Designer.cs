@@ -30,7 +30,7 @@
         {
             this.dgvCustomerManager = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnCustomerTypes = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Controls.Add(this.btnCustomerTypes);
             this.panel1.Controls.Add(this.btnCreate);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -65,20 +65,20 @@
             this.panel1.TabIndex = 26;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnClose
+            // btnCustomerTypes
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(266, 22);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(150, 60);
-            this.btnClose.TabIndex = 28;
-            this.btnClose.Text = "Thoát";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnCustomerTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCustomerTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnCustomerTypes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCustomerTypes.ForeColor = System.Drawing.Color.White;
+            this.btnCustomerTypes.Location = new System.Drawing.Point(266, 22);
+            this.btnCustomerTypes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCustomerTypes.Name = "btnCustomerTypes";
+            this.btnCustomerTypes.Size = new System.Drawing.Size(150, 60);
+            this.btnCustomerTypes.TabIndex = 28;
+            this.btnCustomerTypes.Text = "Loại phòng";
+            this.btnCustomerTypes.UseVisualStyleBackColor = false;
+            this.btnCustomerTypes.Click += new System.EventHandler(this.btnCustomerTypes_Click);
             // 
             // btnCreate
             // 
@@ -147,7 +147,7 @@
 
         private System.Windows.Forms.DataGridView dgvCustomerManager;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnCustomerTypes;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;

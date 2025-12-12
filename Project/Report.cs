@@ -5,11 +5,11 @@ using Services;
 
 namespace Project
 {
-    public partial class ReportForm : Form
+    public partial class Report : Form
     {
         private readonly ReportService reportService = new ReportService();
 
-        public ReportForm()
+        public Report()
         {
             InitializeComponent();
         }

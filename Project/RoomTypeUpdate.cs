@@ -5,12 +5,12 @@ using Data;
 
 namespace Project
 {
-    public partial class RoomTypes_UpdateForm : Form
+    public partial class RoomTypeUpdate : Form
     {
         private readonly RoomService roomService = new RoomService();
         private readonly string maLoaiPhong;
 
-        public RoomTypes_UpdateForm(string maLoaiPhong)
+        public RoomTypeUpdate(string maLoaiPhong)
         {
             InitializeComponent();
             this.maLoaiPhong = maLoaiPhong;

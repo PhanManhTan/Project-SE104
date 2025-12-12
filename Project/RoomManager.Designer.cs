@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class RoomManeger
+    partial class RoomManager
     {
         /// <summary>
         /// Required designer variable.
@@ -22,14 +22,11 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnRoomTypes = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -40,7 +37,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Controls.Add(this.btnRoomTypes);
             this.panel1.Controls.Add(this.btnCreate);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -51,19 +48,19 @@
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnClose
+            // btnRoomTypes
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(354, 22);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(150, 60);
-            this.btnClose.TabIndex = 23;
-            this.btnClose.Text = "Thoát";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnRoomTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnRoomTypes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRoomTypes.ForeColor = System.Drawing.Color.White;
+            this.btnRoomTypes.Location = new System.Drawing.Point(354, 22);
+            this.btnRoomTypes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRoomTypes.Name = "btnRoomTypes";
+            this.btnRoomTypes.Size = new System.Drawing.Size(150, 60);
+            this.btnRoomTypes.TabIndex = 23;
+            this.btnRoomTypes.Text = "Loại phòng";
+            this.btnRoomTypes.UseVisualStyleBackColor = false;
+            this.btnRoomTypes.Click += new System.EventHandler(this.btnRoomTypes_Click);
             // 
             // btnCreate
             // 
@@ -120,9 +117,9 @@
             this.dgvRoomManeger.RowTemplate.Height = 24;
             this.dgvRoomManeger.Size = new System.Drawing.Size(984, 574);
             this.dgvRoomManeger.TabIndex = 20;
-            this.dgvRoomManeger.SelectionChanged += new System.EventHandler(this.dgvRoomManeger_SelectionChanged_1);
+            this.dgvRoomManeger.SelectionChanged += new System.EventHandler(this.dgvRoomManeger_SelectionChanged);
             // 
-            // RoomManeger
+            // RoomManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,8 +128,8 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "RoomManeger";
-            this.Text = "RoomManeger";
+            this.Name = "RoomManager";
+            this.Text = "RoomManager";
             this.Load += new System.EventHandler(this.RoomManeger_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoomManeger)).EndInit();
@@ -142,7 +139,7 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnRoomTypes;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;

@@ -50,14 +50,14 @@ namespace Project
                 // Xóa thông tin người dùng
                 Global_.CurrentUser = null;
 
-                // ĐÓNG MainForm → tự động quay về LoginForm
+                // ĐÓNG MainForm → tự động quay về Login
                 this.Close();
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenForm(new RoomManeger()); 
+            OpenForm(new RoomManager()); 
         }
 
 
@@ -84,7 +84,7 @@ namespace Project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenForm(new QuyDinhForm());
+            OpenForm(new Parameter());
         }
 
         private void panel_body_Paint(object sender, PaintEventArgs e)
@@ -94,7 +94,7 @@ namespace Project
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenForm(new RoomManeger());
+            OpenForm(new RoomManager());
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace Project
 
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenForm(new ReportForm());
+            OpenForm(new Report());
         }
     }
 }

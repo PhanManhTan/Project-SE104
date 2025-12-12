@@ -1,110 +1,143 @@
 ﻿using Data;
 using Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project
 {
     public partial class CustomerManager : Form
     {
+        private KhachHang khachHangDangChon = null;
+
         public CustomerManager()
         {
             InitializeComponent();
+
             LoadCustomers();
-
-
         }
 
         private void CustomerManager_Load(object sender, EventArgs e)
         {
+            SetupDataGridView();
             LoadCustomers();
         }
-        private KhachHang KhachHangdangchon = null;
+
+        #region === CẤU HÌNH GIAO DIỆN DATAGRIDVIEW ===
+        private void SetupDataGridView()
+        {
+            var dgv = dgvCustomerManager;
+
+            // Cấu hình chung
+            dgv.RowHeadersVisible = false;
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToResizeRows = false;
+            dgv.AllowUserToResizeColumns = false;
+            dgv.ReadOnly = true;
+            dgv.MultiSelect = false;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Tắt style Windows mặc định
+            dgv.EnableHeadersVisualStyles = false;
+
+            // Header đẹp - Navy + chữ trắng
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgv.ColumnHeadersHeight = 45;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
+
+            // Dòng dữ liệu
+            dgv.RowsDefaultCellStyle.Font = new Font("Segoe UI", 10F);
+            dgv.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 180);
+            dgv.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 248, 255);
+
+            // Hover effect nhẹ (rất pro)
+            dgv.CellMouseEnter += (s, e) =>
+            {
+                if (e.RowIndex >= 0)
+                    dgv.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.FromArgb(220, 235, 255);
+            };
+
+            dgv.CellMouseLeave += (s, e) =>
+            {
+                if (e.RowIndex >= 0)
+                    dgv.InvalidateRow(e.RowIndex);
+            };
+        }
+        #endregion
+
+        #region === LOAD + REFRESH DANH SÁCH KHÁCH HÀNG ===
         private void LoadCustomers()
         {
-            CustomerService customerService = new CustomerService();
-            List<KhachHang> list = customerService.GetAllCustomers();
+            var customerService = new CustomerService();
+            var list = customerService.GetAllCustomers();
 
             dgvCustomerManager.AutoGenerateColumns = false;
             dgvCustomerManager.Columns.Clear();
-            dgvCustomerManager.RowHeadersVisible = false;
 
-            // ===== Cột STT =====
-            var colSTT = new DataGridViewTextBoxColumn
+            // Cột STT
+            dgvCustomerManager.Columns.Add(new DataGridViewTextBoxColumn
             {
                 HeaderText = "STT",
                 Name = "STT",
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                Width = 70,
                 ReadOnly = true,
                 DefaultCellStyle = new DataGridViewCellStyle
                 {
                     Alignment = DataGridViewContentAlignment.MiddleCenter,
-                    Font = new Font("Segoe UI", 10, FontStyle.Bold)
+                    Font = new Font("Segoe UI", 10F, FontStyle.Bold),
+                    ForeColor = Color.Navy
                 }
-            };
-            dgvCustomerManager.Columns.Add(colSTT);
+            });
 
-            // ===== Mã khách =====
+            // Mã khách
             dgvCustomerManager.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "MaKhach",
                 HeaderText = "Mã khách",
                 DataPropertyName = "MaKhach",
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-                DefaultCellStyle = new DataGridViewCellStyle
-                {
-                    Alignment = DataGridViewContentAlignment.MiddleCenter
-                }
+                DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
             });
 
-            // ===== Họ tên =====
+            // Họ tên
             dgvCustomerManager.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "HoTen",
                 HeaderText = "Họ tên",
                 DataPropertyName = "HoTen",
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 DefaultCellStyle = new DataGridViewCellStyle
                 {
-                    Alignment = DataGridViewContentAlignment.MiddleLeft
+                    Alignment = DataGridViewContentAlignment.MiddleLeft,
+                    Padding = new Padding(10, 0, 0, 0)
                 }
             });
 
-            // ===== CMND / CCCD =====
+            // CMND/CCCD
             dgvCustomerManager.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "CMND",
-                HeaderText = "CMND",
+                HeaderText = "CMND/CCCD",
                 DataPropertyName = "CMND",
-                //AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-                DefaultCellStyle = new DataGridViewCellStyle
-                {
-                    Alignment = DataGridViewContentAlignment.MiddleCenter
-                }
+                DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
             });
 
-            // ===== Loại khách =====
+            // Loại khách
             dgvCustomerManager.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "LoaiKhach",
                 HeaderText = "Loại khách",
                 DataPropertyName = "MaLoaiKhach",
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-                DefaultCellStyle = new DataGridViewCellStyle
-                {
-                    Alignment = DataGridViewContentAlignment.MiddleCenter
-                }
+                DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
             });
 
-            // ===== Địa chỉ =====
+            // Địa chỉ (giãn hết phần còn lại)
             dgvCustomerManager.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "DiaChi",
@@ -113,88 +146,103 @@ namespace Project
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 DefaultCellStyle = new DataGridViewCellStyle
                 {
-                    Alignment = DataGridViewContentAlignment.MiddleLeft
+                    Alignment = DataGridViewContentAlignment.MiddleLeft,
+                    Padding = new Padding(10, 0, 0, 0)
                 }
             });
 
-            // ===== Gán dữ liệu =====
+            // Gán dữ liệu
             dgvCustomerManager.DataSource = list;
 
-            // ===== Đánh số STT =====
+            // Đánh số thứ tự
             for (int i = 0; i < dgvCustomerManager.Rows.Count; i++)
+            {
                 dgvCustomerManager.Rows[i].Cells["STT"].Value = (i + 1).ToString();
-
-            // ===== Thiết kế bảng =====
-            dgvCustomerManager.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvCustomerManager.MultiSelect = false;
-            dgvCustomerManager.AllowUserToResizeRows = false;
-
-            // Header
-            dgvCustomerManager.EnableHeadersVisualStyles = false;
-            dgvCustomerManager.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvCustomerManager.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
-            dgvCustomerManager.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
-            dgvCustomerManager.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dgvCustomerManager.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Navy;
-            dgvCustomerManager.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            using (var frm = new LoaiKhachForm())
-            {
-                if (frm.ShowDialog() == DialogResult.OK) this.Close();
-
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        public void RefreshGrid()
         {
-            CustomerService customerService = new CustomerService();
-            DialogResult result = MessageBox.Show(
-            "Are you sure you want to delete this Customer?",
-            "Warning!",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Warning
-            );
-            if (result == DialogResult.Yes)
-            {
-                RoomService roomService = new RoomService();
-                customerService.DeleteCustomer(KhachHangdangchon.MaKhach);
-
-            }
             LoadCustomers();
+            khachHangDangChon = null;
         }
+        #endregion
 
+        #region === CHỌN DÒNG ===
         private void dgvCustomerManager_SelectionChanged(object sender, EventArgs e)
         {
             if (dgvCustomerManager.CurrentRow != null && dgvCustomerManager.CurrentRow.Index >= 0)
             {
-                KhachHangdangchon = (KhachHang)dgvCustomerManager.CurrentRow.DataBoundItem;
+                khachHangDangChon = (KhachHang)dgvCustomerManager.CurrentRow.DataBoundItem;
             }
             else
             {
-                dgvCustomerManager = null;
+                khachHangDangChon = null;
+            }
+        }
+        #endregion
+
+        #region === CÁC NÚT CHỨC NĂNG ===
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            var form = new DetailCustomer();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                RefreshGrid();
             }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            DetailCustomer detailCustomer = new DetailCustomer(KhachHangdangchon);
-            detailCustomer.ShowDialog();
-            LoadCustomers();
+            if (khachHangDangChon == null)
+            {
+                MessageBox.Show("Vui lòng chọn một khách hàng để sửa!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            var form = new DetailCustomer(khachHangDangChon);
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                RefreshGrid();
+            }
         }
 
-        private void btnCreate_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            DetailCustomer detailCustomer1 = new DetailCustomer();
-            detailCustomer1.ShowDialog();
-            LoadCustomers();
+            if (khachHangDangChon == null)
+            {
+                MessageBox.Show("Vui lòng chọn một khách hàng để xóa!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            var result = MessageBox.Show(
+                $"Bạn có chắc chắn muốn xóa khách hàng \"{khachHangDangChon.HoTen}\" (Mã: {khachHangDangChon.MaKhach}) không?",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                var customerService = new CustomerService();
+                customerService.DeleteCustomer(khachHangDangChon.MaKhach);
+                RefreshGrid();
+                MessageBox.Show("Xóa khách hàng thành công!", "Thành công",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnCustomerTypes_Click(object sender, EventArgs e)
         {
-
+            using (var frm = new CustomerTypeManager())
+            {
+                frm.ShowDialog();
+                // Không cần this.Close() nếu chỉ mở form loại khách để xem/sửa
+            }
         }
+        #endregion
+
+        private void panel1_Paint(object sender, PaintEventArgs e) { }
     }
 }

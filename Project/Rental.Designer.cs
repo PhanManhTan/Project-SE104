@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    partial class RentalForm
+    partial class Rental
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -139,7 +139,7 @@ namespace Project
             this.panel1.Size = new System.Drawing.Size(478, 80);
             this.panel1.TabIndex = 8;
             // 
-            // RentalForm
+            // Rental
             // 
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(478, 564);
@@ -155,7 +155,7 @@ namespace Project
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "RentalForm";
+            this.Name = "Rental";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lập phiếu thuê phòng";
             this.Load += new System.EventHandler(this.RentalForm_Load);

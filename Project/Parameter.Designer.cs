@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class QuyDinhForm
+    partial class Parameter
     {
         /// <summary>
         /// Required designer variable.
@@ -189,7 +189,7 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // QuyDinhForm
+            // Parameter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,7 +200,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "QuyDinhForm";
+            this.Name = "Parameter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thay Đổi Quy Định";
             this.Load += new System.EventHandler(this.QuyDinhForm_Load);

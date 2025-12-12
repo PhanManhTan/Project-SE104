@@ -4,11 +4,11 @@ using Services; // Quan trọng: phải có dòng này
 
 namespace Project
 {
-    public partial class QuyDinhForm : Form
+    public partial class Parameter : Form
     {
         private readonly ParameterService paramService = new ParameterService();
 
-        public QuyDinhForm()
+        public Parameter()
         {
             InitializeComponent();
         }

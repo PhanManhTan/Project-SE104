@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class LoaiKhach_UpdateForm
+    partial class CustomerTypeUpdate
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -80,7 +80,7 @@
             this.lbMaLK.TabIndex = 49;
             this.lbMaLK.Text = "Mã loại khách";
             // 
-            // LoaiKhach_UpdateForm
+            // CustomerTypeUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,7 +91,7 @@
             this.Controls.Add(this.lbDG);
             this.Controls.Add(this.txtMaLK);
             this.Controls.Add(this.lbMaLK);
-            this.Name = "LoaiKhach_UpdateForm";
+            this.Name = "CustomerTypeUpdate";
             this.Text = "Cập nhật loại khách";
             this.Load += new System.EventHandler(this.LoaiKhach_UpdateForm_Load);
             this.ResumeLayout(false);

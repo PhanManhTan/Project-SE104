@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class ReportForm
+    partial class Report
     {
         private System.ComponentModel.IContainer components = null;
 

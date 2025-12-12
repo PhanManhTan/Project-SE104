@@ -1,4 +1,4 @@
-﻿// LoginForm.cs
+﻿// Login.cs
 using System;
 using System.Windows.Forms;
 using Services;
@@ -6,11 +6,11 @@ using Data;
 
 namespace Project
 {
-    public partial class LoginForm : Form
+    public partial class Login : Form
     {
         private readonly UserService userService = new UserService();
 
-        public LoginForm()
+        public Login()
         {
             InitializeComponent();
         }

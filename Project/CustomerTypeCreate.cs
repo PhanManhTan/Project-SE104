@@ -5,11 +5,11 @@ using Data;
 
 namespace Project
 {
-    public partial class LoaiKhach_CreateForm : Form
+    public partial class CustomerTypeCreate : Form
     {
         private readonly CustomerService customerService = new CustomerService();
 
-        public LoaiKhach_CreateForm()
+        public CustomerTypeCreate()
         {
             InitializeComponent();
         }

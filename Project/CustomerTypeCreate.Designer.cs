@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class LoaiKhach_CreateForm
+    partial class CustomerTypeCreate
     {
         private System.ComponentModel.IContainer components = null;
 

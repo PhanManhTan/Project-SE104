@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class RoomTypes_CreateForm
+    partial class RoomTypeCreate
     {
         /// <summary>
         /// Required designer variable.

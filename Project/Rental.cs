@@ -7,13 +7,13 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class RentalForm : Form
+    public partial class Rental : Form
     {
         private readonly string _maPhong;
         private readonly RentalService _rentalService = new RentalService();
         private Label lblSoKhachChon; // Tự tạo nếu chưa có
 
-        public RentalForm(string maPhong)
+        public Rental(string maPhong)
         {
             InitializeComponent();
             _maPhong = maPhong;

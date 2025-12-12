@@ -5,11 +5,11 @@ using Data;
 
 namespace Project
 {
-    public partial class RoomTypes_CreateForm : Form
+    public partial class RoomTypeCreate : Form
     {
         private readonly RoomService roomService = new RoomService();
 
-        public RoomTypes_CreateForm()
+        public RoomTypeCreate()
         {
             InitializeComponent();
             FormSetup();

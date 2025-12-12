@@ -67,6 +67,7 @@
             this.btnClose.TabIndex = 20;
             this.btnClose.Text = "Thoát";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label2
             // 
@@ -105,7 +106,7 @@
             // 
             this.tbNote.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.tbNote.Location = new System.Drawing.Point(131, 259);
-            this.tbNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNote.Margin = new System.Windows.Forms.Padding(4);
             this.tbNote.Multiline = true;
             this.tbNote.Name = "tbNote";
             this.tbNote.Size = new System.Drawing.Size(365, 73);
@@ -120,7 +121,7 @@
             "Đã thuê",
             "Đang dọn"});
             this.cbStatus.Location = new System.Drawing.Point(131, 188);
-            this.cbStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(365, 28);
             this.cbStatus.TabIndex = 30;
@@ -130,7 +131,7 @@
             this.cbTypeRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbTypeRoom.FormattingEnabled = true;
             this.cbTypeRoom.Location = new System.Drawing.Point(131, 110);
-            this.cbTypeRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTypeRoom.Margin = new System.Windows.Forms.Padding(4);
             this.cbTypeRoom.Name = "cbTypeRoom";
             this.cbTypeRoom.Size = new System.Drawing.Size(365, 28);
             this.cbTypeRoom.TabIndex = 31;
@@ -158,7 +159,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDone);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DetailRoom";
             this.Text = "DetailRoom";
             this.Load += new System.EventHandler(this.DetailRoom_Load);

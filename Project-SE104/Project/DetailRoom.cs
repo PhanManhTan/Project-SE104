@@ -62,11 +62,31 @@ namespace Project
         private void btnDone_Click(object sender, EventArgs e)
         {
             RoomService roomService = new RoomService();
-            cur.MaLoaiPhong = cbTypeRoom.SelectedItem.ToString()+"    ";
-            string temp = cur.LoaiPhong.MaLoaiPhong;
-            cur.TinhTrang = cbStatus.SelectedItem.ToString();
-            cur.GhiChu = tbNote.Text;
-            roomService.UpdateRoom(cur);
+
+            if (cur != null)
+            {
+                Phong phong = new Phong();
+                phong.MaPhong = tbMaPhong.Text;
+                phong.MaLoaiPhong = cbTypeRoom.SelectedItem.ToString();
+                phong.TinhTrang = cbStatus.SelectedIndex.ToString();
+                phong.GhiChu = tbNote.Text;
+                roomService.UpdateRoom(phong);
+                this.Close();
+            }
+            else
+            {
+                Phong phong = new Phong();
+                phong.MaPhong = tbMaPhong.Text;
+                phong.MaLoaiPhong = cbTypeRoom.SelectedItem.ToString();
+                phong.TinhTrang = cbStatus.SelectedIndex.ToString();
+                phong.GhiChu = tbNote.Text;
+                roomService.AddRoom(phong);
+                this.Close();
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

@@ -212,6 +212,7 @@ namespace Project
         {
             DetailRoom room = new DetailRoom();
             room.ShowDialog();
+            LoadDanhSachPhong();
         }
     }
 }

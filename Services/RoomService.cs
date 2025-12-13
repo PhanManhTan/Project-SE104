@@ -11,7 +11,6 @@ namespace Services
     {
         private readonly DBDataContext qlks = new DBDataContext();
 
-        // ==================== QUẢN LÝ PHÒNG ====================
 
         public List<Phong> GetAllRooms() => qlks.Phongs.ToList();
 
@@ -99,6 +98,8 @@ namespace Services
                 return false;
             }
         }
+
+
 
         // ==================== QUẢN LÝ LOẠI PHÒNG (MỚI THÊM) ====================
 

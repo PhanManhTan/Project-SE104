@@ -130,7 +130,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RoomManager";
             this.Text = "RoomManager";
-            this.Load += new System.EventHandler(this.RoomManeger_Load);
+            this.Load += new System.EventHandler(this.RoomManager_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoomManeger)).EndInit();
             this.ResumeLayout(false);

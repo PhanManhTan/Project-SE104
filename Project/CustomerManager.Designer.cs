@@ -54,6 +54,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnCustomerTypes);
             this.panel1.Controls.Add(this.btnCreate);
             this.panel1.Controls.Add(this.btnDelete);
@@ -76,7 +77,7 @@
             this.btnCustomerTypes.Name = "btnCustomerTypes";
             this.btnCustomerTypes.Size = new System.Drawing.Size(150, 60);
             this.btnCustomerTypes.TabIndex = 28;
-            this.btnCustomerTypes.Text = "Loại phòng";
+            this.btnCustomerTypes.Text = "Loại khách";
             this.btnCustomerTypes.UseVisualStyleBackColor = false;
             this.btnCustomerTypes.Click += new System.EventHandler(this.btnCustomerTypes_Click);
             // 

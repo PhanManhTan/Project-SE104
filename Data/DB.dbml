@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyKhachSan3" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-0A82EOD\MSI;Initial Catalog=QuanLyKhachSan3;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="Data.Properties.Settings" SettingsPropertyName="QuanLyKhachSan2ConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyKhachSan2" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-0A82EOD\MSI;Initial Catalog=QuanLyKhachSan2;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="Data.Properties.Settings" SettingsPropertyName="QuanLyKhachSan2ConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChiTietHoaDon" Member="ChiTietHoaDons">
     <Type Name="ChiTietHoaDon">
       <Column Name="MaHoaDon" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -48,7 +48,7 @@
   <Table Name="dbo.LoaiPhong" Member="LoaiPhongs">
     <Type Name="LoaiPhong">
       <Column Name="MaLoaiPhong" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenLoaiPhong" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TenLoaiPhong" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="DonGia" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
       <Association Name="LoaiPhong_Phong" Member="Phongs" ThisKey="MaLoaiPhong" OtherKey="MaLoaiPhong" Type="Phong" />
     </Type>
@@ -67,8 +67,8 @@
     <Type Name="Phong">
       <Column Name="MaPhong" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaLoaiPhong" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="GhiChu" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Association Name="Phong_PhieuThue" Member="PhieuThues" ThisKey="MaPhong" OtherKey="MaPhong" Type="PhieuThue" />
       <Association Name="LoaiPhong_Phong" Member="LoaiPhong" ThisKey="MaLoaiPhong" OtherKey="MaLoaiPhong" Type="LoaiPhong" IsForeignKey="true" />
     </Type>
@@ -83,7 +83,7 @@
     <Type Name="User_">
       <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Password_" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="FullName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="Role_" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>

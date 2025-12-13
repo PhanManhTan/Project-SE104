@@ -55,5 +55,16 @@ namespace Data.Properties {
                 return ((string)(this["QuanLyKhachSan2ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0A82EOD\\MSI;Initial Catalog=QuanLyKhachSan3;Integrated Securi" +
+            "ty=True;TrustServerCertificate=True")]
+        public string QuanLyKhachSan3ConnectionString {
+            get {
+                return ((string)(this["QuanLyKhachSan3ConnectionString"]));
+            }
+        }
     }
 }

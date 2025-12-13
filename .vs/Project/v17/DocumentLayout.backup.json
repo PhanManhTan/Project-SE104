@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\HK5\\SE104\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project\\project\\customermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\customermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project\\project\\customermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\customermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project\\project\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\hk5\\se104\\project\\project\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roommanager.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\hk5\\se104\\project\\project\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project\\project\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,11 +55,7 @@
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project\\project\\customermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\customermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\hk5\\se104\\project\\project\\detailcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project\\project\\detailcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -256,7 +256,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -280,58 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\Program.cs",
-              "RelativeDocumentMoniker": "Project\\Program.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\Program.cs",
-              "RelativeToolTip": "Project\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T09:06:24.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rental.cs [Design]",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\Rental.cs",
-              "RelativeDocumentMoniker": "Project\\Rental.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\Rental.cs [Design]",
-              "RelativeToolTip": "Project\\Rental.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T10:58:57.834Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "Services\\RoomService.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project\\Services\\RoomService.cs",
-              "RelativeToolTip": "Services\\RoomService.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAcwGQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T07:59:25.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DetailRoom.cs",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\DetailRoom.cs",
-              "RelativeDocumentMoniker": "Project\\DetailRoom.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\DetailRoom.cs",
-              "RelativeToolTip": "Project\\DetailRoom.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwEMAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T09:01:44.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RoomManager.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomManager.Designer.cs",
               "RelativeDocumentMoniker": "Project\\RoomManager.Designer.cs",
@@ -339,12 +288,11 @@
               "RelativeToolTip": "Project\\RoomManager.Designer.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAuwIcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T13:40:49.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T13:40:49.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomerManager.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\CustomerManager.cs",
               "RelativeDocumentMoniker": "Project\\CustomerManager.cs",
@@ -356,32 +304,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DetailRoom.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\DetailRoom.cs",
               "RelativeDocumentMoniker": "Project\\DetailRoom.cs",
               "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\DetailRoom.cs [Design]",
               "RelativeToolTip": "Project\\DetailRoom.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T10:55:52.984Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-12T10:55:52.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RoomManager.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomManager.cs",
               "RelativeDocumentMoniker": "Project\\RoomManager.cs",
               "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\RoomManager.cs",
               "RelativeToolTip": "Project\\RoomManager.cs",
-              "ViewState": "AgIAAOwAAAAAAAAAAAAIwAgBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T11:00:15.951Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "CustomerManager.cs",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\CustomerManager.cs",
+              "RelativeDocumentMoniker": "Project\\CustomerManager.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\CustomerManager.cs",
+              "RelativeToolTip": "Project\\CustomerManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAjwPUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T13:29:58.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DetailRoom.cs",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\DetailRoom.cs",
+              "RelativeDocumentMoniker": "Project\\DetailRoom.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\DetailRoom.cs",
+              "RelativeToolTip": "Project\\DetailRoom.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwEMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T09:01:44.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "Services\\RoomService.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project\\Services\\RoomService.cs",
+              "RelativeToolTip": "Services\\RoomService.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T07:59:25.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rental.cs [Design]",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\Rental.cs",
+              "RelativeDocumentMoniker": "Project\\Rental.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\Rental.cs [Design]",
+              "RelativeToolTip": "Project\\Rental.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T10:58:57.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Project\\Program.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\Program.cs",
+              "RelativeToolTip": "Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:06:24.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\Login.cs",
               "RelativeDocumentMoniker": "Project\\Login.cs",
@@ -389,20 +396,18 @@
               "RelativeToolTip": "Project\\Login.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwEEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:26:05.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T12:26:05.41Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RoomManager.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomManager.cs",
               "RelativeDocumentMoniker": "Project\\RoomManager.cs",
               "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\RoomManager.cs [Design]",
               "RelativeToolTip": "Project\\RoomManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T10:58:36.361Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-12T10:58:36.361Z"
             },
             {
               "$type": "Document",
@@ -413,25 +418,11 @@
               "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\Main.cs [Design]",
               "RelativeToolTip": "Project\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T09:03:26.883Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-11T09:03:26.883Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "CustomerManager.cs",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\CustomerManager.cs",
-              "RelativeDocumentMoniker": "Project\\CustomerManager.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\CustomerManager.cs",
-              "RelativeToolTip": "Project\\CustomerManager.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAawPUAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T13:29:58.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Main.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\Main.cs",
               "RelativeDocumentMoniker": "Project\\Main.cs",
@@ -439,12 +430,11 @@
               "RelativeToolTip": "Project\\Main.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAASwFwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T09:06:45.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T09:06:45.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DB.designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Data\\DB.designer.cs",
               "RelativeDocumentMoniker": "Data\\DB.designer.cs",
@@ -452,8 +442,7 @@
               "RelativeToolTip": "Data\\DB.designer.cs",
               "ViewState": "AgIAAIsFAAAAAAAAAADgv6wFAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T16:46:18.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T16:46:18.723Z"
             },
             {
               "$type": "Document",
@@ -464,8 +453,7 @@
               "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\DetailCustomer.cs [Design]",
               "RelativeToolTip": "Project\\DetailCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T03:52:04.18Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-13T03:52:04.18Z"
             },
             {
               "$type": "Document",
@@ -582,8 +570,7 @@
               "RelativeToolTip": "Project\\Rental.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAADgvwkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T10:58:59.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T10:58:59.635Z"
             },
             {
               "$type": "Document",
@@ -595,8 +582,7 @@
               "RelativeToolTip": "Project\\Rental.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T10:56:05.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T10:56:05.296Z"
             },
             {
               "$type": "Document",
@@ -921,8 +907,7 @@
               "RelativeToolTip": "Services\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-12T07:20:06.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T07:20:06.382Z"
             },
             {
               "$type": "Document",
@@ -969,8 +954,7 @@
               "RelativeToolTip": "Project\\Main.Designer.cs",
               "ViewState": "AgIAAIgAAAAAAAAAAAAAADMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:42:18.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T14:42:18.608Z"
             },
             {
               "$type": "Document",
@@ -1018,8 +1002,7 @@
               "RelativeToolTip": "Project\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-10T15:00:07.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T15:00:07.208Z"
             }
           ]
         }

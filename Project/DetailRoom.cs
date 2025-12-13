@@ -1,9 +1,9 @@
-﻿using Data;
-using Services;
-using System;
+﻿using System;
 using System.Drawing;
-using System.Linq;
+using System.Linq; // Để dùng OrderByDescending
 using System.Windows.Forms;
+using Services;
+using Data;
 
 namespace Project
 {
@@ -33,7 +33,7 @@ namespace Project
             cbTypeRoom.ValueMember = "MaLoaiPhong";
             cbTypeRoom.DataSource = loaiPhongList;
 
-            // Load tình trạng (trực tiếp dùng giá trị DB)
+            // Load tình trạng
             cbTinhTrang.Items.Clear();
             cbTinhTrang.Items.Add("Trống");
             cbTinhTrang.Items.Add("Đã thuê");
@@ -42,13 +42,9 @@ namespace Project
             if (cur != null)
             {
                 // Chế độ SỬA
-                tbMaPhong.Text = cur.MaPhong;
-                tbMaPhong.ReadOnly = true;
-                tbMaPhong.BackColor = SystemColors.Window;
-                tbMaPhong.TabStop = false;
-
+                tbMaPhong.Text = cur.MaPhong?.Trim() ?? "";
                 tbNote.Text = cur.GhiChu ?? "";
-                cbTinhTrang.Text = cur.TinhTrang?.Trim() ?? "Trống"; // Lấy trực tiếp từ DB
+                cbTinhTrang.Text = cur.TinhTrang?.Trim() ?? "Trống";
 
                 if (!string.IsNullOrEmpty(cur.MaLoaiPhong))
                 {
@@ -61,15 +57,20 @@ namespace Project
             {
                 // Chế độ THÊM MỚI
                 tbMaPhong.Text = GenerateNewMaPhong();
-                tbMaPhong.ReadOnly = true;
-                tbMaPhong.BackColor = SystemColors.Window;
-                tbMaPhong.TabStop = false;
-
+                
                 tbNote.Text = "";
-                cbTinhTrang.Text = "Trống"; // Mặc định theo DB
+                cbTinhTrang.SelectedIndex = 0; // Mặc định "Trống"
                 cbTypeRoom.SelectedIndex = -1;
                 tbDonGia.Text = "";
             }
+
+            // LUÔN KHÓA MÃ PHÒNG (cả thêm mới lẫn cập nhật)
+            tbMaPhong.Enabled = false;
+            tbMaPhong.BackColor = SystemColors.Window;
+            tbMaPhong.TabStop = false; // Không cho focus bằng Tab
+
+            // Focus vào ô đầu tiên có thể nhập
+            cbTypeRoom.Focus();
         }
 
         private void cbTypeRoom_SelectedIndexChanged(object sender, EventArgs e)
@@ -91,20 +92,33 @@ namespace Project
             }
         }
 
+        /// <summary>
+        /// Tự động sinh mã phòng mới dạng P001, P002, P003,...
+        /// </summary>
         private string GenerateNewMaPhong()
         {
-            var lastRoom = roomService.GetAllRooms()
-                .OrderByDescending(p => p.MaPhong)
-                .FirstOrDefault();
-
-            if (lastRoom == null || string.IsNullOrEmpty(lastRoom.MaPhong))
-                return "P001";
-
-            string lastCode = lastRoom.MaPhong.Trim().ToUpper();
-            if (lastCode.StartsWith("P") && int.TryParse(lastCode.Substring(1), out int num))
+            try
             {
-                return "P" + (num + 1).ToString("D3");
+                var lastRoom = roomService.GetAllRooms()
+                    .Where(p => !string.IsNullOrEmpty(p.MaPhong) &&
+                                p.MaPhong.StartsWith("P", StringComparison.OrdinalIgnoreCase))
+                    .OrderByDescending(p => p.MaPhong, StringComparer.OrdinalIgnoreCase)
+                    .FirstOrDefault();
+
+                if (lastRoom == null || string.IsNullOrEmpty(lastRoom.MaPhong))
+                    return "P001";
+
+                string lastCode = lastRoom.MaPhong.Trim().ToUpper();
+                if (lastCode.StartsWith("P") && int.TryParse(lastCode.Substring(1), out int num))
+                {
+                    return "P" + (num + 1).ToString("D3");
+                }
             }
+            catch
+            {
+                // Nếu lỗi, trả về mặc định
+            }
+
             return "P001";
         }
 
@@ -118,7 +132,16 @@ namespace Project
         {
             if (cbTypeRoom.SelectedValue == null)
             {
-                MessageBox.Show("Vui lòng chọn loại phòng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn loại phòng!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbTypeRoom.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(tbMaPhong.Text))
+            {
+                MessageBox.Show("Mã phòng không hợp lệ!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -126,25 +149,27 @@ namespace Project
             {
                 MaPhong = tbMaPhong.Text.Trim(),
                 MaLoaiPhong = cbTypeRoom.SelectedValue.ToString().Trim(),
-                GhiChu = tbNote.Text.Trim(),
-                TinhTrang = cbTinhTrang.Text.Trim() // Lưu trực tiếp giá trị hiển thị (đã đồng bộ với DB)
+                GhiChu = string.IsNullOrWhiteSpace(tbNote.Text) ? null : tbNote.Text.Trim(),
+                TinhTrang = cbTinhTrang.Text.Trim()
             };
 
             bool success = cur != null
                 ? roomService.UpdateRoom(phong)
                 : roomService.AddRoom(phong);
 
-            string action = cur != null ? "cập nhật" : "thêm";
+            string action = cur != null ? "cập nhật" : "thêm mới";
 
             if (success)
             {
-                MessageBox.Show($"Phòng đã được {action} thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Phòng đã được {action} thành công!", "Thành công",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
             else
             {
-                MessageBox.Show($"Không thể {action} phòng. Vui lòng kiểm tra lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Không thể {action} phòng!\n\nLý do phổ biến:\n• Mã phòng đã tồn tại\n• Lỗi kết nối CSDL",
+                    "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

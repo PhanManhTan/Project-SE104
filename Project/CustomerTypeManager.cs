@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Services; // Thêm dòng này
-using Data;     // Thêm dòng này
+using Services;
+using Data;
 
 namespace Project
 {
     public partial class CustomerTypeManager : Form
     {
         private string selectedMaLoai = null;
-        private readonly CustomerService customerService = new CustomerService(); // Khai báo Service
+        private readonly CustomerService customerService = new CustomerService();
+        private BindingSource bindingSource = new BindingSource(); // Đồng bộ với CustomerManager
 
-        // Giữ nguyên constructor nhận connString để code cũ không bị lỗi, nhưng ta không dùng biến đó nữa
         public CustomerTypeManager()
         {
             InitializeComponent();
@@ -19,113 +19,156 @@ namespace Project
 
         private void LoaiKhachForm_Load(object sender, EventArgs e)
         {
-
-            SetupForm();
+            SetupDataGridView();
+            ConfigureDataGridViewColumns(); // Gọi một lần ở đây
             LoadData();
+
             dgvLoaiKhach.SelectionChanged += DgvLoaiKhach_SelectionChanged;
         }
 
-        // ... (Giữ nguyên các hàm SetupDataGridView, SetupForm) ...
+        #region === CẤU HÌNH GIAO DIỆN DATAGRIDVIEW (ĐỒNG BỘ VỚI CUSTOMERMANAGER) ===
 
-
-        private void SetupForm()
+        private void SetupDataGridView()
         {
-            dgvLoaiKhach.RowHeadersVisible = false;
-            dgvLoaiKhach.AllowUserToAddRows = false;
-            dgvLoaiKhach.ReadOnly = true;
-            dgvLoaiKhach.MultiSelect = false;
-            dgvLoaiKhach.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLoaiKhach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvLoaiKhach.ScrollBars = ScrollBars.Vertical;
+            var dgv = dgvLoaiKhach;
 
-            dgvLoaiKhach.EnableHeadersVisualStyles = false;
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.RowHeadersVisible = false;
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToResizeRows = false;
+            dgv.AllowUserToResizeColumns = false;
+            dgv.ReadOnly = true;
+            dgv.MultiSelect = false;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgv.ColumnHeadersHeight = 45;
 
-            // Header
-            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
-            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
-            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvLoaiKhach.ColumnHeadersHeight = 30;
-            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.White;
-            dgvLoaiKhach.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
+            // Header style
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
 
-            // Dòng xen kẽ
-            dgvLoaiKhach.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 249, 250);
-            dgvLoaiKhach.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
-            dgvLoaiKhach.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+            // Row style
+            dgv.RowsDefaultCellStyle.Font = new Font("Segoe UI", 10F);
+            dgv.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 180);
+            dgv.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 248, 255);
 
-            // Font dòng
-            dgvLoaiKhach.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
+            dgv.ScrollBars = ScrollBars.Vertical;
 
-            // Tăng độ cao dòng
-            dgvLoaiKhach.RowTemplate.Height = 40;
-
-            // Cấm kéo cột/dòng
-            dgvLoaiKhach.AllowUserToResizeColumns = false;
-            dgvLoaiKhach.AllowUserToResizeRows = false;
-            dgvLoaiKhach.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            // STT tự động
+            dgv.DataBindingComplete += DgvLoaiKhach_DataBindingComplete;
         }
+
+        private void DgvLoaiKhach_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            for (int i = 0; i < dgvLoaiKhach.Rows.Count; i++)
+            {
+                dgvLoaiKhach.Rows[i].Cells["STT"].Value = (i + 1).ToString();
+            }
+        }
+
+        #endregion
+
+        #region === CẤU HÌNH CÁC CỘT (THỦ CÔNG) ===
+
+        private void ConfigureDataGridViewColumns()
+        {
+            var dgv = dgvLoaiKhach;
+            dgv.AutoGenerateColumns = false;
+            dgv.Columns.Clear();
+
+            // STT
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "STT",
+                Name = "STT",
+                Width = 60,
+                ReadOnly = true,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleCenter,
+                    Font = new Font("Segoe UI", 10F, FontStyle.Bold)
+                },
+                SortMode = DataGridViewColumnSortMode.NotSortable
+            });
+
+            // Mã loại khách
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "MaLoaiKhach",
+                HeaderText = "Mã loại khách",
+                DataPropertyName = "MaLoaiKhach",
+                DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
+            });
+
+            // Tên loại khách
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "TenLoaiKhach",
+                HeaderText = "Tên loại khách",
+                DataPropertyName = "TenLoaiKhach",
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleLeft,
+                    Padding = new Padding(10, 0, 0, 0)
+                }
+            });
+
+            // Gán BindingSource
+            dgv.DataSource = bindingSource;
+        }
+
+        #endregion
+
+        #region === LOAD + REFRESH DANH SÁCH ===
 
         private void LoadData()
         {
-            // SỬA: Dùng Service thay vì SqlDataAdapter
-            // Tạo mới service để làm mới context
-            var list = new CustomerService().GetAllCustomerTypes();
-
-            // Tạo DataTable thủ công để control hiển thị (giống RoomTypesForm của bạn)
-            var dt = new System.Data.DataTable();
-            dt.Columns.Add("STT", typeof(int));
-            dt.Columns.Add("MaLoaiKhach", typeof(string));
-            dt.Columns.Add("TenLoaiKhach", typeof(string));
-
-            int stt = 1;
-            foreach (var item in list)
-            {
-                dt.Rows.Add(stt++, item.MaLoaiKhach, item.TenLoaiKhach);
-            }
-
-            dgvLoaiKhach.DataSource = dt;
+            var list = customerService.GetAllCustomerTypes();
+            bindingSource.DataSource = list;
             dgvLoaiKhach.ClearSelection();
             selectedMaLoai = null;
-
-            // Gọi lại cấu hình cột (nếu cần)
-            ConfigureColumns();
         }
 
-        private void ConfigureColumns()
+        public void RefreshGrid()
         {
-            // Code cũ của bạn, giữ nguyên
-            void SetupColumn(string columnName, string headerText, int fillWeight = 20, DataGridViewContentAlignment align = DataGridViewContentAlignment.MiddleCenter)
-            {
-                if (dgvLoaiKhach.Columns[columnName] != null)
-                {
-                    var col = dgvLoaiKhach.Columns[columnName];
-                    col.HeaderText = headerText;
-                    col.DefaultCellStyle.Alignment = align;
-                    col.SortMode = DataGridViewColumnSortMode.NotSortable;
-                    col.FillWeight = fillWeight;
-                }
-            }
-
-            SetupColumn("STT", "STT", 10);
-            SetupColumn("MaLoaiKhach", "Mã loại khách", 30);
-            SetupColumn("TenLoaiKhach", "Tên loại khách", 60);
+            LoadData();
         }
+
+        #endregion
+
+        #region === CHỌN DÒNG ===
 
         private void DgvLoaiKhach_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvLoaiKhach.SelectedRows.Count > 0)
+            if (dgvLoaiKhach.CurrentRow != null && dgvLoaiKhach.CurrentRow.Index >= 0)
             {
-                var row = dgvLoaiKhach.SelectedRows[0];
-                if (!row.IsNewRow && row.Cells["MaLoaiKhach"].Value != null)
+                var row = dgvLoaiKhach.CurrentRow;
+                if (row.Cells["MaLoaiKhach"].Value != null)
                     selectedMaLoai = row.Cells["MaLoaiKhach"].Value.ToString();
+            }
+            else
+            {
+                selectedMaLoai = null;
             }
         }
 
+        #endregion
+
+        #region === CÁC NÚT CHỨC NĂNG ===
+
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            // Bỏ truyền connString, Forms con tự xử lý service
-            using (var frm = new CustomerTypeCreate())
+            using (var frm = new DetailCustomerType())
             {
                 if (frm.ShowDialog() == DialogResult.OK)
                     LoadData();
@@ -136,15 +179,27 @@ namespace Project
         {
             if (string.IsNullOrEmpty(selectedMaLoai))
             {
-                MessageBox.Show("Vui lòng chọn 1 loại khách để cập nhật.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn 1 loại khách để cập nhật.", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Bỏ truyền connString
-            using (var frm = new CustomerTypeUpdate(selectedMaLoai))
+            var loaiKhachCanSua = customerService.GetCustomerTypeById(selectedMaLoai);
+
+            if (loaiKhachCanSua == null)
+            {
+                MessageBox.Show("Không tìm thấy loại khách cần cập nhật. Có thể dữ liệu đã bị xóa.", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LoadData();
+                return;
+            }
+
+            using (var frm = new DetailCustomerType(loaiKhachCanSua))
             {
                 if (frm.ShowDialog() == DialogResult.OK)
+                {
                     LoadData();
+                }
             }
         }
 
@@ -152,26 +207,57 @@ namespace Project
         {
             if (string.IsNullOrEmpty(selectedMaLoai))
             {
-                MessageBox.Show("Vui lòng chọn 1 loại khách để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn 1 loại khách để xóa.", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (MessageBox.Show($"Bạn có chắc muốn xóa loại khách {selectedMaLoai}?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            var loaiKhach = customerService.GetCustomerTypeById(selectedMaLoai);
+            if (loaiKhach == null)
+            {
+                MessageBox.Show("Không tìm thấy loại khách.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LoadData();
+                return;
+            }
+
+            string tenLoai = loaiKhach.TenLoaiKhach?.Trim() ?? selectedMaLoai;
+
+            var confirm = MessageBox.Show(
+                $"Bạn có chắc chắn muốn xóa loại khách \"{tenLoai}\" (Mã: {selectedMaLoai}) không?\n\n" +
+                "Lưu ý: Nếu loại khách này đang có khách hàng sử dụng thì không thể xóa.",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (confirm == DialogResult.No)
                 return;
 
-            // SỬA: Gọi Service
-            if (customerService.DeleteCustomerType(selectedMaLoai))
+            bool success = customerService.DeleteCustomerType(selectedMaLoai);
+
+            if (success)
             {
                 LoadData();
-                MessageBox.Show("Xóa thành công!", "Thông báo");
+                MessageBox.Show("Xóa loại khách thành công!", "Thành công",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            // Không cần else vì Service đã hiện MessageBox lỗi nếu có
+            else
+            {
+                MessageBox.Show(
+                    "Không thể xóa loại khách này!\n\n" +
+                    "Nguyên nhân thường gặp:\n" +
+                    "• Có khách hàng đang thuộc loại khách này\n" +
+                    "• Dữ liệu đang được sử dụng ở nơi khác",
+                    "Không thể xóa",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        #endregion
     }
 }

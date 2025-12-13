@@ -91,23 +91,23 @@ namespace Services
         {
             try
             {
-                if (db.KhachHangs.Any(kh => kh.MaLoaiKhach == maLoai))
-                {
-                    return false; // Loại khách đang được sử dụng
-                }
-
                 var lk = db.LoaiKhaches.FirstOrDefault(x => x.MaLoaiKhach == maLoai);
-                if (lk != null)
-                {
-                    db.LoaiKhaches.DeleteOnSubmit(lk);
-                    db.SubmitChanges();
-                    return true;
-                }
+                if (lk == null)
+                    return false;
 
-                return false;
+                // Kiểm tra ràng buộc (dù có FK hay không)
+                if (db.KhachHangs.Any(kh => kh.MaLoaiKhach == maLoai))
+                    return false;
+
+                db.LoaiKhaches.DeleteOnSubmit(lk);
+                db.SubmitChanges();
+
+                return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                // Ghi log hoặc trả về thông tin lỗi (tùy dự án)
+                // Ví dụ: System.Diagnostics.Debug.WriteLine(ex.Message);
                 return false;
             }
         }

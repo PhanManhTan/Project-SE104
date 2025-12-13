@@ -59,6 +59,12 @@
     <Compile Include="DetailCustomer.Designer.cs">
       <DependentUpon>DetailCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetailCustomerType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailCustomerType.Designer.cs">
+      <DependentUpon>DetailCustomerType.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetailRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,17 +77,11 @@
     <Compile Include="CustomerTypeManager.Designer.cs">
       <DependentUpon>CustomerTypeManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerTypeCreate.cs">
+    <Compile Include="DetailRoomType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerTypeCreate.Designer.cs">
-      <DependentUpon>CustomerTypeCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerTypeUpdate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerTypeUpdate.Designer.cs">
-      <DependentUpon>CustomerTypeUpdate.cs</DependentUpon>
+    <Compile Include="DetailRoomType.Designer.cs">
+      <DependentUpon>DetailRoomType.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -121,23 +121,11 @@
     <Compile Include="RoomManager.Designer.cs">
       <DependentUpon>RoomManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomTypeCreate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RoomTypeCreate.Designer.cs">
-      <DependentUpon>RoomTypeCreate.cs</DependentUpon>
-    </Compile>
     <Compile Include="RoomTypeManager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RoomTypeManager.Designer.cs">
       <DependentUpon>RoomTypeManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RoomTypeUpdate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RoomTypeUpdate.Designer.cs">
-      <DependentUpon>RoomTypeUpdate.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CustomerManager.resx">
       <DependentUpon>CustomerManager.cs</DependentUpon>
@@ -145,8 +133,14 @@
     <EmbeddedResource Include="DetailCustomer.resx">
       <DependentUpon>DetailCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetailCustomerType.resx">
+      <DependentUpon>DetailCustomerType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetailRoom.resx">
       <DependentUpon>DetailRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailRoomType.resx">
+      <DependentUpon>DetailRoomType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -174,9 +168,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoomManager.resx">
       <DependentUpon>RoomManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RoomTypeCreate.resx">
-      <DependentUpon>RoomTypeCreate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

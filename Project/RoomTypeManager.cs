@@ -8,8 +8,9 @@ namespace Project
 {
     public partial class RoomTypeManager : Form
     {
-        private RoomService roomService = new RoomService();
-        private string selectedMaLoai;
+        private readonly RoomService roomService = new RoomService();
+        private string selectedMaLoai = null;
+        private BindingSource bindingSource = new BindingSource();
 
         public RoomTypeManager()
         {
@@ -18,80 +19,174 @@ namespace Project
 
         private void RoomTypesForm_Load(object sender, EventArgs e)
         {
-            SetupForm();
+            SetupDataGridView();
+            ConfigureDataGridViewColumns();
             LoadData();
+
             dgvLoaiPhong.SelectionChanged += DgvLoaiPhong_SelectionChanged;
         }
 
-        private void SetupForm()
+        #region === CẤU HÌNH GIAO DIỆN DATAGRIDVIEW (ĐỒNG BỘ VỚI CUSTOMERMANAGER) ===
+
+        private void SetupDataGridView()
         {
-            dgvLoaiPhong.RowHeadersVisible = false;
-            dgvLoaiPhong.AllowUserToAddRows = false;
-            dgvLoaiPhong.ReadOnly = true;
-            dgvLoaiPhong.MultiSelect = false;
-            dgvLoaiPhong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLoaiPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            var dgv = dgvLoaiPhong;
 
-            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
-            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
-            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dgvLoaiPhong.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.RowHeadersVisible = false;
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToResizeRows = false;
+            dgv.AllowUserToResizeColumns = false;
+            dgv.ReadOnly = true;
+            dgv.MultiSelect = false;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgv.ColumnHeadersHeight = 45;
 
-            dgvLoaiPhong.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 249, 250);
-            dgvLoaiPhong.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
-            dgvLoaiPhong.RowsDefaultCellStyle.SelectionForeColor = Color.White;
-            dgvLoaiPhong.DefaultCellStyle.Font = new Font("Segoe UI", 11F);
-            dgvLoaiPhong.RowTemplate.Height = 40;
+            // Header style
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // Row style
+            dgv.RowsDefaultCellStyle.Font = new Font("Segoe UI", 10F);
+            dgv.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 180);
+            dgv.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 248, 255);
+
+            dgv.ScrollBars = ScrollBars.Vertical;
+
+            // STT tự động
+            dgv.DataBindingComplete += DgvLoaiPhong_DataBindingComplete;
+            // Định dạng hiển thị đơn giá với " đ"
+            dgv.CellFormatting += DgvLoaiPhong_CellFormatting;
         }
+
+        private void DgvLoaiPhong_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            for (int i = 0; i < dgvLoaiPhong.Rows.Count; i++)
+            {
+                dgvLoaiPhong.Rows[i].Cells["STT"].Value = (i + 1).ToString();
+
+            }
+        }
+
+        #endregion
+
+        #region === CẤU HÌNH CÁC CỘT ===
+
+        private void ConfigureDataGridViewColumns()
+        {
+            var dgv = dgvLoaiPhong;
+            dgv.AutoGenerateColumns = false;
+            dgv.Columns.Clear();
+
+            // STT
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "STT",
+                Name = "STT",
+                Width = 60,
+                ReadOnly = true,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleCenter,
+                    Font = new Font("Segoe UI", 10F, FontStyle.Bold)
+                },
+                SortMode = DataGridViewColumnSortMode.NotSortable
+            });
+
+            // Mã loại phòng
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "MaLoaiPhong",
+                HeaderText = "Mã loại phòng",
+                DataPropertyName = "MaLoaiPhong",
+                DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
+            });
+
+            // Tên loại phòng
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "TenLoaiPhong",
+                HeaderText = "Tên loại phòng",
+                DataPropertyName = "TenLoaiPhong",
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleLeft,
+                    Padding = new Padding(10, 0, 0, 0)
+                }
+            });
+
+            // Đơn giá
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "DonGia",
+                HeaderText = "Đơn giá",
+                DataPropertyName = "DonGia",
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleRight,
+                    Format = "N0",
+                    Padding = new Padding(0, 0, 10, 0)
+                }
+            });
+
+            dgv.DataSource = bindingSource;
+        }
+
+        #endregion
+
+        #region === LOAD + REFRESH ===
 
         private void LoadData()
         {
-            // Quan trọng: Tạo mới service để lấy dữ liệu mới nhất từ DB
-            roomService = new RoomService();
-
-            // Lấy danh sách (đảm bảo chỉ khai báo biến list 1 lần)
             var list = roomService.GetAllRoomTypes();
-
-            var dt = new System.Data.DataTable();
-            dt.Columns.Add("STT", typeof(int));
-            dt.Columns.Add("MaLoaiPhong", typeof(string));
-            dt.Columns.Add("TenLoaiPhong", typeof(string));
-            dt.Columns.Add("DonGia", typeof(decimal));
-
-            int stt = 1;
-            foreach (var lp in list)
-            {
-                dt.Rows.Add(stt++, lp.MaLoaiPhong, lp.TenLoaiPhong, lp.DonGia);
-            }
-
-            // Gán DataSource trực tiếp, KHÔNG xóa ngay sau đó
-            dgvLoaiPhong.DataSource = dt;
-
-            // Định dạng cột
-            if (dgvLoaiPhong.Columns["DonGia"] != null)
-                dgvLoaiPhong.Columns["DonGia"].DefaultCellStyle.Format = "N0";
-            if (dgvLoaiPhong.Columns["STT"] != null)
-                dgvLoaiPhong.Columns["STT"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-            // Clear selection
+            bindingSource.DataSource = list;
             dgvLoaiPhong.ClearSelection();
             selectedMaLoai = null;
         }
 
+        public void RefreshGrid()
+        {
+            LoadData();
+        }
+
+        #endregion
+
+        #region === CHỌN DÒNG ===
 
         private void DgvLoaiPhong_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvLoaiPhong.SelectedRows.Count > 0)
+            if (dgvLoaiPhong.CurrentRow != null && dgvLoaiPhong.CurrentRow.Index >= 0)
             {
-                selectedMaLoai = dgvLoaiPhong.SelectedRows[0].Cells["MaLoaiPhong"].Value?.ToString();
+                var row = dgvLoaiPhong.CurrentRow;
+                if (row.Cells["MaLoaiPhong"].Value != null)
+                    selectedMaLoai = row.Cells["MaLoaiPhong"].Value.ToString();
+            }
+            else
+            {
+                selectedMaLoai = null;
             }
         }
 
+        #endregion
+
+        #region === CÁC NÚT CHỨC NĂNG ===
+
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            using (var frm = new RoomTypeCreate())
+            using (var frm = new DetailRoomType())
             {
-                if (frm.ShowDialog() == DialogResult.OK) 
+                if (frm.ShowDialog() == DialogResult.OK)
                     LoadData();
             }
         }
@@ -100,14 +195,27 @@ namespace Project
         {
             if (string.IsNullOrEmpty(selectedMaLoai))
             {
-                MessageBox.Show("Vui lòng chọn một loại phòng để cập nhật.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn một loại phòng để cập nhật.", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            using (var frm = new RoomTypeUpdate(selectedMaLoai))
+            var loaiPhongCanSua = roomService.GetRoomTypeById(selectedMaLoai);
+
+            if (loaiPhongCanSua == null)
+            {
+                MessageBox.Show("Không tìm thấy loại phòng cần cập nhật.", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LoadData();
+                return;
+            }
+
+            using (var frm = new DetailRoomType(loaiPhongCanSua))
             {
                 if (frm.ShowDialog() == DialogResult.OK)
-                    LoadData();  // Refresh ngay tại đây
+                {
+                    LoadData();
+                }
             }
         }
 
@@ -115,23 +223,53 @@ namespace Project
         {
             if (string.IsNullOrEmpty(selectedMaLoai))
             {
-                MessageBox.Show("Vui lòng chọn một loại phòng để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn một loại phòng để xóa.", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (MessageBox.Show($"Bạn có chắc chắn muốn xóa loại phòng \"{selectedMaLoai}\"?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            var loaiPhong = roomService.GetRoomTypeById(selectedMaLoai);
+            string tenLoai = loaiPhong?.TenLoaiPhong ?? selectedMaLoai;
+
+            var result = MessageBox.Show(
+                $"Bạn có chắc chắn muốn xóa loại phòng \"{tenLoai}\" (Mã: {selectedMaLoai}) không?\n\n" +
+                "Cảnh báo: Nếu loại phòng này đang được sử dụng trong phòng hoặc phiếu thuê, việc xóa sẽ thất bại.",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
             {
                 if (roomService.DeleteRoomType(selectedMaLoai))
                 {
-                    MessageBox.Show("Xóa thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Xóa loại phòng thành công!", "Thành công",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadData();
+                }
+                else
+                {
+                    MessageBox.Show("Không thể xóa loại phòng!\n\nLý do phổ biến:\n• Loại phòng đang được sử dụng trong danh sách phòng\n• Đang có phiếu thuê sử dụng loại này",
+                        "Lỗi xóa", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
-
+        private void DgvLoaiPhong_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            // Chỉ áp dụng cho cột DonGia
+            if (dgvLoaiPhong.Columns[e.ColumnIndex].Name == "DonGia" && e.Value != null)
+            {
+                if (decimal.TryParse(e.Value.ToString(), out decimal price))
+                {
+                    e.Value = price.ToString("N0") + " đ";
+                    e.FormattingApplied = true;
+                }
+            }
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        #endregion
     }
 }

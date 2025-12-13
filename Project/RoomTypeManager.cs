@@ -149,8 +149,13 @@ namespace Project
 
         private void LoadData()
         {
-            var list = roomService.GetAllRoomTypes();
+            // Tạo service mới mỗi lần load → tránh cache context cũ
+            var tempService = new RoomService();
+            var list = tempService.GetAllRoomTypes();
+
             bindingSource.DataSource = list;
+            bindingSource.ResetBindings(false); // Thêm để chắc chắn
+
             dgvLoaiPhong.ClearSelection();
             selectedMaLoai = null;
         }

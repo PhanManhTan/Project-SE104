@@ -69,7 +69,7 @@
             this.dgvLoaiKhach.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvLoaiKhach.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLoaiKhach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLoaiKhach.Location = new System.Drawing.Point(3, 72);
+            this.dgvLoaiKhach.Location = new System.Drawing.Point(3, 66);
             this.dgvLoaiKhach.Name = "dgvLoaiKhach";
             this.dgvLoaiKhach.RowHeadersWidth = 62;
             this.dgvLoaiKhach.RowTemplate.Height = 28;

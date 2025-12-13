@@ -69,7 +69,7 @@
             // btnCustomerTypes
             // 
             this.btnCustomerTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCustomerTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnCustomerTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(170)))), ((int)(((byte)(50)))));
             this.btnCustomerTypes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnCustomerTypes.ForeColor = System.Drawing.Color.White;
             this.btnCustomerTypes.Location = new System.Drawing.Point(266, 22);

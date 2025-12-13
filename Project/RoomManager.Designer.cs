@@ -39,12 +39,12 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(900, 100);
             this.panel1.TabIndex = 26;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // btnRoomTypes
             // 
             this.btnRoomTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRoomTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnRoomTypes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(170)))), ((int)(((byte)(50)))));
             this.btnRoomTypes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnRoomTypes.ForeColor = System.Drawing.Color.White;
             this.btnRoomTypes.Location = new System.Drawing.Point(266, 22);

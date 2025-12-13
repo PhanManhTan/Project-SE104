@@ -62,6 +62,10 @@ namespace Project
             {
                 dgvCustomerManager.Rows[i].Cells["STT"].Value = (i + 1).ToString();
             }
+            dgvCustomerManager.ClearSelection();
+
+            // Đảm bảo biến selectedRoom là null ban đầu
+            selectedCustomerView = null;
         }
         #endregion
 

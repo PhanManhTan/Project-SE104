@@ -130,6 +130,9 @@
     <EmbeddedResource Include="CustomerManager.resx">
       <DependentUpon>CustomerManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerTypeManager.resx">
+      <DependentUpon>CustomerTypeManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetailCustomer.resx">
       <DependentUpon>DetailCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoomManager.resx">
       <DependentUpon>RoomManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomTypeManager.resx">
+      <DependentUpon>RoomTypeManager.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

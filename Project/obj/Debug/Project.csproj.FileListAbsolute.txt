@@ -26,3 +26,5 @@ D:\HK5\SE104\Project\Project\obj\Debug\Project.Report.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.Parameter.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.DetailCustomerType.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.DetailRoomType.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.CustomerTypeManager.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.RoomTypeManager.resources

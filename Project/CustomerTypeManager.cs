@@ -133,8 +133,13 @@ namespace Project
 
         private void LoadData()
         {
-            var list = customerService.GetAllCustomerTypes();
+            // Tạo service mới mỗi lần load → tránh cache context cũ, luôn lấy dữ liệu mới nhất từ DB
+            var tempService = new CustomerService();
+            var list = tempService.GetAllCustomerTypes();
+
             bindingSource.DataSource = list;
+            bindingSource.ResetBindings(false); // Buộc refresh binding để hiển thị ngay dữ liệu mới
+
             dgvLoaiKhach.ClearSelection();
             selectedMaLoai = null;
         }

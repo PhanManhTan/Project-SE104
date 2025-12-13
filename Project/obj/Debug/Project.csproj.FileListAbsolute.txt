@@ -23,3 +23,5 @@ D:\HK5\SE104\Project\Project\obj\Debug\Project.Login.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.RoomManager.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.RoomTypeCreate.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.Rental.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.Report.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.Parameter.resources

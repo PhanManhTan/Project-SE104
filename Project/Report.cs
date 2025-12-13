@@ -1,87 +1,212 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
+﻿using Data;
 using Services;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Project
 {
     public partial class Report : Form
     {
         private readonly ReportService reportService = new ReportService();
+        private readonly BindingSource bindingSource = new BindingSource();
 
         public Report()
         {
             InitializeComponent();
         }
 
-        private void ReportForm_Load(object sender, EventArgs e)
+        private void Report_Load(object sender, EventArgs e)
         {
-            SetupForm();
+            SetupDataGridView();
+            ConfigureDataGridViewColumns();
+            SetupControls();
+
+            // Thêm sự kiện CellFormatting để gắn " đ" và "%" (chỉ đăng ký 1 lần)
+            dgvReport.CellFormatting += DgvReport_CellFormatting;
         }
 
-        private void SetupForm()
+        #region === SETUP CONTROLS ===
+        private void SetupControls()
         {
-            // 1. Fill dữ liệu tháng (1 -> 12)
+            // Fill tháng
             for (int i = 1; i <= 12; i++)
             {
-                cboMonth.Items.Add(i);
+                cboMonth.Items.Add(i.ToString("D2")); // 01, 02,...
             }
-            cboMonth.SelectedIndex = DateTime.Now.Month - 1; // Chọn tháng hiện tại
-            numYear.Value = DateTime.Now.Year; // Chọn năm hiện tại
+            cboMonth.SelectedIndex = DateTime.Now.Month - 1;
+            // Gán Minimum/Maximum trước Value để tránh lỗi năm 2025+
+            numYear.Minimum = 2000;
+            numYear.Maximum = 2100;
+            numYear.Value = DateTime.Now.Year;
+        }
+        #endregion
 
-            // 2. Format Grid
-            dgvReport.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvReport.ReadOnly = true;
-            dgvReport.AllowUserToAddRows = false;
-            dgvReport.RowHeadersVisible = false;
-            dgvReport.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
-            // Font & Màu sắc (giống các form khác của bạn)
-            dgvReport.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            dgvReport.DefaultCellStyle.Font = new Font("Segoe UI", 10F);
+        #region === CẤU HÌNH GIAO DIỆN DATAGRIDVIEW (ĐỒNG BỘ HOÀN TOÀN VỚI CUSTOMERMANAGER) ===
+        private void SetupDataGridView()
+        {
+            var dgv = dgvReport;
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.RowHeadersVisible = false;
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToResizeRows = false;
+            dgv.AllowUserToResizeColumns = false;
+            dgv.ReadOnly = true;
+            dgv.MultiSelect = false;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ScrollBars = ScrollBars.Vertical;
+            // Header giống hệt CustomerManager
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgv.ColumnHeadersHeight = 45;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Navy;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
+            // Row style giống hệt
+            dgv.RowsDefaultCellStyle.Font = new Font("Segoe UI", 10F);
+            dgv.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 180);
+            dgv.RowsDefaultCellStyle.SelectionForeColor = Color.White;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 248, 255);
+            // Hover effect giống hệt
+            dgv.CellMouseEnter += (s, e) =>
+            {
+                if (e.RowIndex >= 0)
+                    dgv.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.FromArgb(220, 235, 255);
+            };
+            dgv.CellMouseLeave += (s, e) =>
+            {
+                if (e.RowIndex >= 0)
+                    dgv.InvalidateRow(e.RowIndex);
+            };
+            // Đánh số STT tự động giống hệt
+            dgv.DataBindingComplete += DgvReport_DataBindingComplete;
+            dgv.DataSource = bindingSource;
         }
 
+        private void DgvReport_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            for (int i = 0; i < dgvReport.Rows.Count; i++)
+            {
+                dgvReport.Rows[i].Cells["STT"].Value = (i + 1).ToString();
+            }
+        }
+        #endregion
+
+        #region === CẤU HÌNH CÁC CỘT ===
+        private void ConfigureDataGridViewColumns()
+        {
+            var dgv = dgvReport;
+            dgv.AutoGenerateColumns = false;
+            dgv.Columns.Clear();
+            // STT
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "STT",
+                Name = "STT",
+                Width = 60,
+                ReadOnly = true,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleCenter,
+                    Font = new Font("Segoe UI", 10F, FontStyle.Bold)
+                }
+            });
+            // Loại phòng
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Loại Phòng",
+                Name = "TenLoaiPhong",
+                DataPropertyName = "TenLoaiPhong",
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleLeft,
+                    Padding = new Padding(10, 0, 0, 0)
+                }
+            });
+            // Doanh thu
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Doanh Thu",
+                Name = "DoanhThu",
+                DataPropertyName = "DoanhThu",
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleRight,
+                    Format = "N0",  // Giữ N0 để có dấu phẩy
+                }
+            });
+            // Tỷ lệ
+            dgv.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Tỷ Lệ",
+                Name = "TyLe",
+                DataPropertyName = "TyLe",
+                DefaultCellStyle = new DataGridViewCellStyle
+                {
+                    Alignment = DataGridViewContentAlignment.MiddleRight,
+                    Format = "N2",  // Giữ N2 như bạn muốn
+                    Font = new Font("Segoe UI", 10F, FontStyle.Bold),
+                }
+            });
+        }
+        #endregion
+
+        #region === NÚT XEM BÁO CÁO ===
         private void btnXem_Click(object sender, EventArgs e)
         {
+            if (cboMonth.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn tháng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int month = int.Parse(cboMonth.SelectedItem.ToString());
             int year = (int)numYear.Value;
-
             var data = reportService.GetReportByMonth(month, year);
-
-            // Tạo DataTable để hiển thị có STT
-            var dt = new System.Data.DataTable();
-            dt.Columns.Add("STT", typeof(int));
-            dt.Columns.Add("TenLoaiPhong", typeof(string));
-            dt.Columns.Add("DoanhThu", typeof(decimal));
-            dt.Columns.Add("TyLe", typeof(float));
-
-            int stt = 1;
-            foreach (var item in data)
+            bindingSource.DataSource = data.Any() ? data : null;
+            if (!data.Any())
             {
-                dt.Rows.Add(stt++, item.TenLoaiPhong, item.DoanhThu, item.TyLe);
+                MessageBox.Show($"Không có dữ liệu doanh thu trong tháng {month:00}/{year}!",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        #endregion
+
+        #region === THÊM DẤU " đ" VÀ "%" VÀO GIÁ TRỊ (KHÔNG THAY ĐỔI CODE CŨ) ===
+        private void DgvReport_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            var dgv = dgvReport;
+
+            // Thêm " đ" cho cột DoanhThu
+            if (e.ColumnIndex == dgv.Columns["DoanhThu"].Index && e.Value != null)
+            {
+                if (decimal.TryParse(e.Value.ToString(), out decimal value))
+                {
+                    e.Value = value.ToString("N0") + " đ";
+                    e.FormattingApplied = true;
+                }
             }
 
-            dgvReport.DataSource = dt;
-
-            // Đặt tên cột tiếng Việt
-            dgvReport.Columns["TenLoaiPhong"].HeaderText = "Loại Phòng";
-            dgvReport.Columns["DoanhThu"].HeaderText = "Doanh Thu";
-            dgvReport.Columns["TyLe"].HeaderText = "Tỷ Lệ (%)";
-            dgvReport.Columns["STT"].Width = 50;
-
-            // Format tiền tệ và %
-            dgvReport.Columns["DoanhThu"].DefaultCellStyle.Format = "N0"; // Có dấu phẩy ngăn cách
-            dgvReport.Columns["TyLe"].DefaultCellStyle.Format = "N2";     // 2 số lẻ thập phân
-
-            // Canh lề
-            dgvReport.Columns["STT"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvReport.Columns["DoanhThu"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            dgvReport.Columns["TyLe"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-
-            if (data.Count == 0)
+            // Thêm "%" cho cột TyLe
+            if (e.ColumnIndex == dgv.Columns["TyLe"].Index && e.Value != null)
             {
-                MessageBox.Show("Không có dữ liệu hóa đơn trong tháng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (double.TryParse(e.Value.ToString(), out double value))
+                {
+                    e.Value = value.ToString("N2") + "%";
+                    e.FormattingApplied = true;
+                }
             }
+        }
+        #endregion
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }

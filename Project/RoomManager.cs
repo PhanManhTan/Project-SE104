@@ -146,7 +146,7 @@ namespace Project
                 Name = "TenLoaiPhong",
                 HeaderText = "Loại phòng",
                 DataPropertyName = "TenLoaiPhong",
-                MinimumWidth = 120,
+                MinimumWidth = 180,
                 DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
             });
 

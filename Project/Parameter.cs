@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Services; // Quan trọng: phải có dòng này
+using Services;
 
 namespace Project
 {
@@ -13,11 +13,12 @@ namespace Project
             InitializeComponent();
         }
 
-        private void QuyDinhForm_Load(object sender, EventArgs e)
+        private void Parameter_Load(object sender, EventArgs e)
         {
             LoadData();
         }
 
+        #region === LOAD DỮ LIỆU ===
         private void LoadData()
         {
             // 1. Số khách tối đa
@@ -33,13 +34,15 @@ namespace Project
             numHeSo.Value = paramService.GetThamSo(
                 ParameterService.KEY_HE_SO_NUOC_NGOAI, 1.5m);
         }
+        #endregion
 
+        #region === LƯU THAY ĐỔI ===
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
                 // 1. Số khách tối đa
-                paramService.UpdateThamSo(ParameterService.KEY_SO_KHACH_TOI_DA, numMaxGuest.Value);
+                paramService.UpdateThamSo(ParameterService.KEY_SO_KHACH_TOI_DA, (int)numMaxGuest.Value);
 
                 // 2. Tỷ lệ phụ thu (chuyển từ % về thập phân)
                 paramService.UpdateThamSo(ParameterService.KEY_TY_LE_PHU_THU, numPhuThu.Value / 100);
@@ -49,6 +52,8 @@ namespace Project
 
                 MessageBox.Show("Cập nhật quy định thành công!", "Thông báo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
             }
             catch (Exception ex)
             {
@@ -56,17 +61,16 @@ namespace Project
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        #endregion
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        #region === HỦY (KHÔNG LƯU - GIỮ NGUYÊN QUY ĐỊNH CŨ) ===
 
-        // Tốt nhất nên Dispose service khi form đóng
+
         protected override void OnFormClosed(FormClosedEventArgs e)
         {
             paramService?.Dispose();
             base.OnFormClosed(e);
         }
+        #endregion
     }
 }

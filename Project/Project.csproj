@@ -47,11 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillManager.Designer.cs">
+      <DependentUpon>BillManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerManager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomerManager.Designer.cs">
       <DependentUpon>CustomerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailBill.cs" />
+    <Compile Include="DetailBill.Designer.cs">
+      <DependentUpon>DetailBill.cs</DependentUpon>
     </Compile>
     <Compile Include="DetailCustomer.cs">
       <SubType>Form</SubType>
@@ -64,6 +74,12 @@
     </Compile>
     <Compile Include="DetailCustomerType.Designer.cs">
       <DependentUpon>DetailCustomerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailRental.Designer.cs">
+      <DependentUpon>DetailRental.cs</DependentUpon>
     </Compile>
     <Compile Include="DetailRoom.cs">
       <SubType>Form</SubType>
@@ -83,6 +99,24 @@
     <Compile Include="DetailRoomType.Designer.cs">
       <DependentUpon>DetailRoomType.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetailUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailUser.Designer.cs">
+      <DependentUpon>DetailUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCustomer.Designer.cs">
+      <DependentUpon>InsertCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +128,12 @@
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +148,12 @@
     </Compile>
     <Compile Include="Rental.Designer.cs">
       <DependentUpon>Rental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalManager.Designer.cs">
+      <DependentUpon>RentalManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Report.cs">
       <SubType>Form</SubType>
@@ -127,11 +173,23 @@
     <Compile Include="RoomTypeManager.Designer.cs">
       <DependentUpon>RoomTypeManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManager.Designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BillManager.resx">
+      <DependentUpon>BillManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerManager.resx">
       <DependentUpon>CustomerManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerTypeManager.resx">
       <DependentUpon>CustomerTypeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailBill.resx">
+      <DependentUpon>DetailBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailCustomer.resx">
       <DependentUpon>DetailCustomer.cs</DependentUpon>
@@ -139,11 +197,23 @@
     <EmbeddedResource Include="DetailCustomerType.resx">
       <DependentUpon>DetailCustomerType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetailRental.resx">
+      <DependentUpon>DetailRental.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetailRoom.resx">
       <DependentUpon>DetailRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailRoomType.resx">
       <DependentUpon>DetailRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailUser.resx">
+      <DependentUpon>DetailUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCustomer.resx">
+      <DependentUpon>InsertCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -153,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Parameter.resx">
       <DependentUpon>Parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +239,9 @@
     <EmbeddedResource Include="Rental.resx">
       <DependentUpon>Rental.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RentalManager.resx">
+      <DependentUpon>RentalManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoomTypeManager.resx">
       <DependentUpon>RoomTypeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

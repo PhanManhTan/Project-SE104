@@ -15,6 +15,17 @@ namespace Project
         public RoomTypeManager()
         {
             InitializeComponent();
+
+            if (Global_.CurrentUser != null && Global_.CurrentUser.Role_ == "Staff")
+            {
+                // Chỉ khóa nút XÓA khách hàng
+                btnDelete.Enabled = false;
+                btnDelete.BackColor = Color.DarkGray;
+                btnUpdate.Enabled = false;
+                btnUpdate.BackColor = Color.DarkGray;
+                btnCreate.Enabled = false;
+                btnCreate.BackColor = Color.DarkGray;
+            }
         }
 
         private void RoomTypesForm_Load(object sender, EventArgs e)
@@ -24,6 +35,10 @@ namespace Project
             LoadData();
 
             dgvLoaiPhong.SelectionChanged += DgvLoaiPhong_SelectionChanged;
+
+
+
+
         }
 
         #region === CẤU HÌNH GIAO DIỆN DATAGRIDVIEW (ĐỒNG BỘ VỚI CUSTOMERMANAGER) ===
@@ -276,5 +291,10 @@ namespace Project
         }
 
         #endregion
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

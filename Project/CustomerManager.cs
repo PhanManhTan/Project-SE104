@@ -14,6 +14,13 @@ namespace Project
         public CustomerManager()
         {
             InitializeComponent();
+            if (Global_.CurrentUser != null && Global_.CurrentUser.Role_ == "Staff")
+            {
+                // Chỉ khóa nút XÓA khách hàng
+                btnDelete.Enabled = false;
+                btnDelete.BackColor = Color.DarkGray;
+
+            }
         }
 
         private void CustomerManager_Load(object sender, EventArgs e)
@@ -21,6 +28,7 @@ namespace Project
             SetupDataGridView();
             ConfigureDataGridViewColumns(); // Gọi một lần duy nhất ở đây
             LoadCustomers();
+
         }
 
         #region === CẤU HÌNH GIAO DIỆN DATAGRIDVIEW ===
@@ -251,6 +259,11 @@ namespace Project
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvCustomerManager_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

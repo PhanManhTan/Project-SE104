@@ -8,3 +8,13 @@ D:\HK5\SE104\Project\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 D:\HK5\SE104\Project\Data\obj\Debug\Data.exe
 D:\HK5\SE104\Project\Data\obj\Debug\Data.pdb
 D:\HK5\SE104\Project\Data\obj\Debug\Data.exe.config
+D:\HK5\SE104\Project - Main\Data\bin\Debug\Data.exe.config
+D:\HK5\SE104\Project - Main\Data\bin\Debug\Data.exe
+D:\HK5\SE104\Project - Main\Data\bin\Debug\Data.pdb
+D:\HK5\SE104\Project - Main\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+D:\HK5\SE104\Project - Main\Data\obj\Debug\Data.exe.config
+D:\HK5\SE104\Project - Main\Data\obj\Debug\Data.Properties.Resources.resources
+D:\HK5\SE104\Project - Main\Data\obj\Debug\Data.csproj.GenerateResource.cache
+D:\HK5\SE104\Project - Main\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\HK5\SE104\Project - Main\Data\obj\Debug\Data.exe
+D:\HK5\SE104\Project - Main\Data\obj\Debug\Data.pdb

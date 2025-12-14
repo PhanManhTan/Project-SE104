@@ -1,5 +1,4 @@
-﻿// Login.cs
-using System;
+﻿using System;
 using System.Windows.Forms;
 using Services;
 using Data;
@@ -15,11 +14,6 @@ namespace Project
             InitializeComponent();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-            txtUsername.Focus();
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             PerformLogin();
@@ -29,7 +23,7 @@ namespace Project
         {
             if (e.KeyCode == Keys.Enter)
             {
-                e.SuppressKeyPress = true; // tránh tiếng "beep"
+                e.SuppressKeyPress = true; 
                 PerformLogin();
             }
         }
@@ -50,7 +44,6 @@ namespace Project
 
             if (user != null)
             {
-                // Lưu thông tin người dùng vào Global
                 Global_.CurrentUser = user;
 
                 MessageBox.Show($"Đăng nhập thành công!\nChào mừng {user.DisplayName}", "Thành công",
@@ -60,11 +53,10 @@ namespace Project
 
                 var mainForm = new Main();
                 mainForm.ShowDialog();
-
-                // Khi MainForm đóng (đăng xuất) → quay lại Login
-                Global_.CurrentUser = null;        // xóa thông tin user
+           
+                Global_.CurrentUser = null;        
                 txtPassword.Clear();
-                txtUsername.Focus();
+                txtUsername.Clear();
                 this.Show();
             }
             else
@@ -75,5 +67,7 @@ namespace Project
                 txtPassword.Focus();
             }
         }
+
+
     }
 }

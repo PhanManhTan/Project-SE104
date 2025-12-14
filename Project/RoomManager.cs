@@ -15,6 +15,16 @@ namespace Project
         public RoomManager()
         {
             InitializeComponent();
+            if (Global_.CurrentUser != null && Global_.CurrentUser.Role_ == "Staff")
+            {
+                // Chỉ khóa nút XÓA khách hàng
+                btnDelete.Enabled = false;
+                btnDelete.BackColor = Color.DarkGray;
+                btnUpdate.Enabled = false;
+                btnUpdate.BackColor = Color.DarkGray;
+                btnCreate.Enabled = false;
+                btnCreate.BackColor = Color.DarkGray;
+            }
         }
 
         private void RoomManager_Load(object sender, EventArgs e)
@@ -22,6 +32,7 @@ namespace Project
             SetupDataGridView();
             ConfigureDataGridViewColumns(); // Gọi một lần duy nhất ở đây
             LoadDanhSachPhong();
+
         }
 
         #region === THIẾT LẬP GIAO DIỆN DATAGRIDVIEW ===
@@ -213,16 +224,29 @@ namespace Project
         #endregion
 
         #region === XỬ LÝ CHỌN DÒNG ===
+        //private void dgvRoomManeger_SelectionChanged(object sender, EventArgs e)
+        //{
+        //    if (dgvRoomManeger.CurrentRow != null && dgvRoomManeger.CurrentRow.Index >= 0)
+        //    {
+        //        selectedRoom = dgvRoomManeger.CurrentRow.DataBoundItem as RoomViewModel;
+        //    }
+        //    else
+        //    {
+        //        selectedRoom = null;
+        //    }
+        //}
         private void dgvRoomManeger_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvRoomManeger.CurrentRow != null && dgvRoomManeger.CurrentRow.Index >= 0)
+            // 1. Lấy dữ liệu dòng được chọn
+            if (dgvRoomManeger.SelectedRows.Count > 0)
             {
-                selectedRoom = dgvRoomManeger.CurrentRow.DataBoundItem as RoomViewModel;
+                selectedRoom = dgvRoomManeger.SelectedRows[0].DataBoundItem as RoomViewModel;
             }
             else
             {
                 selectedRoom = null;
             }
+
         }
         #endregion
 
@@ -312,6 +336,11 @@ namespace Project
         #endregion
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

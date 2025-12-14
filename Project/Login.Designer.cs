@@ -21,7 +21,6 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -29,13 +28,12 @@
             // 
             this.panelLogin.BackColor = System.Drawing.Color.White;
             this.panelLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLogin.Controls.Add(this.lblTitle);
             this.panelLogin.Controls.Add(this.btnLogin);
             this.panelLogin.Controls.Add(this.lblPassword);
             this.panelLogin.Controls.Add(this.txtPassword);
             this.panelLogin.Controls.Add(this.txtUsername);
             this.panelLogin.Controls.Add(this.lblUsername);
-            this.panelLogin.Location = new System.Drawing.Point(328, 150);
+            this.panelLogin.Location = new System.Drawing.Point(256, 110);
             this.panelLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(450, 400);
@@ -48,7 +46,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(112, 288);
+            this.btnLogin.Location = new System.Drawing.Point(112, 296);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(225, 62);
@@ -60,69 +58,61 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblPassword.Location = new System.Drawing.Point(86, 175);
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblPassword.Location = new System.Drawing.Point(85, 169);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(108, 30);
+            this.lblPassword.Size = new System.Drawing.Size(119, 32);
             this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Password:";
+            this.lblPassword.Text = "Mật khẩu";
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtPassword.Location = new System.Drawing.Point(90, 209);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtPassword.Location = new System.Drawing.Point(90, 221);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(270, 37);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.Size = new System.Drawing.Size(270, 39);
+            this.txtPassword.TabIndex = 0;
+            this.txtPassword.TabStop = false;
             this.txtPassword.Text = "1";
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // txtUsername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtUsername.Location = new System.Drawing.Point(90, 134);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtUsername.Location = new System.Drawing.Point(90, 110);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(270, 37);
+            this.txtUsername.Size = new System.Drawing.Size(270, 39);
             this.txtUsername.TabIndex = 0;
+            this.txtUsername.TabStop = false;
             this.txtUsername.Text = "son";
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblUsername.Location = new System.Drawing.Point(86, 100);
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblUsername.Location = new System.Drawing.Point(85, 58);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(116, 30);
+            this.lblUsername.Size = new System.Drawing.Size(177, 32);
             this.lblUsername.TabIndex = 2;
-            this.lblUsername.Text = "Username:";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(105, 37);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(239, 48);
-            this.lblTitle.TabIndex = 5;
-            this.lblTitle.Text = "ĐĂNG NHẬP";
+            this.lblUsername.Text = "Tên đăng nhập";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1107, 701);
+            this.ClientSize = new System.Drawing.Size(962, 620);
             this.Controls.Add(this.panelLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QUẢN LÝ KHÁCH SẠN - ĐĂNG NHẬP";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.Text = "Đăng nhập";
+
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             this.ResumeLayout(false);
@@ -137,6 +127,5 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lblTitle;
     }
 }

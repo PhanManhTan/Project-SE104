@@ -28,239 +28,230 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panelButton = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnReservationList = new System.Windows.Forms.Button();
+            this.btnBillList = new System.Windows.Forms.Button();
+            this.btnCustomerList = new System.Windows.Forms.Button();
+            this.btnRoomList = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnPolicy = new System.Windows.Forms.Button();
+            this.btnAccountManagement = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.panelBody = new System.Windows.Forms.Panel();
             this.lbRole = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
-            this.btnLogou = new System.Windows.Forms.Button();
-            this.panel_body = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelButton.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelButton
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.lbRole);
-            this.panel1.Controls.Add(this.lbName);
-            this.panel1.Controls.Add(this.btnLogou);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 843);
-            this.panel1.TabIndex = 0;
+            this.panelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            this.panelButton.Controls.Add(this.lbRole);
+            this.panelButton.Controls.Add(this.lbName);
+            this.panelButton.Controls.Add(this.btnHome);
+            this.panelButton.Controls.Add(this.btnReservationList);
+            this.panelButton.Controls.Add(this.btnBillList);
+            this.panelButton.Controls.Add(this.btnCustomerList);
+            this.panelButton.Controls.Add(this.btnRoomList);
+            this.panelButton.Controls.Add(this.btnReport);
+            this.panelButton.Controls.Add(this.btnPolicy);
+            this.panelButton.Controls.Add(this.btnAccountManagement);
+            this.panelButton.Controls.Add(this.btnLogout);
+            this.panelButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelButton.Location = new System.Drawing.Point(0, 0);
+            this.panelButton.Name = "panelButton";
+            this.panelButton.Size = new System.Drawing.Size(258, 843);
+            this.panelButton.TabIndex = 0;
             // 
-            // button1
+            // btnHome
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(258, 78);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Trang chủ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnHome.Location = new System.Drawing.Point(0, 141);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(258, 78);
+            this.btnHome.TabIndex = 13;
+            this.btnHome.Text = "Trang chủ";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // button8
+            // btnReservationList
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(0, 271);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(258, 78);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Thiết lập";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnReservationList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnReservationList.FlatAppearance.BorderSize = 0;
+            this.btnReservationList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReservationList.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnReservationList.Location = new System.Drawing.Point(0, 219);
+            this.btnReservationList.Name = "btnReservationList";
+            this.btnReservationList.Size = new System.Drawing.Size(258, 78);
+            this.btnReservationList.TabIndex = 12;
+            this.btnReservationList.Text = " Danh sách phiếu thuê";
+            this.btnReservationList.UseVisualStyleBackColor = true;
+            this.btnReservationList.Click += new System.EventHandler(this.btnReservationList_Click);
             // 
-            // button7
+            // btnBillList
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(0, 349);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(258, 78);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Thiết lập";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnBillList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnBillList.FlatAppearance.BorderSize = 0;
+            this.btnBillList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBillList.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnBillList.Location = new System.Drawing.Point(0, 297);
+            this.btnBillList.Name = "btnBillList";
+            this.btnBillList.Size = new System.Drawing.Size(258, 78);
+            this.btnBillList.TabIndex = 11;
+            this.btnBillList.Text = "Danh sách hóa đơn";
+            this.btnBillList.UseVisualStyleBackColor = true;
+            this.btnBillList.Click += new System.EventHandler(this.btnBillList_Click);
             // 
-            // button6
+            // btnCustomerList
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 427);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(258, 78);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Danh sách khách";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnCustomerList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCustomerList.FlatAppearance.BorderSize = 0;
+            this.btnCustomerList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomerList.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCustomerList.Location = new System.Drawing.Point(0, 375);
+            this.btnCustomerList.Name = "btnCustomerList";
+            this.btnCustomerList.Size = new System.Drawing.Size(258, 78);
+            this.btnCustomerList.TabIndex = 10;
+            this.btnCustomerList.Text = "Danh sách khách ";
+            this.btnCustomerList.UseVisualStyleBackColor = true;
+            this.btnCustomerList.Click += new System.EventHandler(this.btnCustomerList_Click);
             // 
-            // button5
+            // btnRoomList
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(0, 505);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(258, 78);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Danh sách phòng";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnRoomList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRoomList.FlatAppearance.BorderSize = 0;
+            this.btnRoomList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRoomList.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnRoomList.Location = new System.Drawing.Point(0, 453);
+            this.btnRoomList.Name = "btnRoomList";
+            this.btnRoomList.Size = new System.Drawing.Size(258, 78);
+            this.btnRoomList.TabIndex = 8;
+            this.btnRoomList.Text = "Danh sách phòng";
+            this.btnRoomList.UseVisualStyleBackColor = true;
+            this.btnRoomList.Click += new System.EventHandler(this.btnRoomList_Click);
             // 
-            // button4
+            // btnReport
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 583);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(258, 92);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Báo cáo tháng";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnReport.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnReport.Location = new System.Drawing.Point(0, 531);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(258, 78);
+            this.btnReport.TabIndex = 7;
+            this.btnReport.Text = "Báo cáo";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
-            // button3
+            // btnPolicy
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 675);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(258, 78);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Quy Định";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnPolicy.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnPolicy.FlatAppearance.BorderSize = 0;
+            this.btnPolicy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPolicy.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnPolicy.Location = new System.Drawing.Point(0, 609);
+            this.btnPolicy.Name = "btnPolicy";
+            this.btnPolicy.Size = new System.Drawing.Size(258, 78);
+            this.btnPolicy.TabIndex = 6;
+            this.btnPolicy.Text = "Quy định";
+            this.btnPolicy.UseVisualStyleBackColor = true;
+            this.btnPolicy.Click += new System.EventHandler(this.btnPolicy_Click);
+            // 
+            // btnAccountManagement
+            // 
+            this.btnAccountManagement.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAccountManagement.FlatAppearance.BorderSize = 0;
+            this.btnAccountManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountManagement.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnAccountManagement.Location = new System.Drawing.Point(0, 687);
+            this.btnAccountManagement.Name = "btnAccountManagement";
+            this.btnAccountManagement.Size = new System.Drawing.Size(258, 78);
+            this.btnAccountManagement.TabIndex = 5;
+            this.btnAccountManagement.Text = "Quản lý tài khoản";
+            this.btnAccountManagement.UseVisualStyleBackColor = true;
+            this.btnAccountManagement.Click += new System.EventHandler(this.btnAccountManagement_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.Location = new System.Drawing.Point(0, 765);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(258, 78);
+            this.btnLogout.TabIndex = 2;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // panelBody
+            // 
+            this.panelBody.BackColor = System.Drawing.Color.White;
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelBody.Location = new System.Drawing.Point(258, 0);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(1132, 843);
+            this.panelBody.TabIndex = 1;
             // 
             // lbRole
             // 
             this.lbRole.AutoSize = true;
-            this.lbRole.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbRole.Location = new System.Drawing.Point(0, 25);
+            this.lbRole.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbRole.Location = new System.Drawing.Point(36, 56);
             this.lbRole.Name = "lbRole";
-            this.lbRole.Size = new System.Drawing.Size(64, 25);
-            this.lbRole.TabIndex = 4;
-            this.lbRole.Text = "label1";
+            this.lbRole.Size = new System.Drawing.Size(61, 32);
+            this.lbRole.TabIndex = 15;
+            this.lbRole.Text = "Role";
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbName.Location = new System.Drawing.Point(0, 0);
+            this.lbName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbName.Location = new System.Drawing.Point(36, 8);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(64, 25);
-            this.lbName.TabIndex = 3;
-            this.lbName.Text = "label1";
-            // 
-            // btnLogou
-            // 
-            this.btnLogou.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogou.FlatAppearance.BorderSize = 0;
-            this.btnLogou.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogou.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogou.Location = new System.Drawing.Point(0, 753);
-            this.btnLogou.Name = "btnLogou";
-            this.btnLogou.Size = new System.Drawing.Size(258, 90);
-            this.btnLogou.TabIndex = 2;
-            this.btnLogou.Text = "Đăng xuất";
-            this.btnLogou.UseVisualStyleBackColor = true;
-            this.btnLogou.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // panel_body
-            // 
-            this.panel_body.BackColor = System.Drawing.Color.White;
-            this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_body.Location = new System.Drawing.Point(258, 81);
-            this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(1132, 762);
-            this.panel_body.TabIndex = 1;
-            this.panel_body.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_body_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.lblTitle);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(258, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1132, 81);
-            this.panel3.TabIndex = 2;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(446, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(286, 74);
-            this.lblTitle.TabIndex = 4;
-            this.lblTitle.Text = "36 HOTEL";
+            this.lbName.Size = new System.Drawing.Size(79, 32);
+            this.lbName.TabIndex = 14;
+            this.lbName.Text = "Name";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1390, 843);
-            this.Controls.Add(this.panel_body);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelBody);
+            this.Controls.Add(this.panelButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Main";
-            this.Text = "Main";
+            this.Text = "Quản lý khách sạn";
             this.Load += new System.EventHandler(this.Main_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelButton.ResumeLayout(false);
+            this.panelButton.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel_body;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnLogou;
+        private System.Windows.Forms.Panel panelButton;
+        private System.Windows.Forms.Panel panelBody;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnAccountManagement;
+        private System.Windows.Forms.Button btnReport;
+        private System.Windows.Forms.Button btnPolicy;
+        private System.Windows.Forms.Button btnCustomerList;
+        private System.Windows.Forms.Button btnRoomList;
+        private System.Windows.Forms.Button btnBillList;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnReservationList;
         private System.Windows.Forms.Label lbRole;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button1;
     }
 }

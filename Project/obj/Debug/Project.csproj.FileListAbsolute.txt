@@ -28,3 +28,84 @@ D:\HK5\SE104\Project\Project\obj\Debug\Project.DetailCustomerType.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.DetailRoomType.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.CustomerTypeManager.resources
 D:\HK5\SE104\Project\Project\obj\Debug\Project.RoomTypeManager.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.HomePage.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.InsertCustomer.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.UserManager.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.DetailUser.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.BillManager.resources
+D:\HK5\SE104\Project\Project\obj\Debug\Project.BillDetail.resources
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Project.exe.config
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Project.exe
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Project.pdb
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Data.exe
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Services.exe
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Data.pdb
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Data.exe.config
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Services.pdb
+D:\HK5\SE104\Project - Backup1412\Project\bin\Debug\Services.exe.config
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.exe.config
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.BillManager.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.CustomerManager.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.CustomerTypeManager.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.BillDetail.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.DetailCustomer.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.DetailCustomerType.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.DetailRoom.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.DetailRoomType.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.DetailUser.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.InsertCustomer.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.Main.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.Parameter.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.Properties.Resources.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.Rental.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.Report.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.RoomManager.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.RoomTypeManager.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.UserManager.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.csproj.Up2Date
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.exe
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.pdb
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.Login.resources
+D:\HK5\SE104\Project - Backup1412\Project\obj\Debug\Project.Home.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.exe.config
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.BillManager.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.CustomerManager.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.CustomerTypeManager.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.BillDetail.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.DetailCustomer.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.DetailCustomerType.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.DetailRental.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.DetailRoom.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.DetailRoomType.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.DetailUser.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.Home.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.InsertCustomer.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.Login.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.Main.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.Parameter.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.Properties.Resources.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.Rental.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.RentalManager.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.Report.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.RoomManager.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.RoomTypeManager.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.UserManager.resources
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.exe
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.pdb
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Project.exe.config
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Project.exe
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Project.pdb
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Data.exe
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Services.exe
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Data.pdb
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Data.exe.config
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Services.pdb
+D:\HK5\SE104\Project - Main\Project\bin\Debug\Services.exe.config
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.csproj.Up2Date
+D:\HK5\SE104\Project - Main\Project\obj\Debug\Project.PaymentForm.resources

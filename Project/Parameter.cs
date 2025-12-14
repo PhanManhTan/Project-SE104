@@ -1,6 +1,8 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using Data;
 using Services;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Project
 {
@@ -11,6 +13,19 @@ namespace Project
         public Parameter()
         {
             InitializeComponent();
+            if (Global_.CurrentUser != null && Global_.CurrentUser.Role_ == "Staff")
+            {
+                // Vô hiệu hóa nút Lưu
+                btnDone.Enabled = false;
+                btnDone.BackColor = Color.DarkGray;
+
+                // Khóa các ô nhập liệu (chế độ chỉ xem)
+                numMaxGuest.Enabled = false;
+                numPhuThu.Enabled = false;
+                numHeSo.Enabled = false;
+
+            }
+
         }
 
         private void Parameter_Load(object sender, EventArgs e)

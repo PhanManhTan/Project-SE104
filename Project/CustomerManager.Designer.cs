@@ -50,6 +50,7 @@
             this.dgvCustomerManager.RowTemplate.Height = 24;
             this.dgvCustomerManager.Size = new System.Drawing.Size(900, 462);
             this.dgvCustomerManager.TabIndex = 25;
+            this.dgvCustomerManager.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomerManager_CellContentClick);
             this.dgvCustomerManager.SelectionChanged += new System.EventHandler(this.dgvCustomerManager_SelectionChanged);
             // 
             // panel1

@@ -1,19 +1,10 @@
 ﻿using Data;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing; // Thêm để dùng Color.FromArgb
 using System.Windows.Forms;
+
 namespace Project
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public partial class Main : Form
     {
         public Main()
@@ -21,24 +12,114 @@ namespace Project
             InitializeComponent();
         }
 
+        // Định nghĩa màu sắc
+        private readonly Color NormalButtonColor = Color.FromArgb(225, 240, 255); // Màu nền mặc định
+        private readonly Color ActiveButtonColor = Color.FromArgb(0, 120, 215);   // Màu khi active (xanh đậm)
+        private readonly Color NormalForeColor = SystemColors.ControlText;       // Màu chữ mặc định (ControlText)
+        private readonly Color ActiveForeColor = Color.White;                    // Màu chữ khi active
+
+        private Button currentActiveButton = null;
+
         private void Main_Load(object sender, EventArgs e)
         {
             if (Global_.CurrentUser != null)
             {
-                lbName.Text = Global_.CurrentUser.DisplayName;           // Tên đầy đủ
-                lbRole.Text = Global_.CurrentUser.Role.ToUpper();        // ADMIN / NHÂN VIÊN
+                lbName.Text = Global_.CurrentUser.DisplayName;
+                lbRole.Text = Global_.CurrentUser.Role.ToUpper();
             }
-            else
+
+            // Mở trang chủ mặc định và highlight nút Home
+            OpenForm(new Home());
+            ActivateButton(btnHome);
+        }
+
+        private Form curentFormChild;
+
+        private void OpenForm(Form form)
+        {
+            if (curentFormChild != null)
             {
-                // Trường hợp mở MainForm trực tiếp (test)
-                lbName.Text = "Chưa đăng nhập";
-                lbRole.Text = "GUEST";
+                curentFormChild.Close();
             }
+            curentFormChild = form;
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            panelBody.Controls.Add(form);
+            panelBody.Tag = form;
+            form.BringToFront();
+            form.Show();
+        }
+
+        private void ActivateButton(Button btn)
+        {
+            if (currentActiveButton != null && currentActiveButton != btn)
+            {
+                // Trả về trạng thái bình thường cho button cũ
+                currentActiveButton.BackColor = NormalButtonColor;
+                currentActiveButton.ForeColor = NormalForeColor;
+            }
+
+            // Kích hoạt button mới
+            btn.BackColor = ActiveButtonColor;
+            btn.ForeColor = ActiveForeColor;
+
+            currentActiveButton = btn;
+        }
+
+        // Các sự kiện click button - đã thêm highlight
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnHome);
+            OpenForm(new Home());
+        }
+
+        private void btnReservationList_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnReservationList);
+            // Nếu có form tương ứng thì thêm OpenForm ở đây sau
+            OpenForm(new RentalManager());
+        }
+
+        private void btnBillList_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnBillList);
+            OpenForm(new BillManager());
+        }
+
+        private void btnCustomerList_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnCustomerList);
+            OpenForm(new CustomerManager());
+        }
+
+        private void btnRoomList_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnRoomList);
+            OpenForm(new RoomManager());
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnReport);
+            OpenForm(new Report());
+        }
+
+        private void btnPolicy_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnPolicy);
+            OpenForm(new Parameter());
+        }
+
+        private void btnAccountManagement_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnAccountManagement);
+            OpenForm(new UserManager());
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            // Hỏi xác nhận
+            ActivateButton(btnLogout);
             var result = MessageBox.Show(
                 "Bạn có chắc chắn muốn đăng xuất không?",
                 "Xác nhận đăng xuất",
@@ -47,65 +128,10 @@ namespace Project
 
             if (result == DialogResult.Yes)
             {
-                // Xóa thông tin người dùng
                 Global_.CurrentUser = null;
-
-                // ĐÓNG MainForm → tự động quay về Login
                 this.Close();
             }
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenForm(new RoomManager()); 
-        }
-
-
-        private void OpenForm(Form form)
-        {
-            if (curentFormChild != null)
-            {
-                curentFormChild.Close();
-            }
-
-            curentFormChild = form;
-            form.TopLevel = false;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-            panel_body.Controls.Add(form);
-            panel_body.Tag = form;
-            form.BringToFront();
-            form.Show();
-        }
-
-
-
-        private Form curentFormChild;
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            OpenForm(new Parameter());
-           // button3.BackColor = SystemColors.;
-        }
-
-        private void panel_body_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            OpenForm(new RoomManager());
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            OpenForm(new CustomerManager());
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            OpenForm(new Report());
         }
     }
 }

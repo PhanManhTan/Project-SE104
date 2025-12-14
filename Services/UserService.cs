@@ -4,7 +4,7 @@ using System.Linq;
 using System.Data.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Data;     
+using Data;
 
 
 namespace Services
@@ -33,6 +33,35 @@ namespace Services
             return null; // sai tài khoản hoặc mật khẩu
         }
 
+        public bool Update(User_ user)
+        {
+            try
+            {
+                var existing = qlks.User_s.FirstOrDefault(u => u.Username == user.Username);
+                if (existing == null) return false;
+
+                existing.FullName = user.FullName;
+                existing.Role_ = user.Role_;
+
+                // Chỉ cập nhật mật khẩu nếu người dùng nhập mới (logic này tùy bạn xử lý ở Form)
+                // Ở đây mình gán thẳng, Form sẽ lo việc truyền password nào xuống
+                existing.Password_ = user.Password_;
+
+                qlks.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public User_ GetByUsername(string username)
+        {
+            return qlks.User_s.FirstOrDefault(u => u.Username == username);
+        }
+
+
         // 2. Đổi mật khẩu
         //public bool ChangePassword(string username, string oldPass, string newPass)
         //{
@@ -53,7 +82,7 @@ namespace Services
         //}
 
         // 3. Đăng ký user mới
-        public bool Create (User_ newUser)
+        public bool Create(User_ newUser)
         {
             // SỬA: qlks.User_s + Any
             if (qlks.User_s.Any(u => u.Username == newUser.Username))
@@ -74,12 +103,26 @@ namespace Services
         // 5. Xóa user
         public bool Delete(string username)
         {
-            var user = qlks.User_s.FirstOrDefault(u => u.Username == username);
-            if (user == null) return false;
+            try
+            {
+                // Tìm user cần xóa
+                var user = qlks.User_s.FirstOrDefault(u => u.Username == username);
 
-            qlks.User_s.DeleteOnSubmit(user);
-            qlks.SubmitChanges();
-            return true;
+                // Nếu không tìm thấy -> coi như xóa thất bại
+                if (user == null) return false;
+
+                // Thực hiện xóa
+                qlks.User_s.DeleteOnSubmit(user);
+                qlks.SubmitChanges(); // Lưu xuống DB
+
+                return true;
+            }
+            catch (Exception)
+            {
+                // Nếu có lỗi (VD: User này đang có ràng buộc khóa ngoại với bảng khác mà chưa xử lý)
+                // Trả về false để bên ngoài thông báo lỗi, không làm crash app
+                return false;
+            }
         }
 
         // 6. Kiểm tra quyền

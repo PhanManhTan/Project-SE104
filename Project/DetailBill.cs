@@ -13,27 +13,23 @@ namespace Project
         private HoaDon hoaDon;
         private BindingSource bindingSource = new BindingSource();
 
+        // Các biến lưu thông tin để vẽ lên giao diện
+        private string _tenKhach = "";
+        private string _diaChi = "";
+        private decimal _tongTien = 0;
+
         public BillDetail(string _maHoaDon)
         {
             this.maHoaDon = _maHoaDon;
-            InitializeComponent();
+            InitializeComponent(); // Gọi hàm từ file Designer
         }
 
         private void DetailBill_Load(object sender, EventArgs e)
         {
             LoadHoaDonDetail();
-
-            // Cấu hình DataGridView giống CustomerManager/BillManager
-            SetupDataGridView();
-            ConfigureColumns();
-            LoadChiTietHoaDon();
-
-            // Phân quyền: Staff không được in (nếu cần)
-            if (Global_.CurrentUser?.Role_ == "Staff")
-            {
-                btnPrint.Enabled = false;
-                btnPrint.BackColor = Color.DarkGray;
-            }
+            SetupDataGridViewStyle();  // Style nâng cao cho Grid
+            ConfigureColumns();        // Định nghĩa cột
+            LoadChiTietHoaDon();       // Đổ dữ liệu
         }
 
         private void LoadHoaDonDetail()
@@ -48,12 +44,11 @@ namespace Project
                     return;
                 }
 
-                // Hiển thị thông tin chung
-                lblMaHoaDon.Text = hoaDon.MaHoaDon;
-                lblNgayLap.Text = hoaDon.NgayLap.ToString("dd/MM/yyyy");
-                lblTriGia.Text = hoaDon.TriGia.ToString("N0") + " VNĐ";
+                // Cập nhật Label tiêu đề (đã khai báo bên Designer)
+                lblSubTitle.Text = $"Mã HĐ: {hoaDon.MaHoaDon}  |  Ngày lập: {hoaDon.NgayLap:dd/MM/yyyy}";
+                _tongTien = hoaDon.TriGia;
 
-                // Lấy thông tin khách hàng đại diện (khách chính đầu tiên trong các phiếu)
+                // Tìm khách hàng đại diện
                 var khachChinh = db.ChiTietHoaDons
                     .Where(ct => ct.MaHoaDon == maHoaDon)
                     .SelectMany(ct => ct.PhieuThue.ChiTietPhieuThues)
@@ -61,47 +56,79 @@ namespace Project
 
                 if (khachChinh != null)
                 {
-                    lblKhachHang.Text = khachChinh.KhachHang.HoTen;
-                    lblDiaChi.Text = khachChinh.KhachHang.DiaChi ?? "Không có";
+                    _tenKhach = khachChinh.KhachHang.HoTen;
+                    _diaChi = khachChinh.KhachHang.DiaChi ?? "";
                 }
                 else
                 {
-                    lblKhachHang.Text = "Không xác định";
-                    lblDiaChi.Text = "-";
+                    _tenKhach = "Khách vãng lai";
+                    _diaChi = "";
                 }
+
+                // Vẽ lại panel thông tin
+                panelInfo.Invalidate();
             }
         }
 
-        #region === CẤU HÌNH DATAGRIDVIEW ===
+        // === SỰ KIỆN VẼ KHUNG THÔNG TIN ===
+        private void PanelInfo_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            Pen pen = new Pen(Color.Black, 1);
+            Brush brushText = Brushes.Black;
+            Font fontTitle = new Font("Segoe UI", 10, FontStyle.Bold);
+            Font fontValue = new Font("Segoe UI", 11);
+            Font fontTotal = new Font("Segoe UI", 12, FontStyle.Bold);
 
-        private void SetupDataGridView()
+            int w = panelInfo.Width - 40; // Trừ padding
+            int h = panelInfo.Height - 10;
+            int x = 20;
+            int y = 0;
+
+            int midX = x + (w / 2);
+            int midY = y + (h / 2);
+
+            // Vẽ khung
+            g.DrawRectangle(pen, x, y, w, h);
+            g.DrawLine(pen, midX, y, midX, y + h); // Kẻ dọc giữa
+            g.DrawLine(pen, midX, midY, x + w, midY); // Kẻ ngang bên phải
+
+            // Điền chữ
+            g.DrawString("Khách hàng/Cơ quan:", fontTitle, brushText, x + 10, y + 15);
+            g.DrawString(_tenKhach, fontValue, brushText, x + 180, y + 13);
+
+            g.DrawString("Địa chỉ:", fontTitle, brushText, midX + 10, y + 15);
+            g.DrawString(_diaChi, fontValue, brushText, midX + 80, y + 13);
+
+            g.DrawString("Trị giá:", fontTitle, brushText, midX + 10, midY + 15);
+            g.DrawString($"{_tongTien:N0} VNĐ", fontTotal, Brushes.Red, midX + 80, midY + 12);
+        }
+
+        // === CẤU HÌNH GRID ===
+        private void SetupDataGridViewStyle()
         {
             var dgv = dgvChiTiet;
-            dgv.BorderStyle = BorderStyle.None;
-            dgv.RowHeadersVisible = false;
-            dgv.AllowUserToAddRows = false;
-            dgv.AllowUserToDeleteRows = false;
-            dgv.ReadOnly = true;
-            dgv.MultiSelect = false;
-            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Header
             dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgv.ColumnHeadersHeight = 45;
             dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // Rows
             dgv.RowsDefaultCellStyle.Font = new Font("Segoe UI", 10F);
             dgv.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 180);
             dgv.RowsDefaultCellStyle.SelectionForeColor = Color.White;
             dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 248, 255);
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            dgv.DataBindingComplete += (s, e) =>
-            {
-                for (int i = 0; i < dgv.Rows.Count; i++)
-                {
-                    dgv.Rows[i].Cells["STT"].Value = (i + 1).ToString();
-                }
+            // STT Tự động
+            dgv.DataBindingComplete += (s, e) => {
+                for (int i = 0; i < dgv.Rows.Count; i++) dgv.Rows[i].Cells["STT"].Value = (i + 1).ToString();
+                dgv.ClearSelection();
             };
         }
 
@@ -111,61 +138,11 @@ namespace Project
             dgv.AutoGenerateColumns = false;
             dgv.Columns.Clear();
 
-            // STT
-            dgv.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                HeaderText = "STT",
-                Name = "STT",
-                Width = 60,
-                DefaultCellStyle = new DataGridViewCellStyle
-                {
-                    Alignment = DataGridViewContentAlignment.MiddleCenter,
-                    Font = new Font("Segoe UI", 10F, FontStyle.Bold)
-                }
-            });
-
-            dgv.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                HeaderText = "Phòng",
-                Name = "Phong",
-                DataPropertyName = "TenPhong",
-                DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
-            });
-
-            dgv.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                HeaderText = "Số Ngày Thuê",
-                Name = "SoNgayThue",
-                DataPropertyName = "SoNgayThue",
-                DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter }
-            });
-
-            dgv.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                HeaderText = "Đơn Giá",
-                Name = "DonGia",
-                DataPropertyName = "DonGia",
-                DefaultCellStyle = new DataGridViewCellStyle
-                {
-                    Alignment = DataGridViewContentAlignment.MiddleRight,
-                    Format = "N0"
-                }
-            });
-
-            dgv.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                HeaderText = "Thành Tiền",
-                Name = "ThanhTien",
-                DataPropertyName = "ThanhTien",
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
-                Width = 150,
-                DefaultCellStyle = new DataGridViewCellStyle
-                {
-                    Alignment = DataGridViewContentAlignment.MiddleRight,
-                    Format = "N0",
-                    Font = new Font("Segoe UI", 10F, FontStyle.Bold)
-                }
-            });
+            dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "STT", Name = "STT", Width = 50, AutoSizeMode = DataGridViewAutoSizeColumnMode.None, DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter, Font = new Font("Segoe UI", 10F, FontStyle.Bold) } });
+            dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Phòng", DataPropertyName = "TenPhong", DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter } });
+            dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Số Ngày Thuê", DataPropertyName = "SoNgayThue", DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter } });
+            dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Đơn Giá", DataPropertyName = "DonGia", DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleRight, Format = "N0" } });
+            dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Thành Tiền", DataPropertyName = "ThanhTien", DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleRight, Format = "N0", Font = new Font("Segoe UI", 10F, FontStyle.Bold), ForeColor = Color.Navy } });
 
             dgv.DataSource = bindingSource;
         }
@@ -178,27 +155,24 @@ namespace Project
                     .Where(ct => ct.MaHoaDon == maHoaDon)
                     .Select(ct => new
                     {
-                        TenPhong = ct.PhieuThue.Phong.MaPhong + " (" + ct.PhieuThue.Phong.LoaiPhong.TenLoaiPhong + ")",
+                        TenPhong = ct.PhieuThue.Phong.MaPhong,
                         ct.SoNgayThue,
                         DonGia = ct.PhieuThue.Phong.LoaiPhong.DonGia,
                         ct.ThanhTien
                     })
                     .ToList();
-
                 bindingSource.DataSource = data;
             }
         }
 
-        #endregion
-
-        #region === IN HÓA ĐƠN ===
-
+        // === IN HÓA ĐƠN ===
         private void btnPrint_Click(object sender, EventArgs e)
         {
             PrintDocument pd = new PrintDocument();
             pd.PrintPage += new PrintPageEventHandler(PrintPage);
             PrintPreviewDialog preview = new PrintPreviewDialog();
             preview.Document = pd;
+            preview.Width = 800; preview.Height = 600;
             preview.ShowDialog();
         }
 
@@ -207,60 +181,47 @@ namespace Project
             Graphics g = e.Graphics;
             Font fontBold = new Font("Segoe UI", 14, FontStyle.Bold);
             Font fontNormal = new Font("Segoe UI", 11);
-            Font fontSmall = new Font("Segoe UI", 9);
             int y = 50;
 
-            // Tiêu đề
             g.DrawString("HÓA ĐƠN THANH TOÁN", fontBold, Brushes.Black, new PointF(300, y));
             y += 50;
-
-            // Thông tin hóa đơn
-            g.DrawString($"Mã hóa đơn: {lblMaHoaDon.Text}", fontNormal, Brushes.Black, new PointF(50, y));
-            g.DrawString($"Ngày lập: {lblNgayLap.Text}", fontNormal, Brushes.Black, new PointF(500, y));
+            g.DrawString($"Mã hóa đơn: {maHoaDon}", fontNormal, Brushes.Black, new PointF(50, y));
+            g.DrawString($"Ngày lập: {hoaDon.NgayLap:dd/MM/yyyy}", fontNormal, Brushes.Black, new PointF(500, y));
             y += 30;
-
-            g.DrawString($"Khách hàng/Cơ quan: {lblKhachHang.Text}", fontNormal, Brushes.Black, new PointF(50, y));
-            g.DrawString($"Địa chỉ: {lblDiaChi.Text}", fontNormal, Brushes.Black, new PointF(500, y));
+            g.DrawString($"Khách hàng: {_tenKhach}", fontNormal, Brushes.Black, new PointF(50, y));
+            g.DrawString($"Địa chỉ: {_diaChi}", fontNormal, Brushes.Black, new PointF(500, y));
             y += 50;
 
-            // Bảng chi tiết
-            string[] headers = { "STT", "Phòng", "Số Ngày Thuê", "Đơn Giá", "Thành Tiền" };
-            int[] widths = { 60, 200, 120, 150, 150 };
+            // Header bảng
+            int[] widths = { 50, 200, 150, 150, 150 };
+            string[] headers = { "STT", "Phòng", "Số Ngày", "Đơn Giá", "Thành Tiền" };
             int x = 50;
 
             for (int i = 0; i < headers.Length; i++)
             {
-                g.FillRectangle(Brushes.Navy, x, y, widths[i], 30);
-                g.DrawString(headers[i], fontBold, Brushes.White, new RectangleF(x, y, widths[i], 30), new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                g.DrawRectangle(Pens.Black, x, y, widths[i], 30);
+                g.DrawString(headers[i], new Font("Segoe UI", 10, FontStyle.Bold), Brushes.Black, x + 5, y + 5);
                 x += widths[i];
             }
             y += 30;
 
+            // Data
             int stt = 1;
-            foreach (var row in (System.Collections.IEnumerable)dgvChiTiet.DataSource)
+            foreach (DataGridViewRow row in dgvChiTiet.Rows)
             {
                 x = 50;
-                g.DrawString(stt.ToString(), fontNormal, Brushes.Black, new RectangleF(x, y, widths[0], 30), new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
-                x += widths[0];
-
-                var props = row.GetType().GetProperties();
-                g.DrawString(props[0].GetValue(row).ToString(), fontNormal, Brushes.Black, new RectangleF(x, y, widths[1], 30), new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
-                x += widths[1];
-                g.DrawString(props[1].GetValue(row).ToString(), fontNormal, Brushes.Black, new RectangleF(x, y, widths[2], 30), new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
-                x += widths[2];
-                g.DrawString(((decimal)props[2].GetValue(row)).ToString("N0"), fontNormal, Brushes.Black, new RectangleF(x, y, widths[3], 30), new StringFormat() { Alignment = StringAlignment.Far, LineAlignment = StringAlignment.Center });
-                x += widths[3];
-                g.DrawString(((decimal)props[3].GetValue(row)).ToString("N0"), fontNormal, Brushes.Black, new RectangleF(x, y, widths[4], 30), new StringFormat() { Alignment = StringAlignment.Far, LineAlignment = StringAlignment.Center });
-
+                string[] values = { stt.ToString(), row.Cells[1].Value?.ToString(), row.Cells[2].Value?.ToString(), string.Format("{0:N0}", row.Cells[3].Value), string.Format("{0:N0}", row.Cells[4].Value) };
+                for (int i = 0; i < values.Length; i++)
+                {
+                    g.DrawRectangle(Pens.Black, x, y, widths[i], 30);
+                    g.DrawString(values[i], fontNormal, Brushes.Black, x + 5, y + 5);
+                    x += widths[i];
+                }
                 y += 30;
                 stt++;
             }
-
-            // Tổng tiền
             y += 20;
-            g.DrawString($"Tổng cộng: {lblTriGia.Text}", new Font("Segoe UI", 12, FontStyle.Bold), Brushes.Black, new PointF(500, y));
+            g.DrawString($"Tổng cộng: {_tongTien:N0} VNĐ", fontBold, Brushes.Black, new PointF(500, y));
         }
-
-        #endregion
     }
 }

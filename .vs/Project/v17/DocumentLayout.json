@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "D:\\HK5\\SE104\\Project - Main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\hk5\\se104\\project - main\\project\\detailrental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailrental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\hk5\\se104\\project - main\\project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\hk5\\se104\\project - main\\project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|d:\\hk5\\se104\\project - main\\services\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4C822C1-80DA-465D-B6B4-9FEE38B0C7A0}|Services\\Services.csproj|solutionrelative:services\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|d:\\hk5\\se104\\project - main\\project\\rentalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project - Main\\project\\rentalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\rentalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -69,18 +81,6 @@
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\billmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project - Main\\project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project - Main\\project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project - Main\\project\\detailbill.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailbill.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project - Main\\project\\detailuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\detailuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -91,10 +91,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|D:\\HK5\\SE104\\Project - Main\\project\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8759769C-58E6-414F-956D-8EF41E6F64EB}|Project\\Project.csproj|solutionrelative:project\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC4B251-3109-4127-80E5-8FCC2483E861}|Data\\Data.csproj|D:\\HK5\\SE104\\Project - Main\\data\\billviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABC4B251-3109-4127-80E5-8FCC2483E861}|Data\\Data.csproj|solutionrelative:data\\billviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABC4B251-3109-4127-80E5-8FCC2483E861}|Data\\Data.csproj|D:\\HK5\\SE104\\Project - Main\\data\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -364,6 +360,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HK5\\SE104\\Project\\Project\\HomePage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HK5\\SE104\\Project - Main\\Data\\BillViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\BillViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -373,7 +373,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -397,20 +397,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RentalManager.cs",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\RentalManager.cs",
-              "RelativeDocumentMoniker": "Project\\RentalManager.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\RentalManager.cs",
-              "RelativeToolTip": "Project\\RentalManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwMEAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DetailRental.cs [Design]",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRental.cs",
+              "RelativeDocumentMoniker": "Project\\DetailRental.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRental.cs [Design]",
+              "RelativeToolTip": "Project\\DetailRental.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:43:41.425Z",
+              "WhenOpened": "2025-12-14T16:44:32.79Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DetailBill.cs [Design]",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.cs",
+              "RelativeDocumentMoniker": "Project\\DetailBill.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.cs [Design]",
+              "RelativeToolTip": "Project\\DetailBill.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T16:42:55.945Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DetailBill.cs",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.cs",
+              "RelativeDocumentMoniker": "Project\\DetailBill.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.cs",
+              "RelativeToolTip": "Project\\DetailBill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T16:42:52.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Login.cs",
               "RelativeDocumentMoniker": "Project\\Login.cs",
@@ -421,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Login.cs",
               "RelativeDocumentMoniker": "Project\\Login.cs",
@@ -433,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -445,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "BillingService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\BillingService.cs",
               "RelativeDocumentMoniker": "Services\\BillingService.cs",
@@ -457,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "RentalService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\RentalService.cs",
               "RelativeDocumentMoniker": "Services\\RentalService.cs",
@@ -470,19 +494,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Main.cs",
               "RelativeDocumentMoniker": "Project\\Main.cs",
               "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\Main.cs [Design]",
               "RelativeToolTip": "Project\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T09:03:26.883Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-11T09:03:26.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "RentalManager.cs",
+              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\RentalManager.cs",
+              "RelativeDocumentMoniker": "Project\\RentalManager.cs",
+              "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\RentalManager.cs",
+              "RelativeToolTip": "Project\\RentalManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwMEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:43:41.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Main.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Main.cs",
               "RelativeDocumentMoniker": "Project\\Main.cs",
@@ -490,12 +525,11 @@
               "RelativeToolTip": "Project\\Main.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAASwFAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T09:06:45.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T09:06:45.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "BillingService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Github1412\\Project-SE104\\Services\\BillingService.cs",
               "RelativeDocumentMoniker": "..\\Github1412\\Project-SE104\\Services\\BillingService.cs",
@@ -507,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "RentalService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Github1412\\Project-SE104\\Services\\RentalService.cs",
               "RelativeDocumentMoniker": "..\\Github1412\\Project-SE104\\Services\\RentalService.cs",
@@ -519,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "DetailCustomer.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailCustomer.cs",
               "RelativeDocumentMoniker": "Project\\DetailCustomer.cs",
@@ -530,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Login.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Login.Designer.cs",
               "RelativeDocumentMoniker": "Project\\Login.Designer.cs",
@@ -542,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "DetailCustomerType.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailCustomerType.cs",
               "RelativeDocumentMoniker": "Project\\DetailCustomerType.cs",
@@ -553,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "DetailRoom.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRoom.cs",
               "RelativeDocumentMoniker": "Project\\DetailRoom.cs",
@@ -565,18 +599,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "DetailBill.Designer.cs",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.Designer.cs",
-              "RelativeDocumentMoniker": "Project\\DetailBill.Designer.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.Designer.cs",
-              "RelativeToolTip": "Project\\DetailBill.Designer.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAawOAAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T09:10:01.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "BillManager.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\BillManager.cs",
               "RelativeDocumentMoniker": "Project\\BillManager.cs",
@@ -588,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Main.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Main.Designer.cs",
               "RelativeDocumentMoniker": "Project\\Main.Designer.cs",
@@ -596,12 +618,11 @@
               "RelativeToolTip": "Project\\Main.Designer.cs",
               "ViewState": "AgIAAPoAAAAAAAAAAAAqwBEBAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T14:42:18.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T14:42:18.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "BillManager.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\BillManager.cs",
               "RelativeDocumentMoniker": "Project\\BillManager.cs",
@@ -635,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "BillManager.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\BillManager.Designer.cs",
               "RelativeDocumentMoniker": "Project\\BillManager.Designer.cs",
@@ -644,29 +665,6 @@
               "ViewState": "AgIAAD4AAAAAAAAAAAAqwGEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T08:42:38.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DetailBill.cs [Design]",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.cs",
-              "RelativeDocumentMoniker": "Project\\DetailBill.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project\\Project\\DetailBill.cs [Design]",
-              "RelativeToolTip": "..\\Project\\Project\\DetailBill.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T09:09:15.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DetailBill.cs",
-              "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.cs",
-              "RelativeDocumentMoniker": "Project\\DetailBill.cs",
-              "ToolTip": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailBill.cs",
-              "RelativeToolTip": "Project\\DetailBill.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T09:09:18.234Z"
             },
             {
               "$type": "Document",
@@ -681,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 96,
               "Title": "BillViewModel.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\BillViewModel.cs",
               "RelativeDocumentMoniker": "Data\\BillViewModel.cs",
@@ -693,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "CustomerViewModel.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\CustomerViewModel.cs",
               "RelativeDocumentMoniker": "Data\\CustomerViewModel.cs",
@@ -705,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "CustomerManager.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\CustomerManager.cs",
               "RelativeDocumentMoniker": "Project\\CustomerManager.cs",
@@ -716,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "RoomViewModel.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\RoomViewModel.cs",
               "RelativeDocumentMoniker": "Data\\RoomViewModel.cs",
@@ -728,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "CustomerManager.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\CustomerManager.Designer.cs",
               "RelativeDocumentMoniker": "Project\\CustomerManager.Designer.cs",
@@ -740,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "CustomerTypeManager.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\CustomerTypeManager.cs",
               "RelativeDocumentMoniker": "Project\\CustomerTypeManager.cs",
@@ -751,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "DetailUser.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailUser.cs",
               "RelativeDocumentMoniker": "Project\\DetailUser.cs",
@@ -763,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "DetailUser.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailUser.Designer.cs",
               "RelativeDocumentMoniker": "Project\\DetailUser.Designer.cs",
@@ -775,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "CustomerManager.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\CustomerManager.cs",
               "RelativeDocumentMoniker": "Project\\CustomerManager.cs",
@@ -787,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "DetailRoom.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRoom.Designer.cs",
               "RelativeDocumentMoniker": "Project\\DetailRoom.Designer.cs",
@@ -799,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "DetailRoom.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRoom.cs",
               "RelativeDocumentMoniker": "Project\\DetailRoom.cs",
@@ -811,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "Parameter.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Parameter.cs",
               "RelativeDocumentMoniker": "Project\\Parameter.cs",
@@ -822,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 94,
               "Title": "HomePage.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\HomePage.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\HomePage.cs",
@@ -833,7 +831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "UserManager.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\UserManager.cs",
               "RelativeDocumentMoniker": "Project\\UserManager.cs",
@@ -845,7 +843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "Rental.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Rental.cs",
               "RelativeDocumentMoniker": "Project\\Rental.cs",
@@ -856,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "UserManager.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\UserManager.cs",
               "RelativeDocumentMoniker": "Project\\UserManager.cs",
@@ -867,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "RoomTypeManager.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\RoomTypeManager.cs",
               "RelativeDocumentMoniker": "Project\\RoomTypeManager.cs",
@@ -878,7 +876,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 95,
               "Title": "HomePage.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\HomePage.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\HomePage.cs",
@@ -890,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "Report.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Report.cs",
               "RelativeDocumentMoniker": "Project\\Report.cs",
@@ -901,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "InsertCustomer.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\InsertCustomer.cs",
               "RelativeDocumentMoniker": "Project\\InsertCustomer.cs",
@@ -912,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "DetailRoomType.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRoomType.cs",
               "RelativeDocumentMoniker": "Project\\DetailRoomType.cs",
@@ -923,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "Global_.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\Global_.cs",
               "RelativeDocumentMoniker": "Data\\Global_.cs",
@@ -935,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "App.config",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\App.config",
               "RelativeDocumentMoniker": "Project\\App.config",
@@ -943,11 +941,12 @@
               "RelativeToolTip": "Project\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-10T15:00:07.208Z"
+              "WhenOpened": "2025-12-10T15:00:07.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Program.cs",
               "RelativeDocumentMoniker": "Project\\Program.cs",
@@ -959,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "UserManager.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\UserManager.Designer.cs",
               "RelativeDocumentMoniker": "Project\\UserManager.Designer.cs",
@@ -971,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "UserManager.resx",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\UserManager.resx",
               "RelativeDocumentMoniker": "Project\\UserManager.resx",
@@ -982,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "Rental.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Rental.cs",
               "RelativeDocumentMoniker": "Project\\Rental.cs",
@@ -994,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Github1412\\Project-SE104\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "..\\Github1412\\Project-SE104\\Services\\UserService.cs",
@@ -1006,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "Rental.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Rental.Designer.cs",
               "RelativeDocumentMoniker": "Project\\Rental.Designer.cs",
@@ -1018,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "Parameter.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Parameter.cs",
               "RelativeDocumentMoniker": "Project\\Parameter.cs",
@@ -1030,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "CustomerTypeManager.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\CustomerTypeManager.cs",
               "RelativeDocumentMoniker": "Project\\CustomerTypeManager.cs",
@@ -1042,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "RoomTypeManager.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\RoomTypeManager.cs",
               "RelativeDocumentMoniker": "Project\\RoomTypeManager.cs",
@@ -1054,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "RoomManager.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\RoomManager.Designer.cs",
               "RelativeDocumentMoniker": "Project\\RoomManager.Designer.cs",
@@ -1066,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "ReportService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\ReportService.cs",
               "RelativeDocumentMoniker": "Services\\ReportService.cs",
@@ -1078,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "RoomTypeManager.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\RoomTypeManager.Designer.cs",
               "RelativeDocumentMoniker": "Project\\RoomTypeManager.Designer.cs",
@@ -1090,7 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "CustomerTypeManager.resx",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\CustomerTypeManager.resx",
               "RelativeDocumentMoniker": "Project\\CustomerTypeManager.resx",
@@ -1101,7 +1100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "DB.designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\DB.designer.cs",
               "RelativeDocumentMoniker": "Data\\DB.designer.cs",
@@ -1113,7 +1112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "Services\\CustomerService.cs",
@@ -1125,7 +1124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "DetailCustomer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailCustomer.cs",
               "RelativeDocumentMoniker": "Project\\DetailCustomer.cs",
@@ -1137,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "DetailRoomType.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRoomType.cs",
               "RelativeDocumentMoniker": "Project\\DetailRoomType.cs",
@@ -1149,7 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "DetailRoomType.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailRoomType.Designer.cs",
               "RelativeDocumentMoniker": "Project\\DetailRoomType.Designer.cs",
@@ -1161,7 +1160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "DetailCustomer.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailCustomer.Designer.cs",
               "RelativeDocumentMoniker": "Project\\DetailCustomer.Designer.cs",
@@ -1173,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "DetailCustomerType.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailCustomerType.Designer.cs",
               "RelativeDocumentMoniker": "Project\\DetailCustomerType.Designer.cs",
@@ -1185,7 +1184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "DetailCustomerType.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\DetailCustomerType.cs",
               "RelativeDocumentMoniker": "Project\\DetailCustomerType.cs",
@@ -1197,7 +1196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "Parameter.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Parameter.Designer.cs",
               "RelativeDocumentMoniker": "Project\\Parameter.Designer.cs",
@@ -1209,7 +1208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "Report.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Report.cs",
               "RelativeDocumentMoniker": "Project\\Report.cs",
@@ -1221,7 +1220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "RoomService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\RoomService.cs",
               "RelativeDocumentMoniker": "Services\\RoomService.cs",
@@ -1233,7 +1232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "Report.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Project\\Report.Designer.cs",
               "RelativeDocumentMoniker": "Project\\Report.Designer.cs",
@@ -1245,7 +1244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "ParameterService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\ParameterService.cs",
               "RelativeDocumentMoniker": "Services\\ParameterService.cs",
@@ -1257,7 +1256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 79,
               "Title": "RoomManeger.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomManeger.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RoomManeger.cs",
@@ -1268,7 +1267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 77,
               "Title": "CustomerManagerForm.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\CustomerManagerForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\CustomerManagerForm.cs",
@@ -1279,7 +1278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 76,
               "Title": "CustomerManagerForm.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\CustomerManagerForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\CustomerManagerForm.cs",
@@ -1290,7 +1289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 80,
               "Title": "RoomManeger.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomManeger.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RoomManeger.cs",
@@ -1302,7 +1301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 81,
               "Title": "RoomTypes_UpdateForm.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomTypes_UpdateForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RoomTypes_UpdateForm.cs",
@@ -1313,7 +1312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 82,
               "Title": "RoomManeger.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomManeger.Designer.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RoomManeger.Designer.cs",
@@ -1325,7 +1324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 83,
               "Title": "RoomTypes_CreateForm.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomTypes_CreateForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RoomTypes_CreateForm.cs",
@@ -1336,7 +1335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 84,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\LoginForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\LoginForm.cs",
@@ -1347,7 +1346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 85,
               "Title": "RentalForm.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RentalForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RentalForm.cs",
@@ -1358,7 +1357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 78,
               "Title": "LoaiKhach_UpdateForm.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\LoaiKhach_UpdateForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\LoaiKhach_UpdateForm.cs",
@@ -1370,7 +1369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 86,
               "Title": "RoomTypes_UpdateForm.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomTypes_UpdateForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RoomTypes_UpdateForm.cs",
@@ -1382,7 +1381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Github1212\\Project-SE104\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "..\\Github1212\\Project-SE104\\Services\\CustomerService.cs",
@@ -1394,7 +1393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 87,
               "Title": "RoomTypes_CreateForm.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RoomTypes_CreateForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RoomTypes_CreateForm.cs",
@@ -1406,7 +1405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "RoomService.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Github1212\\Project-SE104\\Services\\RoomService.cs",
               "RelativeDocumentMoniker": "..\\Github1212\\Project-SE104\\Services\\RoomService.cs",
@@ -1418,7 +1417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 73,
               "Title": "User_.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\User_.cs",
               "RelativeDocumentMoniker": "Data\\User_.cs",
@@ -1430,7 +1429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 88,
               "Title": "RentalForm.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RentalForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RentalForm.cs",
@@ -1442,7 +1441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\Program.cs",
               "RelativeDocumentMoniker": "Data\\Program.cs",
@@ -1454,7 +1453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 89,
               "Title": "QuyDinhForm.cs [Design]",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\QuyDinhForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\QuyDinhForm.cs",
@@ -1465,7 +1464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 74,
               "Title": "App.config",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Services\\App.config",
               "RelativeDocumentMoniker": "Services\\App.config",
@@ -1477,7 +1476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 90,
               "Title": "QuyDinhForm.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\QuyDinhForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\QuyDinhForm.cs",
@@ -1489,7 +1488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 75,
               "Title": "DB.dbml",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project - Main\\Data\\DB.dbml",
               "RelativeDocumentMoniker": "Data\\DB.dbml",
@@ -1500,7 +1499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 91,
               "Title": "RentalForm.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\RentalForm.Designer.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\RentalForm.Designer.cs",
@@ -1512,7 +1511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 92,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\LoginForm.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\LoginForm.cs",
@@ -1524,7 +1523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 93,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "D:\\HK5\\SE104\\Project\\Project\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "..\\Project\\Project\\LoginForm.Designer.cs",

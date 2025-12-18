@@ -17,7 +17,7 @@ namespace Project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
      //  Application.Run(new RoomManager());
-            Application.Run(new Login());
+            Application.Run(new LoginForm());
         }
     }
 }

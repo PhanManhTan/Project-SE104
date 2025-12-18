@@ -135,15 +135,6 @@ namespace Services
             return db.KhachHangs.ToList();
         }
 
-        public List<KhachHang> SearchCustomer(string keyword)
-        {
-            keyword = keyword?.Trim().ToLower() ?? "";
-            return db.KhachHangs
-                .Where(k => k.HoTen.ToLower().Contains(keyword) ||
-                            k.CMND.Contains(keyword) ||
-                            k.MaKhach.ToLower().Contains(keyword))
-                .ToList();
-        }
 
         public bool AddCustomer(KhachHang kh)
         {
@@ -223,11 +214,6 @@ namespace Services
         public KhachHang GetCustomerById(string maKhach)
         {
             return db.KhachHangs.FirstOrDefault(k => k.MaKhach == maKhach);
-        }
-
-        public bool IsCustomerTypeInUse(string maLoai)
-        {
-            return db.KhachHangs.Any(kh => kh.MaLoaiKhach == maLoai);
         }
     }
 }

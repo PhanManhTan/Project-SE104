@@ -47,89 +47,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BillManager.cs">
+    <Compile Include="AddCustomerForm.Designer.cs">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BillManager.Designer.cs">
-      <DependentUpon>BillManager.cs</DependentUpon>
+    <Compile Include="BillsForm.Designer.cs">
+      <DependentUpon>BillsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerManager.cs">
+    <Compile Include="CustomersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerManager.Designer.cs">
-      <DependentUpon>CustomerManager.cs</DependentUpon>
+    <Compile Include="CustomersForm.Designer.cs">
+      <DependentUpon>CustomersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailBill.cs">
+    <Compile Include="BillDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailBill.Designer.cs">
-      <DependentUpon>DetailBill.cs</DependentUpon>
+    <Compile Include="BillDetailForm.Designer.cs">
+      <DependentUpon>BillDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailCustomer.cs">
+    <Compile Include="CustomerDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailCustomer.Designer.cs">
-      <DependentUpon>DetailCustomer.cs</DependentUpon>
+    <Compile Include="CustomerDetailForm.Designer.cs">
+      <DependentUpon>CustomerDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailCustomerType.cs">
+    <Compile Include="CustomerTypeDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailCustomerType.Designer.cs">
-      <DependentUpon>DetailCustomerType.cs</DependentUpon>
+    <Compile Include="CustomerTypeDetailForm.Designer.cs">
+      <DependentUpon>CustomerTypeDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailRental.cs">
+    <Compile Include="RoomDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailRental.Designer.cs">
-      <DependentUpon>DetailRental.cs</DependentUpon>
+    <Compile Include="RoomDetailForm.Designer.cs">
+      <DependentUpon>RoomDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailRoom.cs">
+    <Compile Include="CustomerTypesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailRoom.Designer.cs">
-      <DependentUpon>DetailRoom.cs</DependentUpon>
+    <Compile Include="CustomerTypesForm.Designer.cs">
+      <DependentUpon>CustomerTypesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerTypeManager.cs">
+    <Compile Include="RoomTypeDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerTypeManager.Designer.cs">
-      <DependentUpon>CustomerTypeManager.cs</DependentUpon>
+    <Compile Include="RoomTypeDetailForm.Designer.cs">
+      <DependentUpon>RoomTypeDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailRoomType.cs">
+    <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailRoomType.Designer.cs">
-      <DependentUpon>DetailRoomType.cs</DependentUpon>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailUser.cs">
+    <Compile Include="AddCustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailUser.Designer.cs">
-      <DependentUpon>DetailUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsertCustomer.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InsertCustomer.Designer.cs">
-      <DependentUpon>InsertCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PaymentForm.cs">
       <SubType>Form</SubType>
@@ -139,92 +127,98 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Parameter.cs">
+    <Compile Include="ParametersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Parameter.Designer.cs">
-      <DependentUpon>Parameter.cs</DependentUpon>
+    <Compile Include="ParametersForm.Designer.cs">
+      <DependentUpon>ParametersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rental.cs">
+    <Compile Include="RentalRegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rental.Designer.cs">
-      <DependentUpon>Rental.cs</DependentUpon>
+    <Compile Include="RentalRegistrationForm.Designer.cs">
+      <DependentUpon>RentalRegistrationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RentalManager.cs">
+    <Compile Include="RentalDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RentalManager.Designer.cs">
-      <DependentUpon>RentalManager.cs</DependentUpon>
+    <Compile Include="RentalDetailForm.Designer.cs">
+      <DependentUpon>RentalDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report.cs">
+    <Compile Include="RentalsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report.Designer.cs">
-      <DependentUpon>Report.cs</DependentUpon>
+    <Compile Include="RentalsForm.Designer.cs">
+      <DependentUpon>RentalsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomManager.cs">
+    <Compile Include="ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomManager.Designer.cs">
-      <DependentUpon>RoomManager.cs</DependentUpon>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomTypeManager.cs">
+    <Compile Include="RoomsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomTypeManager.Designer.cs">
-      <DependentUpon>RoomTypeManager.cs</DependentUpon>
+    <Compile Include="RoomsForm.Designer.cs">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserManager.cs">
+    <Compile Include="RoomTypesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserManager.Designer.cs">
-      <DependentUpon>UserManager.cs</DependentUpon>
+    <Compile Include="RoomTypesForm.Designer.cs">
+      <DependentUpon>RoomTypesForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BillManager.resx">
-      <DependentUpon>BillManager.cs</DependentUpon>
+    <Compile Include="UserDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDetailForm.Designer.cs">
+      <DependentUpon>UserDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BillsForm.resx">
+      <DependentUpon>BillsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerManager.resx">
-      <DependentUpon>CustomerManager.cs</DependentUpon>
+    <EmbeddedResource Include="CustomersForm.resx">
+      <DependentUpon>CustomersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerTypeManager.resx">
-      <DependentUpon>CustomerTypeManager.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerTypeDetailForm.resx">
+      <DependentUpon>CustomerTypeDetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailBill.resx">
-      <DependentUpon>DetailBill.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerTypesForm.resx">
+      <DependentUpon>CustomerTypesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailCustomer.resx">
-      <DependentUpon>DetailCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="BillDetailForm.resx">
+      <DependentUpon>BillDetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailCustomerType.resx">
-      <DependentUpon>DetailCustomerType.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerDetailForm.resx">
+      <DependentUpon>CustomerDetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailRental.resx">
-      <DependentUpon>DetailRental.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DetailRoom.resx">
-      <DependentUpon>DetailRoom.cs</DependentUpon>
+    <EmbeddedResource Include="RoomDetailForm.resx">
+      <DependentUpon>RoomDetailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailRoomType.resx">
-      <DependentUpon>DetailRoomType.cs</DependentUpon>
+      <DependentUpon>RoomTypeDetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailUser.resx">
-      <DependentUpon>DetailUser.cs</DependentUpon>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertCustomer.resx">
-      <DependentUpon>InsertCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameter.resx">
-      <DependentUpon>Parameter.cs</DependentUpon>
+    <EmbeddedResource Include="ParametersForm.resx">
+      <DependentUpon>ParametersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentForm.resx">
       <DependentUpon>PaymentForm.cs</DependentUpon>
@@ -238,23 +232,29 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Rental.resx">
-      <DependentUpon>Rental.cs</DependentUpon>
+    <EmbeddedResource Include="RentalRegistrationForm.resx">
+      <DependentUpon>RentalRegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RentalManager.resx">
-      <DependentUpon>RentalManager.cs</DependentUpon>
+    <EmbeddedResource Include="RentalDetailForm.resx">
+      <DependentUpon>RentalDetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report.resx">
-      <DependentUpon>Report.cs</DependentUpon>
+    <EmbeddedResource Include="RentalsForm.resx">
+      <DependentUpon>RentalsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomManager.resx">
-      <DependentUpon>RoomManager.cs</DependentUpon>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomTypeManager.resx">
-      <DependentUpon>RoomTypeManager.cs</DependentUpon>
+    <EmbeddedResource Include="RoomsForm.resx">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserManager.resx">
-      <DependentUpon>UserManager.cs</DependentUpon>
+    <EmbeddedResource Include="RoomTypesForm.resx">
+      <DependentUpon>RoomTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetailForm.resx">
+      <DependentUpon>UserDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

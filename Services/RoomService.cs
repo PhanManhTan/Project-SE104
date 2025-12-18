@@ -9,33 +9,9 @@ namespace Services
     {
         private readonly DBDataContext qlks = new DBDataContext();
 
-        // ==================== QUẢN LÝ PHÒNG ====================
-        public List<Phong> GetAllRooms() => qlks.Phongs.ToList();
-
-        public List<Phong> GetAvailableRooms() =>
-            qlks.Phongs.Where(p => p.TinhTrang == "Trống").ToList();
-
-        public List<Phong> GetRoomsByType(string maLoaiPhong) =>
-            qlks.Phongs.Where(p => p.MaLoaiPhong == maLoaiPhong).ToList();
-
-        public bool UpdateRoomStatus(string maPhong, string tinhTrang)
+        public List<Phong> GetAllRooms()
         {
-            try
-            {
-                var phong = qlks.Phongs.FirstOrDefault(p => p.MaPhong == maPhong);
-                if (phong == null) return false;
-
-                if (tinhTrang != "Trống" && tinhTrang != "Đã thuê" && tinhTrang != "Đang dọn")
-                    return false;
-
-                phong.TinhTrang = tinhTrang;
-                qlks.SubmitChanges();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            return qlks.Phongs.ToList();
         }
 
         public bool AddRoom(Phong newRoom)
@@ -43,9 +19,9 @@ namespace Services
             try
             {
                 if (qlks.Phongs.Any(p => p.MaPhong == newRoom.MaPhong))
-                    return false; // Mã phòng đã tồn tại
+                    return false;
 
-                newRoom.TinhTrang = "Trống"; // Mặc định khi thêm mới
+                newRoom.TinhTrang = "Trống";
                 qlks.Phongs.InsertOnSubmit(newRoom);
                 qlks.SubmitChanges();
                 return true;
@@ -81,8 +57,6 @@ namespace Services
             {
                 var phong = qlks.Phongs.FirstOrDefault(p => p.MaPhong == maPhong);
                 if (phong == null) return false;
-
-                // Không cho xóa nếu phòng đang có phiếu thuê
                 if (qlks.PhieuThues.Any(pt => pt.MaPhong == maPhong))
                     return false;
 
@@ -96,7 +70,6 @@ namespace Services
             }
         }
 
-        // ==================== QUẢN LÝ LOẠI PHÒNG ====================
         public List<LoaiPhong> GetAllRoomTypes()
         {
             return qlks.LoaiPhongs.OrderBy(lp => lp.MaLoaiPhong).ToList();
@@ -107,7 +80,7 @@ namespace Services
             try
             {
                 if (qlks.LoaiPhongs.Any(lp => lp.MaLoaiPhong == newType.MaLoaiPhong))
-                    return false; // Mã loại đã tồn tại
+                    return false;
 
                 qlks.LoaiPhongs.InsertOnSubmit(newType);
                 qlks.SubmitChanges();
@@ -119,6 +92,26 @@ namespace Services
             }
         }
 
+        // Overload mới (tối ưu, an toàn - khuyến khích dùng)
+        public bool UpdateRoomType(LoaiPhong updatedType)
+        {
+            try
+            {
+                var lp = qlks.LoaiPhongs.FirstOrDefault(p => p.MaLoaiPhong == updatedType.MaLoaiPhong);
+                if (lp == null) return false;
+
+                lp.TenLoaiPhong = updatedType.TenLoaiPhong;
+                lp.DonGia = updatedType.DonGia;
+                qlks.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        // Overload cũ - giữ lại để tương thích với code cũ (có thể đổi mã)
         public bool UpdateRoomType(LoaiPhong updatedType, string originalMaLoai)
         {
             try
@@ -129,21 +122,12 @@ namespace Services
 
                 if (isIdUnchanged)
                 {
-                    var lp = qlks.LoaiPhongs.FirstOrDefault(p => p.MaLoaiPhong == oldID);
-                    if (lp == null) return false;
-
-                    lp.TenLoaiPhong = updatedType.TenLoaiPhong;
-                    lp.DonGia = updatedType.DonGia;
-                    qlks.SubmitChanges();
-                    return true;
+                    return UpdateRoomType(updatedType); // Gọi overload mới
                 }
                 else
                 {
-                    // Kiểm tra mã mới đã tồn tại chưa
                     if (qlks.LoaiPhongs.Any(p => p.MaLoaiPhong == newID))
                         return false;
-
-                    // Không cho đổi mã nếu loại phòng đang được sử dụng
                     if (qlks.Phongs.Any(p => p.MaLoaiPhong == oldID))
                         return false;
 
@@ -168,8 +152,6 @@ namespace Services
             {
                 var loaiPhong = qlks.LoaiPhongs.FirstOrDefault(lp => lp.MaLoaiPhong == maLoaiPhong);
                 if (loaiPhong == null) return false;
-
-                // Không cho xóa nếu có phòng đang dùng loại này
                 if (qlks.Phongs.Any(p => p.MaLoaiPhong == maLoaiPhong))
                     return false;
 
@@ -193,7 +175,6 @@ namespace Services
             return qlks.Phongs.Any(p => p.MaLoaiPhong == maLoaiPhong);
         }
 
-        // ==================== VIEW MODEL CHO GRID ====================
         public List<RoomViewModel> GetAllRoomsView()
         {
             var query = from p in qlks.Phongs
@@ -204,14 +185,13 @@ namespace Services
                             MaPhong = p.MaPhong,
                             MaLoaiPhong = p.MaLoaiPhong,
                             TenLoaiPhong = loaiPhong != null ? loaiPhong.TenLoaiPhong : "Không xác định",
-                            TinhTrang = p.TinhTrang,
+                            TinhTrang = p.TinhTrang ?? "Trống",
                             GhiChu = p.GhiChu ?? "",
                             DonGia = loaiPhong != null ? loaiPhong.DonGia : 0
                         };
             return query.ToList();
         }
 
-        // ==================== DANH SÁCH TÌNH TRẠNG ====================
         public List<string> GetAllStatus()
         {
             return new List<string> { "Trống", "Đã thuê", "Đang dọn" };

@@ -13,9 +13,6 @@ namespace Services
         public float TyLe { get; set; }
     }
 
-    // ==========================================
-    // 2. CLASS XỬ LÝ LOGIC CHÍNH
-    // ==========================================
     public class ReportService
     {
         private readonly DBDataContext db = new DBDataContext();

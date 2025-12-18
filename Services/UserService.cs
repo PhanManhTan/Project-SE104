@@ -62,26 +62,6 @@ namespace Services
         }
 
 
-        // 2. Đổi mật khẩu
-        //public bool ChangePassword(string username, string oldPass, string newPass)
-        //{
-        //    // SỬA: qlks.User_s
-        //    var user = qlks.User_s.FirstOrDefault(u =>
-        //        u.Username.Trim().Equals(username.Trim(), StringComparison.OrdinalIgnoreCase));
-
-        //    if (user == null || !user.CheckPassword(oldPass))
-        //        return false;
-
-        //    user.Password_ = newPass;
-
-        //    // SỬA: Bảng User_ của bạn KHÔNG có cột UpdatedDate → bỏ dòng này đi!
-        //    // user.UpdatedDate = DateTime.Now;   ← XÓA DÒNG NÀY
-
-        //    qlks.SubmitChanges();
-        //    return true;
-        //}
-
-        // 3. Đăng ký user mới
         public bool Create(User_ newUser)
         {
             // SỬA: qlks.User_s + Any

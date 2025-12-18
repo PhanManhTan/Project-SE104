@@ -1,0 +1,42 @@
+D:\HK5\SE104\Project\Services\bin\Debug\Services.exe.config
+D:\HK5\SE104\Project\Services\bin\Debug\Services.exe
+D:\HK5\SE104\Project\Services\bin\Debug\Services.pdb
+D:\HK5\SE104\Project\Services\bin\Debug\Data.exe
+D:\HK5\SE104\Project\Services\bin\Debug\Data.pdb
+D:\HK5\SE104\Project\Services\bin\Debug\Data.exe.config
+D:\HK5\SE104\Project\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+D:\HK5\SE104\Project\Services\obj\Debug\Services.Properties.Resources.resources
+D:\HK5\SE104\Project\Services\obj\Debug\Services.csproj.GenerateResource.cache
+D:\HK5\SE104\Project\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\HK5\SE104\Project\Services\obj\Debug\Services.csproj.Up2Date
+D:\HK5\SE104\Project\Services\obj\Debug\Services.exe
+D:\HK5\SE104\Project\Services\obj\Debug\Services.pdb
+D:\HK5\SE104\Project\Services\obj\Debug\Services.exe.config
+D:\HK5\SE104\Project - Main\Services\bin\Debug\Services.exe.config
+D:\HK5\SE104\Project - Main\Services\bin\Debug\Services.exe
+D:\HK5\SE104\Project - Main\Services\bin\Debug\Services.pdb
+D:\HK5\SE104\Project - Main\Services\bin\Debug\Data.exe
+D:\HK5\SE104\Project - Main\Services\bin\Debug\Data.pdb
+D:\HK5\SE104\Project - Main\Services\bin\Debug\Data.exe.config
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.exe.config
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.Properties.Resources.resources
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.csproj.GenerateResource.cache
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.csproj.Up2Date
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.exe
+D:\HK5\SE104\Project - Main\Services\obj\Debug\Services.pdb
+D:\HK5\SE104\Final\Project-SE104\Services\bin\Debug\Services.exe.config
+D:\HK5\SE104\Final\Project-SE104\Services\bin\Debug\Services.exe
+D:\HK5\SE104\Final\Project-SE104\Services\bin\Debug\Services.pdb
+D:\HK5\SE104\Final\Project-SE104\Services\bin\Debug\Data.exe
+D:\HK5\SE104\Final\Project-SE104\Services\bin\Debug\Data.pdb
+D:\HK5\SE104\Final\Project-SE104\Services\bin\Debug\Data.exe.config
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.exe.config
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.Properties.Resources.resources
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.csproj.GenerateResource.cache
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.csproj.Up2Date
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.exe
+D:\HK5\SE104\Final\Project-SE104\Services\obj\Debug\Services.pdb
